@@ -531,6 +531,21 @@
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
+        },
+        {
+            "documento": "1234123412",
+            "edad": 123,
+            "nombre": "juan",
+            "apellido": "juan",
+            "telefono": 1234123412,
+            "sexo": "Masculino",
+            "ciudad": "juan",
+            "direccion": "juan]",
+            "email": "juan",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
         }
     ]
 }
