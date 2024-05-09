@@ -64,33 +64,35 @@ def validar_password():
             validar = 0
             break
         elif password != "password":
+            clear_screen()
             print("Contraseña incorrecta")
             print("Si no eres admin oprime 0")
             print("***************************************")
             
     return validar
-main_1()
-op = pedir_opcion()
 
 
-
-if op == 1:
-    print ("Bienvenido usuario a", NAME)
-    print("Si no eres user oprime 0")
-    op = 1
-elif op == 2:
-    validar = validar_password() 
-    clear_screen()
-    if validar == 0:
+def asignacion(op):
+    if op == 1:
+        print ("Usuario puedes pasar a", NAME)
+        print("Si no eres user oprime 0")
+        op = 1
+    elif op == 2:
+        validar = validar_password() 
+        clear_screen()
+        if validar == 0:
+            print("Adios guerrero Z")
+            op = 0
+        else:
+            print ("Admin puedes pasar a", NAME)
+            op = 2
+    elif op == 0:
         print("Adios guerrero Z")
         op = 0
-    else:
-        print ("Admin bienvenido a", NAME)
-        op = 2
-elif op == 0:
-    print("Adios guerrero Z")
-    op = 0
     
+main_1()
+op = pedir_opcion()
+asignacion(op)
 
 
     
