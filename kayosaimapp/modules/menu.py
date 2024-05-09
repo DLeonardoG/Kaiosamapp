@@ -21,18 +21,19 @@ def clear_screen():
 
 NAME = "Kaiosamapp"
 print("***************************************")
-print ("Bienvenido a",NAME,"escoje una opcion: ")
+print ("Bienvenido a",NAME)
 print ("1. Usuario")
 print ("2. Administrador")
+print ("0. Salir")
 print("***************************************")
 
 def pedir_opcion():
     op = 0
     while True:
         try:
-            op = int(input("Ingrese su cargo: "))
+            op = int(input("Escoja una opcion: "))
             print("***************************************")
-            if op == 1 or op == 2:
+            if op == 1 or op == 2 or op == 0:
                 clear_screen()
                 break
             
@@ -41,10 +42,46 @@ def pedir_opcion():
             print("***************************************")
     return op
             
-        
+            
+def validar_password():
+    while True:
+        password = input("Ingrese la contraseña admin: ")
+        if password == "password":
+            validar = 1
+            print("Puedes pasar guerrero Z")
+            break
+        elif password == "0":
+            validar = 0
+            break
+        elif password != "password":
+            print("Contraseña incorrecta")
+            print("Si no eres admin oprime 0")
+            print("***************************************")
+            
+    return validar
+
 op = pedir_opcion()
+
+
 
 if op == 1:
     print ("Bienvenido usuario a", NAME)
-else:
-    print ("Bienvenido admin a", NAME)
+    op = 1
+elif op == 2:
+    validar = validar_password() 
+    clear_screen()
+    if validar == 0:
+        print("Adios guerrero Z")
+        op = 0
+    else:
+        print ("Bienvenido admin a", NAME)
+        op = 2
+elif op == 0:
+    print("Adios guerrero Z")
+    op = 0
+    
+
+
+    
+
+    

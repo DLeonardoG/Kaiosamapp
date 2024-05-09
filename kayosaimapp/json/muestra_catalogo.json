@@ -2,12 +2,13 @@
     "catalogo_servicios": 
     [
         {
-            "fibra_optica":
+            "fibra_optica_namekusei":
             [
                 {
                     "referencia": "Oozaru.",
                     "plan":"250 MG",
-                    "precio":"80.000",
+                    "tipo_servicios":"fibra_optica_namekusei",
+                    "precio":80000,
                     "nuemero_de_serie":"123456",
                     "permanencia":"2 meses",
                     "descuento":
@@ -22,13 +23,14 @@
 
                 }
             ],
-            "pospago":
+            "pospago_roshi":
             [
                 {
                     "referencia": "supersayayin fase 1",
                     "plan":" 30 G",
+                    "tipo_servicios":"pospago_roshi",
                     "minutos":"ilimitados",
-                    "precio":"30.000",
+                    "precio":30000,
                     "nuemero_de_serie":"1234567",
                     "duracion":"30 dias",
                     "descuento":
@@ -41,13 +43,14 @@
                     ]   
                 }
             ],
-            "prepago":
+            "prepago_Krilin":
             [
                 {
-                    "referencia": "supersayayin fase 1",
+                    "referencia": "supersayayin fase 2",
                     "plan":" 30 G",
+                    "tipo_servicios":"prepago_Krilin",
                     "minutos":"ilimitados",
-                    "precio":"30.000",
+                    "precio":30000,
                     "nuemero_de_serie":"1234567",
                     "duracion":"30 dias",
                     "descuento":
@@ -65,8 +68,9 @@
                 {
                     "referencia": "supersayayin blue + Kaio-ken",
                     "plan":" 30 G + 250MG de fribra optica",
+                    "tipo_servicios":"combo_dragon",
                     "minutos":"ilimitados",
-                    "precio":"30.000",
+                    "precio":30000,
                     "nuemero_de_serie":"12345678",
                     "duracion":"30 dias",
                     "descuento":
@@ -82,7 +86,7 @@
             
         }
     ],
-    "catalogo_ventas": 
+    "catalogo_productos": 
     [
         {
             
@@ -90,7 +94,7 @@
             "clase": "celular",
             "marca":"apple",
             "nuemero_de_serie":"123",
-            "precio": 10,
+            "precio": 10000,
             "caracteristicas": 
             [
                 {
@@ -119,7 +123,7 @@
             "clase": "tv",
             "marca":"lg",
             "nuemero_de_serie":"12345",
-            "precio": 10,
+            "precio": 20000,
             "caracteristicas": 
             [
                 {

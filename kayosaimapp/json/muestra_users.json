@@ -1,13 +1,6 @@
 {
-    "eventos": [
-        {
-            "nombre": "Convivencia",
-            "locacion": "Parque",
-            "dia": 5,
-            "realizado": true
-        }
-    ],
-    "usuarios": [
+    "usuarios": 
+    [
         {
             "edad": 19,
             "nombre": "son goku",
@@ -19,23 +12,61 @@
             "telefono": 3155370033,
             "email":"gokuball@gmail.com",
             "categoria": "cliente nuevo",
-            "registro_servicios":[
+            "registro_servicios":
+            [
                 {
-                    "fibra_optica":[
+                    "fibra_optica_namekusei":[
+                        {
+                            "referencia": "Oozaru",
+                            "precio": 80.000,
+                            "nuemero_de_serie":"123456",
+                            "fecha": "90473847"
+                        }
                         
                     ],
-                    "pospago":[
-                    
+                    "pospago_roshi":
+                    [
+                        {
+                            "referencia": "supersayayin fase 1",
+                            "precio": 30.000,
+                            "nuemero_de_serie":"1234567",
+                            "fecha": "90473847"
+                        }
                     ],
-                    "prepago":[
-
+                    "prepago_Krilin":
+                    [
+                        {
+                            "referencia": "supersayayin fase 2",
+                            "precio": 30.000,
+                            "nuemero_de_serie":"1234567",
+                            "fecha": "90473847"
+                        }
                     ],
-                    "combo_dragon":[
-                        
+                    "combo_dragon":
+                    [
+                        {
+                            "referencia": "supersayayin blue + Kaio-ken",
+                            "precio": 30.000,
+                            "nuemero_de_serie":"12345678",
+                            "fecha": "90473847"
+                        }
                     ]
                 }
             ],
-            "registro_interacciones":[
+            "registro_productos":
+            [
+                {
+                    "referencia": "iphone 15",
+                    "clase": "celular",
+                    "precio": 10000,
+                    "nuemero_de_serie":"123",
+                    "fecha": "90473847"
+                }
+
+            ],
+
+            "registro_interacciones":
+            [
                 {
                     "servicio_al_cliente":[
                         {
@@ -59,22 +90,7 @@
 
                     ]
                 }
-            ],
-            "registro_productos":[
-                {
-                    
-                }
-
-            ]            
-        },
-
-        {
-            "nombre": "carlos",
-            "documento": "1029",
-            "cargo": "gota",
-            "edad": 0,
-            "pago": true,
-            "hola": "si"
+            ]        
         }
     ]
 }

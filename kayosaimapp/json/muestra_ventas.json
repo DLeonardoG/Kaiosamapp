@@ -1,0 +1,27 @@
+{
+    "ventas_servicios":
+    [
+        {
+            "nombre": "son goku",
+            "documento": "11659876",
+            "referencia": "Oozaru",
+            "tipo_servicios":"pospago_roshi",
+            "precio": 80.000,
+            "nuemero_de_serie":"123456",
+            "fecha": "90473847"
+        }
+
+    ],
+    "ventas_productos":
+    [
+        {
+            "nombre": "son goku",
+            "documento": "11659876",
+            "referencia": "iphone 15",
+            "clase": "celular",
+            "precio": 10000,
+            "nuemero_de_serie":"123",
+            "fecha": "90473847"
+        }
+    ]
+}
