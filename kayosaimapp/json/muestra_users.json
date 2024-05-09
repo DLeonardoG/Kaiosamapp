@@ -62,11 +62,7 @@
             ],
             "registro_productos":[
                 {
-                    "marca":"uva",
-                    "referencia":"123",
-                    "cantidad": 1,
-                    "precio": 10,
-                    "fecha": 92122
+                    
                 }
 
             ]            

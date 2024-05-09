@@ -26,7 +26,7 @@
     ],
     "catalogo_ventas_celulares": [
         {
-
+            
             "referencia":"iphone 15",
             "marca":"apple",
             "nuemero_de_serie":"123",
@@ -40,7 +40,9 @@
                     "resolucion":"2.778 x 1.284 píxeles",
                     "bateria":"4.383 mah"                    
                 }
+        
             ],
+            
             "descuento":[
                 {
                     "cliente nuevo": 10,
@@ -48,14 +50,6 @@
                     "cliente leal": 40
                 }
             ]                    
-            }
-        },
-        {
-            "nombre": "carlos",
-            "documento": "1029",
-            "cargo": "gota",
-            "edad": 0,
-            "pago": true
         }
     ]
 }
