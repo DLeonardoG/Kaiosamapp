@@ -20,12 +20,14 @@ def clear_screen():
 
 
 NAME = "Kaiosamapp"
-print("***************************************")
-print ("Bienvenido a",NAME)
-print ("1. Usuario")
-print ("2. Administrador")
-print ("0. Salir")
-print("***************************************")
+def main_1():
+    clear_screen()
+    print("***************************************")
+    print ("Bienvenido a",NAME)
+    print ("1. Usuario")
+    print ("2. Administrador")
+    print ("0. Salir")
+    print("***************************************")
 
 def pedir_opcion():
     op = 0
@@ -36,10 +38,18 @@ def pedir_opcion():
             if op == 1 or op == 2 or op == 0:
                 clear_screen()
                 break
+            else:
+                clear_screen()
+                main_1()
+                print("Valor inválido")
+                print("***************************************")
             
         except Exception:
+            clear_screen()
+            main_1()
             print("Valor inválido")
             print("***************************************")
+            
     return op
             
             
@@ -59,13 +69,14 @@ def validar_password():
             print("***************************************")
             
     return validar
-
+main_1()
 op = pedir_opcion()
 
 
 
 if op == 1:
     print ("Bienvenido usuario a", NAME)
+    print("Si no eres user oprime 0")
     op = 1
 elif op == 2:
     validar = validar_password() 
@@ -74,7 +85,7 @@ elif op == 2:
         print("Adios guerrero Z")
         op = 0
     else:
-        print ("Bienvenido admin a", NAME)
+        print ("Admin bienvenido a", NAME)
         op = 2
 elif op == 0:
     print("Adios guerrero Z")
