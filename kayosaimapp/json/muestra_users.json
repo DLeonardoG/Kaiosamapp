@@ -73,7 +73,8 @@
             "documento": "1029",
             "cargo": "gota",
             "edad": 0,
-            "pago": true
+            "pago": true,
+            "hola": "si"
         }
     ]
 }
