@@ -1,7 +1,7 @@
 import platform
 import os
 from datetime import datetime
-hola
+
 
 
 def time_now():
