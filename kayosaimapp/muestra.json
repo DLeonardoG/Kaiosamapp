@@ -1,0 +1,83 @@
+{
+    "eventos": [
+        {
+            "nombre": "Convivencia",
+            "locacion": "Parque",
+            "dia": 5,
+            "realizado": true
+        }
+    ],
+    "usuarios": [
+        {
+            "edad": 19,
+            "nombre": "son goku",
+            "apellido":"sayayin",
+            "sexo":"masculino",
+            "documento": "11659876",
+            "ciudad":"gotica",
+            "direccion": "calle 102 con 24",
+            "telefono": 3155370033,
+            "email":"gokuball@gmail.com",
+            "categoria": "cliente nuevo",
+            "registro_servicios":[
+                {
+                    "fibra_optica":[
+                        
+                    ],
+                    "pospago":[
+                    
+                    ],
+                    "prepago":[
+
+                    ],
+                    "combo_dragon":[
+                        
+                    ]
+                }
+            ],
+            "registro_interacciones":[
+                {
+                    "servicio_al_cliente":[
+                        {
+                            "pregunta":"porque no me carga",
+                            "fecha":"923242"
+                        }
+                    ],
+                    "reclamaciones":[
+                        {
+                            "motivo":"no me gusta",
+                            "comentario":"que mal servicio al cliente",
+                            "fecha":"92122"
+                        }
+                    ],
+                    "sugerencias":[
+                        {
+                            "sugerencia":"bajenle",
+                            "comentario":"no me alcanza",
+                            "fecha":92122
+                        }
+
+                    ]
+                }
+            ],
+            "registro_compras":[
+                {
+                    "marca":"",
+                    "referencia":"",
+                    "cantidad": 1,
+                    "precio": 10,
+                    "fecha": 92122
+                }
+
+            ]            
+        },
+
+        {
+            "nombre": "carlos",
+            "documento": "1029",
+            "cargo": "gota",
+            "edad": 0,
+            "pago": true
+        }
+    ]
+}

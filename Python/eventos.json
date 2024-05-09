@@ -1,0 +1,54 @@
+{
+    "eventos": [
+        {
+            "nombre": "Convivencia",
+            "locacion": "Parque",
+            "dia": 5,
+            "realizado": true
+        }
+    ],
+    "participantes": [
+        {
+            "nombre": "juan",
+            "documento": "11659876",
+            "edad": 19,
+            "cargo": "gerente",
+            "pago": true
+        },
+        {
+            "nombre": "juan",
+            "documento": "123",
+            "edad": 19,
+            "cargo": "gerente",
+            "pago": false
+        },
+        {
+            "nombre": "luis",
+            "documento": "123",
+            "edad": 19,
+            "cargo": "gerente",
+            "pago": true
+        },
+        {
+            "nombre": "isabella",
+            "documento": "123",
+            "edad": 19,
+            "cargo": "gerente",
+            "pago": false
+        },
+        {
+            "nombre": "camilo ",
+            "documento": "oo2",
+            "cargo": "admin",
+            "edad": 0,
+            "pago": true
+        },
+        {
+            "nombre": "/bin/python3 /home/camper/Descargas/proyecto/kayosaimapp/menu.py",
+            "documento": "11",
+            "cargo": "/bin/python3 /home/camper/Descargas/proyecto/kayosaimapp/menu.py",
+            "edad": 0,
+            "pago": false
+        }
+    ]
+}
