@@ -1,19 +1,55 @@
 {
-    "eventos": [
+    "catalogo_servicios": [
         {
-            "nombre": "Convivencia",
-            "locacion": "Parque",
-            "dia": 5,
-            "realizado": true
+            "fibra_optica":[
+                {
+                    
+                }
+            ],
+            "pospago":[
+                {
+                    
+                }
+            ],
+            "prepago":[
+                {
+
+                }
+            ],
+            "combo_dragon":[
+                {
+                    
+                }
+            ]
+            
         }
     ],
-    "participantes": [
+    "catalogo_ventas": [
         {
-            "nombre": "juan",
-            "documento": 11659876,
-            "edad": 19,
-            "cargo": "gerente",
-            "pago": false
+            "celulares":[
+                {
+                    "referencia":"iphone",
+                    "marca":"iphone",
+                    "referencia":"123",
+                    "precio": 10,
+                    "caracteristicas": [
+                        {
+                            "color":"negro",
+                            "memoria":"128G",
+                            "generacion":"5G"
+
+                        }
+                    ],
+                    
+                    "descuento":[
+                        {
+                            "cliente nuevo": 10,
+                            "cliente regular": 20,
+                            "cliente leal": 40
+                        }
+                    ]
+                }
+            ]
         },
         {
             "nombre": "carlos",
