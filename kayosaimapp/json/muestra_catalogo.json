@@ -1,30 +1,89 @@
 {
-    "catalogo_servicios": [
+    "catalogo_servicios": 
+    [
         {
-            "fibra_optica":[
+            "fibra_optica":
+            [
                 {
-                    
-                }
-            ],
-            "pospago":[
-                {
-                    
-                }
-            ],
-            "prepago":[
-                {
+                    "referencia": "Oozaru.",
+                    "plan":"250 MG",
+                    "precio":"80.000",
+                    "nuemero_de_serie":"123456",
+                    "permanencia":"2 meses",
+                    "descuento":
+                    [
+                        {
+                            "cliente nuevo": 10,
+                            "cliente regular": 20,
+                            "cliente leal": 40
+                        }
+                    ]     
+
 
                 }
             ],
-            "combo_dragon":[
+            "pospago":
+            [
                 {
-                    
+                    "referencia": "supersayayin fase 1",
+                    "plan":" 30 G",
+                    "minutos":"ilimitados",
+                    "precio":"30.000",
+                    "nuemero_de_serie":"1234567",
+                    "duracion":"30 dias",
+                    "descuento":
+                    [
+                        {
+                            "cliente nuevo": 10,
+                            "cliente regular": 20,
+                            "cliente leal": 40
+                        }
+                    ]   
+                }
+            ],
+            "prepago":
+            [
+                {
+                    "referencia": "supersayayin fase 1",
+                    "plan":" 30 G",
+                    "minutos":"ilimitados",
+                    "precio":"30.000",
+                    "nuemero_de_serie":"1234567",
+                    "duracion":"30 dias",
+                    "descuento":
+                    [
+                        {
+                            "cliente nuevo": 10,
+                            "cliente regular": 20,
+                            "cliente leal": 40
+                        }
+                    ]   
+                }
+            ],
+            "combo_dragon":
+            [
+                {
+                    "referencia": "supersayayin blue + Kaio-ken",
+                    "plan":" 30 G + 250MG de fribra optica",
+                    "minutos":"ilimitados",
+                    "precio":"30.000",
+                    "nuemero_de_serie":"12345678",
+                    "duracion":"30 dias",
+                    "descuento":
+                    [
+                        {
+                            "cliente nuevo": 10,
+                            "cliente regular": 20,
+                            "cliente leal": 40
+                        }
+                    ]   
                 }
             ]
             
         }
     ],
-    "catalogo_ventas": [
+    "catalogo_ventas": 
+    [
         {
             
             "referencia":"iphone 15",
@@ -32,7 +91,8 @@
             "marca":"apple",
             "nuemero_de_serie":"123",
             "precio": 10,
-            "caracteristicas": [
+            "caracteristicas": 
+            [
                 {
                     "color":"negro",
                     "memoria":"128G",
@@ -44,31 +104,56 @@
         
             ],
             
-            "descuento":[
+            "descuento":
+            [
                 {
                     "cliente nuevo": 10,
                     "cliente regular": 20,
                     "cliente leal": 40
                 }
             ]                    
-        }
-    ],
-
-    "catalogo_ventas_computadores": [
+        },
         {
             
-            "referencia":"",
+            "referencia":"smart tv",
+            "clase": "tv",
+            "marca":"lg",
+            "nuemero_de_serie":"12345",
+            "precio": 10,
+            "caracteristicas": 
+            [
+                {
+                    
+                    "resolucion":"Full HD",
+                    "pulgadas":"40",
+                    "modelo":"2024"                                        
+                }
+        
+            ],
+                "descuento":
+            [
+                {
+                    "cliente nuevo": 10,
+                    "cliente regular": 20,
+                    "cliente leal": 40
+                }
+            ]                    
+        },
+        {
+            
+            "referencia":"Portatil Asus",
+            "clase": "portatil",
             "marca":"apple",
-            "nuemero_de_serie":"123",
+            "nuemero_de_serie":"1234",
             "precio": 10,
             "caracteristicas": [
                 {
-                    "color":"negro",
-                    "memoria":"128G",
-                    "generacion":"5G",
-                    "camara": "48 MP",
-                    "resolucion":"2.778 x 1.284 píxeles",
-                    "bateria":"4.383 mah"                    
+                    "color":"azul",
+                    "memoria":"1tb ",
+                    "ram":"Ram 24gb",
+                    "generacion":"Intel Core I9",
+                    "resolucion":"Led 16",      
+                    "procesador":"13900h"             
                 }
         
             ],
@@ -81,5 +166,8 @@
                 }
             ]                    
         }
+    
     ]
 }
+    
+
