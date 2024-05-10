@@ -1,5 +1,5 @@
 from funciones_secundarias import *
-from datos import *
+from datos_users import *
 
 
 
@@ -15,14 +15,20 @@ def registrar_user(datos):
     usuarios["documento"]=input("Ingrese el documento: ")
     usuarios["nombre"]=input("Ingrese el nombre: ")
     usuarios["apellido"]=input("Ingrese el apellido: ")
+    usuarios["sexo"]=input("Ingrese el sexo (masculino, femenino, otro): ")
+    usuarios["ciudad"]=input("Ingrese la ciudad: ")
+    usuarios["direccion"]=input("Ingrese la direccion: ")
+    usuarios["telefono"]=input("Ingrese el telefono: ")
+    usuarios["email"]=input("Ingrese el email: ")
+    usuarios["categoria"]=input("Ingrese la categoria: ")
 
 
     
     datos["usuarios"].append(usuarios)
-    print("usuarios registrado con éxito!")
+    print( usuarios["nombre"],usuarios["apellido"],"registrado con éxito!")
     return datos
 
-registrar_user(datos)
+#registrar_user(datos)
 
 
 def eliminar_user(datos):
@@ -30,15 +36,17 @@ def eliminar_user(datos):
     documento =input("Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
+            user = (datos["usuarios"][i]["nombre"],datos["usuarios"][i]["apellido"])
             datos["usuarios"].pop(i)
-            print("usuario eliminado!")
+            print(user,"eliminado!")
+            break
     return datos
 
 #eliminar_user(datos)
 
 def actualizar_user(datos):
     datos = dict(datos)
-    documento =input("Ingrese el documento del participante: ")
+    documento =input("Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
             print ("Actulice el nombre:")

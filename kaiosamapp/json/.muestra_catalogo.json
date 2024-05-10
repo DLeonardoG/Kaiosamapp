@@ -76,6 +76,7 @@
             "tipo_producto": "celular",
             "referencia":"iphone 15",
             "precio": 10000,
+            
             "marca":"apple",
             "caracteristicas": 
             [

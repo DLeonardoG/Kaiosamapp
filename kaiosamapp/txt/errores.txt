@@ -1,2 +1,241 @@
 
 
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'dfg'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'fgh'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'fgh'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'fd'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'hf'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'h'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'hg'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'hgf'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'bgr'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'gh'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'fdyyh'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'fd'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'fg'
+2024-05-10 14:56:30: invalid literal for int() with base 10: 'f'
+2024-05-10 14:56:30: Error al ingresar conraseña de admin
+2024-05-10 14:56:30: Error al ingresar conraseña de admin
+2024-05-10 14:56:30: Error al ingresar conraseña de admin
+2024-05-10 14:56:30: Error al ingresar conraseña de admin
+2024-05-10 14:56:30: Error al ingresar conraseña de admin
+2024-05-10 14:56:30: Error al ingresar conraseña de admin
+2024-05-10 14:56:30: Error al ingresar conraseña de admin
+2024-05-10 14:56:30: Error al ingresar conraseña de admin
+2024-05-10 15:23:23: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_crud_admin.py'
+2024-05-10 15:28:21: invalid literal for int() with base 10: 'g'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'g'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'fg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'f'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'f'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'fd'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'dfg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'dfg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'dfg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'fdg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'fdg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'fdgfdgfd'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'gdf'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'gdfg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'df'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'gdfg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'df'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'gdf'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'gdf'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'gdf'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'gdf'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'gdf'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'gdf'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'gd'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'fgfd'
+2024-05-10 15:30:02: invalid literal for int() with base 10: '0dg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'dsfg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'dsf'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'sdffg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'dsfg'
+2024-05-10 15:30:02: invalid literal for int() with base 10: 'fg'
+2024-05-10 15:39:12: invalid literal for int() with base 10: ''
+2024-05-10 15:40:27: invalid literal for int() with base 10: 'h'
+2024-05-10 15:40:27: invalid literal for int() with base 10: 'g'
+2024-05-10 15:40:27: invalid literal for int() with base 10: 'f'
+2024-05-10 15:40:27: invalid literal for int() with base 10: 'f'
+2024-05-10 15:40:27: invalid literal for int() with base 10: 'f'
+2024-05-10 15:40:27: invalid literal for int() with base 10: 'f'
+2024-05-10 15:40:27: invalid literal for int() with base 10: 'f'
+2024-05-10 15:40:27: invalid literal for int() with base 10: 'f'
+2024-05-10 15:40:27: invalid literal for int() with base 10: 'f'
+2024-05-10 15:40:27: invalid literal for int() with base 10: 'f'
+2024-05-10 15:46:19: invalid literal for int() with base 10: 'g'
+2024-05-10 15:50:25: invalid literal for int() with base 10: 'f'
+2024-05-10 15:52:26: invalid literal for int() with base 10: 'f'
+2024-05-10 15:53:25: invalid literal for int() with base 10: 'f'
+2024-05-10 15:54:13: invalid literal for int() with base 10: 'g'
+2024-05-10 15:56:48: invalid literal for int() with base 10: '\x1b[15~'
+2024-05-10 15:56:48: invalid literal for int() with base 10: 'g'
+2024-05-10 16:04:55: Error al ingresar conraseña de admin
+2024-05-10 16:04:55: Error al ingresar conraseña de admin
+2024-05-10 16:04:55: Error al ingresar conraseña de admin
+2024-05-10 16:04:55: Error al ingresar conraseña de admin
+2024-05-10 16:04:55: Error al ingresar conraseña de admin
+2024-05-10 16:04:55: Error al ingresar conraseña de admin
+2024-05-10 16:04:55: Error al ingresar conraseña de admin
+2024-05-10 16:12:54: Error al ingresar conraseña de admin
+2024-05-10 16:12:54: Error al ingresar conraseña de admin
+2024-05-10 16:12:54: Error al ingresar conraseña de admin
+2024-05-10 16:12:54: Error al ingresar conraseña de admin
+2024-05-10 16:12:54: Error al ingresar conraseña de admin
+2024-05-10 16:12:54: Error al ingresar conraseña de admin
+2024-05-10 16:13:22: Error al ingresar conraseña de admin
+2024-05-10 16:13:22: Error al ingresar conraseña de admin
+2024-05-10 16:19:03: Error al elesgir menu opcion 1
+2024-05-10 16:19:03: Error al elesgir menu opcion 1
+2024-05-10 16:19:03: Error al elesgir menu opcion 1
+2024-05-10 16:19:03: Error al elesgir menu opcion 1
+2024-05-10 16:20:18: Error al ingresar conraseña de admin
+2024-05-10 16:20:18: Error al ingresar conraseña de admin
+2024-05-10 16:20:18: Error al ingresar conraseña de admin
+2024-05-10 16:20:18: Error al ingresar conraseña de admin
+2024-05-10 16:20:18: Error al ingresar conraseña de admin
+2024-05-10 16:20:18: Error al ingresar conraseña de admin
+2024-05-10 16:24:26: Error al ingresar conraseña de admin
+2024-05-10 16:24:26: Error al ingresar conraseña de admin
+2024-05-10 16:24:26: Error al ingresar conraseña de admin
+2024-05-10 16:24:26: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:26:04: Error al ingresar conraseña de admin
+2024-05-10 16:26:04: Error al ingresar conraseña de admin
+2024-05-10 16:27:44: Error al ingresar conraseña de admin
+2024-05-10 16:27:44: Error al ingresar conraseña de admin
+2024-05-10 16:29:08: Error al ingresar conraseña de admin
+2024-05-10 16:29:08: Error al ingresar conraseña de admin
+2024-05-10 16:29:08: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:32:58: Error al ingresar conraseña de admin
+2024-05-10 16:32:58: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:32:58: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:33:40: Error al ingresar conraseña de admin
+2024-05-10 16:33:40: Error al ingresar conraseña de admin
+2024-05-10 16:33:40: Error al ingresar conraseña de admin
+2024-05-10 16:33:40: Error al ingresar conraseña de admin
+2024-05-10 16:33:40: Error al ingresar conraseña de admin
+2024-05-10 16:33:40: Error al ingresar conraseña de admin
+2024-05-10 16:33:40: Error al ingresar conraseña de admin
+2024-05-10 16:36:16: Error al ingresar conraseña de admin
+2024-05-10 16:37:18: Error al ingresar conraseña de admin
+2024-05-10 16:37:48: Error al ingresar conraseña de admin
+2024-05-10 16:39:34: Error al ingresar conraseña de admin
+2024-05-10 16:42:32: Error al ingresar conraseña de admin
+2024-05-10 16:45:06: Error al ingresar conraseña de admin
+2024-05-10 16:45:06: Error al ingresar conraseña de admin
+2024-05-10 16:47:48: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:47:48: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: invalid literal for int() with base 10: ''
+2024-05-10 16:53:49: Error al elesgir menu opcion 1
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: Error al elesgir menu opcion 1
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: local variable 'op' referenced before assignment
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1_funciones.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1.py'
+2024-05-10 16:53:49: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_1.py'
+2024-05-10 16:59:30: Error al ingresar opcion menu 1
+2024-05-10 16:59:30: Error al ingresar opcion menu 1
+2024-05-10 16:59:30: Error al ingresar opcion menu 1
+2024-05-10 16:59:30: Error al elesgir menu opcion 1
+2024-05-10 16:59:30: Error al ingresar opcion menu 1
+2024-05-10 16:59:30: Error al elesgir menu opcion 1
+2024-05-10 16:59:30: Error al elesgir menu opcion 1
+2024-05-10 16:59:30: Error al ingresar opcion menu 1
+2024-05-10 16:59:30: Error al elesgir menu opcion 1
+2024-05-10 16:59:30: Error al ingresar opcion menu 1
+2024-05-10 16:59:30: Error al ingresar opcion menu 1
+2024-05-10 16:59:30: Error al ingresar opcion menu 1
+2024-05-10 16:59:30: Error al elesgir menu opcion 1
+2024-05-10 16:59:30: Error al ingresar opcion menu 1
+2024-05-10 16:59:30: Error al ingresar opcion menu 1
+2024-05-10 17:00:17: local variable 'op' referenced before assignment
+2024-05-10 17:01:16: Error al ingresar conraseña de admin
+2024-05-10 17:01:16: Error al ingresar conraseña de admin
+2024-05-10 17:01:16: Error al ingresar conraseña de admin
+2024-05-10 17:01:16: Error al ingresar conraseña de admin
+2024-05-10 17:01:16: invalid literal for int() with base 10: 'f'
+2024-05-10 17:02:02: invalid literal for int() with base 10: '/bin/python3 /home/camper/Escritorio/proyecto/kaiosamapp/modules/menu_crud_admin.py'
+2024-05-10 17:23:39: Error al ingresar conraseña de admin
+2024-05-10 17:23:39: Error al ingresar conraseña de admin
+2024-05-10 17:23:39: Error al ingresar conraseña de admin
+2024-05-10 17:23:39: Error al ingresar conraseña de admin
+2024-05-10 17:23:39: Error al ingresar conraseña de admin
+2024-05-10 17:23:39: Error al ingresar conraseña de admin
+2024-05-10 17:23:39: Error al ingresar conraseña de admin
+2024-05-10 17:25:35: invalid literal for int() with base 10: 'f'
+2024-05-10 17:43:24: invalid literal for int() with base 10: 'g'
