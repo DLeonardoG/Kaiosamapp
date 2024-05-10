@@ -1,0 +1,37 @@
+import platform
+import os
+from datetime import datetime
+
+ARCHIVO = "errores.txt"
+
+def time_now():
+    fecha = datetime.now()
+    fecha = fecha.replace(microsecond=0)
+    return fecha
+
+fecha = time_now()
+
+def clear_screen():
+    if platform.system() == 'Windows':
+        os.system('cls')
+    else:
+        os.system('clear')
+
+def reportar_error_a_txt(excepcion):
+    ruta_errores = os.path.join("kayosaimapp/txt/errores.txt")
+    with open(ruta_errores, 'a') as f:
+        mensaje_error = f"{fecha}: {excepcion}" 
+        f.write(mensaje_error + '\n')
+        
+NAME = "Kaiosamapp"
+def main_1():
+    clear_screen()
+    print("***************************************")
+    print ("Bienvenido a",NAME)
+    print ("1. Usuario")
+    print ("2. Administrador")
+    print ("0. Salir")
+    print("***************************************")
+
+
+

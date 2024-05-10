@@ -1,33 +1,6 @@
-import platform
-import os
-from datetime import datetime
+from funciones_secundarias import * 
+from datos import *
 
-
-
-def time_now():
-    fecha = datetime.now()
-    fecha = fecha.replace(microsecond=0)
-    return fecha
-
-time = time_now()
-
-def clear_screen():
-    if platform.system() == 'Windows':
-        os.system('cls')
-    else:
-        os.system('clear')
-    
-
-
-NAME = "Kaiosamapp"
-def main_1():
-    clear_screen()
-    print("***************************************")
-    print ("Bienvenido a",NAME)
-    print ("1. Usuario")
-    print ("2. Administrador")
-    print ("0. Salir")
-    print("***************************************")
 
 def pedir_opcion():
     op = 0
@@ -43,8 +16,9 @@ def pedir_opcion():
                 main_1()
                 print("Valor inválido")
                 print("***************************************")
-            
-        except Exception:
+                raise ValueError("Error al elesgir menu opcion 1")
+        except Exception as e:
+            reportar_error_a_txt(e)
             clear_screen()
             main_1()
             print("Valor inválido")
@@ -55,44 +29,72 @@ def pedir_opcion():
             
 def validar_password():
     while True:
-        password = input("Ingrese la contraseña admin: ")
-        if password == "password":
-            validar = 1
-            print("Puedes pasar guerrero Z")
-            break
-        elif password == "0":
-            validar = 0
-            break
-        elif password != "password":
-            clear_screen()
-            print("Contraseña incorrecta")
-            print("Si no eres admin oprime 0")
-            print("***************************************")
-            
+        try:
+            password = input("Ingrese la contraseña admin: ")
+            if password == "password":
+                validar = 1
+                print("Puedes pasar guerrero Z")
+                break
+            else:
+                raise ValueError("Error al ingresar conraseña de admin")
+        except Exception as e:
+            reportar_error_a_txt(e)
+            if password == "0":
+                validar = 0
+                break
+            else:
+                clear_screen()
+                print("Contraseña incorrecta")
+                print("Si no eres admin oprime 0")
+                print("***************************************")
+                
     return validar
 
 
 def asignacion(op):
-    if op == 1:
-        print ("Usuario puedes pasar a", NAME)
-        print("Si no eres user oprime 0")
-        op = 1
-    elif op == 2:
-        validar = validar_password() 
-        clear_screen()
-        if validar == 0:
+    try:
+        if op == 1:
+            print ("Usuario puedes pasar a", NAME)
+            print("Si no eres user oprime 0")
+            op = 1
+        elif op == 2:
+            validar = validar_password() 
+            clear_screen()
+            if validar == 0:
+                print("Adios guerrero Z")
+                op = 0
+            else:
+                print ("Admin puedes pasar a", NAME)
+                op = 2
+        elif op == 0:
             print("Adios guerrero Z")
             op = 0
         else:
-            print ("Admin puedes pasar a", NAME)
-            op = 2
-    elif op == 0:
-        print("Adios guerrero Z")
-        op = 0
+            raise ValueError("Error al ingresar opcion menu 1")
+    except Exception as e:
+        reportar_error_a_txt(e)
+
+
+    
+    
+    
     
 main_1()
 op = pedir_opcion()
 asignacion(op)
+
+def menu_admin_crud_users():
+    print ("1. crear usuario")
+
+
+
+def acceso(op):
+    menu_admin_crud_users()
+    try: 
+        if op == 1:
+            
+        
+    
 
 
     
