@@ -3,19 +3,20 @@
     [
         {
             "edad": 19,
+            "documento": "1165987623",
             "nombre": "son goku",
             "apellido":"sayayin",
             "sexo":"masculino",
-            "documento": "11659876",
             "ciudad":"gotica",
             "direccion": "calle 102 con 24",
             "telefono": 3155370033,
             "email":"gokuball@gmail.com",
-            "categoria": "cliente nuevo",
+            "categoria": "nuevo",
             "registro_servicios":
             [
                 {
-                    "fibra_optica_namekusei":[
+                    "fibra_optica_namekusei":
+                    [
                         {
                             "referencia": "Oozaru",
                             "precio": 80.000,
@@ -68,26 +69,13 @@
             "registro_interacciones":
             [
                 {
-                    "servicio_al_cliente":[
-                        {
-                            "pregunta":"porque no me carga",
-                            "fecha":"923242"
-                        }
-                    ],
-                    "reclamaciones":[
-                        {
-                            "motivo":"no me gusta",
-                            "comentario":"que mal servicio al cliente",
-                            "fecha":"92122"
-                        }
-                    ],
-                    "sugerencias":[
-                        {
-                            "sugerencia":"bajenle",
-                            "comentario":"no me alcanza",
-                            "fecha":92122
-                        }
-
+                "interaccion":[
+                    {
+                        "tipo_de_interaccion":"servicio al cliente, reclamaciones y sugerencias.",
+                        "motivo":"no me gusta",
+                        "comentario":"que mal servicio al cliente",
+                        "fecha":"92122"
+                    }
                     ]
                 }
             ]        

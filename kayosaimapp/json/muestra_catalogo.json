@@ -5,22 +5,21 @@
             "fibra_optica_namekusei":
             [
                 {
+                    "tipo_servicios":"fibra_optica_namekusei",
                     "referencia": "Oozaru.",
                     "plan":"250 MG",
-                    "tipo_servicios":"fibra_optica_namekusei",
+                    "minutos":"ilimitados",
                     "precio":80000,
-                    "nuemero_de_serie":"123456",
-                    "permanencia":"2 meses",
+                    "id":"123456",
+                    "duracion":"2 meses",
                     "descuento":
                     [
                         {
-                            "cliente nuevo": 10,
-                            "cliente regular": 20,
-                            "cliente leal": 40
+                            "nuevo": 10,
+                            "regular": 20,
+                            "leal": 40
                         }
                     ]     
-
-
                 }
             ],
             "pospago_roshi":
@@ -36,9 +35,9 @@
                     "descuento":
                     [
                         {
-                            "cliente nuevo": 10,
-                            "cliente regular": 20,
-                            "cliente leal": 40
+                            "nuevo": 10,
+                            "regular": 20,
+                            "leal": 40
                         }
                     ]   
                 }
@@ -56,9 +55,9 @@
                     "descuento":
                     [
                         {
-                            "cliente nuevo": 10,
-                            "cliente regular": 20,
-                            "cliente leal": 40
+                            "nuevo": 10,
+                            "regular": 20,
+                            "leal": 40
                         }
                     ]   
                 }
@@ -76,9 +75,9 @@
                     "descuento":
                     [
                         {
-                            "cliente nuevo": 10,
-                            "cliente regular": 20,
-                            "cliente leal": 40
+                            "nuevo": 10,
+                            "regular": 20,
+                            "leal": 40
                         }
                     ]   
                 }
@@ -90,8 +89,8 @@
     [
         {
             
-            "referencia":"iphone 15",
             "clase": "celular",
+            "referencia":"iphone 15",
             "marca":"apple",
             "nuemero_de_serie":"123",
             "precio": 10000,
@@ -111,9 +110,9 @@
             "descuento":
             [
                 {
-                    "cliente nuevo": 10,
-                    "cliente regular": 20,
-                    "cliente leal": 40
+                    "nuevo": 10,
+                    "regular": 20,
+                    "leal": 40
                 }
             ]                    
         },
@@ -137,9 +136,9 @@
                 "descuento":
             [
                 {
-                    "cliente nuevo": 10,
-                    "cliente regular": 20,
-                    "cliente leal": 40
+                    "nuevo": 10,
+                    "regular": 20,
+                    "leal": 40
                 }
             ]                    
         },
@@ -164,9 +163,9 @@
             
             "descuento":[
                 {
-                    "cliente nuevo": 10,
-                    "cliente regular": 20,
-                    "cliente leal": 40
+                    "nuevo": 10,
+                    "regular": 20,
+                    "leal": 40
                 }
             ]                    
         }
