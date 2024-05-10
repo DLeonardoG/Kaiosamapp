@@ -11,7 +11,3 @@ def reportar_error_a_txt(excepcion):
         mensaje_error = f"{fecha}: {excepcion}" 
         f.write(mensaje_error + '\n')
 
-try:
-    resultado = 10 / 0
-except Exception as e:    
-    reportar_error_a_txt(e)

@@ -22,7 +22,7 @@ def registrar_user(datos):
     print("usuarios registrado con éxito!")
     return datos
 
-#registrar_user(datos)
+registrar_user(datos)
 
 
 def eliminar_user(datos):
@@ -41,6 +41,20 @@ def actualizar_user(datos):
     documento =input("Ingrese el documento del participante: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
-            print ("¿Desea actualizar el status?")
+            print ("Actulice el nombre:")
+            datos["usuarios"][i]["nombre"]=input("Ingrese el nombre nuevo: ")
+#actualizar_user(datos)
 
+def leer_user(datos):
+    datos = dict(datos)
+    documento =input("Ingrese el documento del usuario: ")
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == documento:
+            print("nombre - ",datos["usuarios"][i]["nombre"])
+            print("apellido - ",datos["usuarios"][i]["apellido"])
+            print("documento - ",datos["usuarios"][i]["documento"])
+            print("edad - ",datos["usuarios"][i]["edad"])
+    return datos
+
+#leer_user(datos)
 guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)

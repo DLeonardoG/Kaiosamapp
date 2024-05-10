@@ -20,7 +20,7 @@ def guardar_datos(datos, archivo):
     
 
 #Constants
-RUTA_BASE_DE_DATOS_USERS ="kayosaimapp/json/users.json"
+RUTA_BASE_DE_DATOS_USERS ="kaiosamapp/json/users.json"
 
 datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
 

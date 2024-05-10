@@ -18,20 +18,13 @@ def clear_screen():
         os.system('clear')
 
 def reportar_error_a_txt(excepcion):
-    ruta_errores = os.path.join("kayosaimapp/txt/errores.txt")
+    ruta_errores = os.path.join("kaiosamapp/txt/errores.txt")
     with open(ruta_errores, 'a') as f:
         mensaje_error = f"{fecha}: {excepcion}" 
         f.write(mensaje_error + '\n')
         
-NAME = "Kaiosamapp"
-def main_1():
-    clear_screen()
-    print("***************************************")
-    print ("Bienvenido a",NAME)
-    print ("1. Usuario")
-    print ("2. Administrador")
-    print ("0. Salir")
-    print("***************************************")
 
+
+#ef dragon_ball():
 
 

@@ -1,6 +1,16 @@
 from funciones_secundarias import * 
 from datos import *
 
+NAME = "Kaiosamapp"
+def main_1():
+    clear_screen()
+    print("***************************************")
+    print ("Bienvenido a",NAME)
+    print("***************************************")
+    print ("1. Admin")
+    print ("2. Usuario")
+    print ("0. Salir")
+    print("***************************************")
 
 def pedir_opcion():
     op = 0
@@ -25,8 +35,7 @@ def pedir_opcion():
             print("***************************************")
             
     return op
-            
-            
+
 def validar_password():
     while True:
         try:
@@ -50,14 +59,13 @@ def validar_password():
                 
     return validar
 
-
 def asignacion(op):
     try:
-        if op == 1:
+        if op == 2:
             print ("Usuario puedes pasar a", NAME)
             print("Si no eres user oprime 0")
-            op = 1
-        elif op == 2:
+            op = 2
+        elif op == 1:
             validar = validar_password() 
             clear_screen()
             if validar == 0:
@@ -65,7 +73,7 @@ def asignacion(op):
                 op = 0
             else:
                 print ("Admin puedes pasar a", NAME)
-                op = 2
+                op = 1
         elif op == 0:
             print("Adios guerrero Z")
             op = 0
@@ -73,30 +81,3 @@ def asignacion(op):
             raise ValueError("Error al ingresar opcion menu 1")
     except Exception as e:
         reportar_error_a_txt(e)
-
-
-    
-    
-    
-    
-main_1()
-op = pedir_opcion()
-asignacion(op)
-
-def menu_admin_crud_users():
-    print ("1. crear usuario")
-
-
-
-def acceso(op):
-    menu_admin_crud_users()
-    try: 
-        if op == 1:
-            
-        
-    
-
-
-    
-
-    
