@@ -1,6 +1,22 @@
 {
-    "usuarios":
-    [
-        
+    "usuarios": [
+        {
+            "edad": 19,
+            "nombre": "carlos",
+            "apellido": "",
+            "documento": "f"
+        },
+        {
+            "edad": 2,
+            "nombre": "2",
+            "apellido": "22",
+            "documento": "2"
+        },
+        {
+            "edad": 23,
+            "nombre": "34",
+            "apellido": "5",
+            "documento": "44"
+        }
     ]
 }
