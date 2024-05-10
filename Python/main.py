@@ -2,7 +2,7 @@
 from datos import *
 from menu import *
 from participantes import *
-
+from eventos import *
 
 
 #Constants
@@ -20,11 +20,11 @@ while True:
     elif opc == 3:
         datos = pagar_participante(datos)
     elif opc == 4:
-        print("opcion 4")
+        registrar_evento(datos)
     elif opc == 5:
-        print("opcion 5")
+        eliminar_evento(datos)
     elif opc == 6:
-        print("opcion 6")
+        asignacion_evento(datos)
     elif opc == 7:
         cuales_participantes_sin_pagar(datos)
     elif opc == 8:
