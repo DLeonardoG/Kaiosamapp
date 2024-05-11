@@ -24,3 +24,4 @@ RUTA_BASE_DE_DATOS_CATALOGO ="kaiosamapp/json/catalogo.json"
 
 datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
 
+

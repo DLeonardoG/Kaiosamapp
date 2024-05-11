@@ -47,6 +47,18 @@
             "telefono": "666",
             "email": "@as",
             "categoria": "as"
+        },
+        {
+            "edad": 18,
+            "documento": "12",
+            "nombre": "goku",
+            "apellido": "son",
+            "sexo": "masculino",
+            "ciudad": "bucaramanga",
+            "direccion": "34 50",
+            "telefono": "666",
+            "email": "dark",
+            "categoria": "nuevo"
         }
     ]
 }

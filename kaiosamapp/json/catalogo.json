@@ -1,3 +1,28 @@
 {
-    
+    "catalogo_servicios": [
+        {
+            "id": "123456",
+            "tipo_servicios": "fibra_optica_namekusei",
+            "referencia": "Oozaru.",
+            "plan": "250 MG",
+            "precio": 80000,
+            "duracion": "2 meses",
+            "descuento": [
+                {
+                    "nuevo": 10,
+                    "regular": 20,
+                    "leal": 40
+                }
+            ]
+        },
+        {
+            "id": "666",
+            "tipo_servicios": "pospago",
+            "referencia": "pospago",
+            "plan": "30 g + minutos",
+            "precio": "30000",
+            "duracion": "3 meses"
+        }
+    ],
+    "catalogo_productos": []
 }

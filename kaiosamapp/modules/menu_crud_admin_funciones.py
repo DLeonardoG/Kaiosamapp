@@ -1,4 +1,4 @@
-from funciones_secundarias import *
+from funciones_secundarias import reportar_error_a_txt
 from datos_users import *
 
 
@@ -65,4 +65,4 @@ def leer_user(datos):
     return datos
 
 #leer_user(datos)
-guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
+#guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)

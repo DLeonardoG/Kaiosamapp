@@ -1,5 +1,5 @@
 from datetime import datetime
-from kaiosamapp.modules.funciones.funciones_secundarias import *
+from funciones_secundarias import *
 
 fecha_y_hora = datetime.now()
 fecha_y_hora = fecha_y_hora.replace(microsecond=0)
