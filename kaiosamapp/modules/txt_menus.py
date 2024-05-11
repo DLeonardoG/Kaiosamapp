@@ -4,10 +4,13 @@ def menu_txt(archivo):
         menu = archive.read()
         print(menu)
 
-principal = "kaiosamapp/txt/menus_plantillas/principal"
+principal = "/workspaces/proyecto/kaiosamapp/txt/menus_plantillas/principal.txt"
 menu_txt(principal)
-_1_1 = ""
-_1_2 = ""
+
+_1 = "kaiosamapp/txt/menus_plantillas/1.txt"
+
+_1_1 = "kaiosamapp/txt/menus_plantillas/1-1.txt"
+_1_2 = "kaiosamapp/txt/menus_plantillas/1-2.txt"
 _1_3 = ""
 _1_4 = ""
 _1_4_2 = ""
