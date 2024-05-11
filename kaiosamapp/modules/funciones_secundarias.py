@@ -23,6 +23,14 @@ def reportar_error_a_txt(excepcion):
         mensaje_error = f"{fecha}: {excepcion}" 
         f.write(mensaje_error + '\n')
         
+def menu_txt(archivo)
+    with open(nombre_archivo, 'r') as archivo:
+    menu = archivo.read()
+    print(menu)
+
+archivo = "kaiosamapp/txt/menus_plantillas/principal"
+menu_txt(archivo)
+        
 def diseño_base():
     print ("     **************************************")
     print('''\033[1;33m
