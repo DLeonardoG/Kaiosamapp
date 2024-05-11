@@ -1,5 +1,5 @@
-from modules.txt_menus import *
-from modules.funciones_secundarias import *
+from txt_menus import *
+
 
 while True:
     clear_screen()

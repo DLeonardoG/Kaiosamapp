@@ -1,4 +1,11 @@
-from modules.funciones_secundarias import *
+import os
+import platform
+
+def clear_screen():
+    if platform.system() == 'Windows':
+        os.system('cls')
+    else:
+        os.system('clear')
 
 def mostrar_txt(ruta_archivo):
     with open(ruta_archivo, 'r') as archivo:
@@ -18,6 +25,7 @@ _1_4_2_4 = "kaiosamapp/txt/menus_plantillas/admin/1-4-2-4.txt"
 _1_4_3 = "kaiosamapp/txt/menus_plantillas/admin/1-4-3.txt"
 _1_4_3_4 = "kaiosamapp/txt/menus_plantillas/admin/1-4-3-4.txt"
 
+#print(_1)
 #clear_screen()
 #diseño_logo()
 #mostrar_txt(principal)
@@ -30,3 +38,5 @@ _1_4_3_4 = "kaiosamapp/txt/menus_plantillas/admin/1-4-3-4.txt"
 #mostrar_txt(_1_4_3)
 #mostrar_txt(_1_4_2_4)
 #mostrar_txt(_1_4_3_4)
+
+
