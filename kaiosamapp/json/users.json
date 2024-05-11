@@ -23,6 +23,30 @@
             "telefono": "3155370033",
             "email": "dark@",
             "categoria": "nuevo"
+        },
+        {
+            "edad": 34,
+            "documento": "3",
+            "nombre": "23",
+            "apellido": "23",
+            "sexo": "3",
+            "ciudad": "2323",
+            "direccion": "23",
+            "telefono": "23",
+            "email": "23",
+            "categoria": "2"
+        },
+        {
+            "edad": 18,
+            "documento": "666",
+            "nombre": "Nicolas",
+            "apellido": "Fuentes",
+            "sexo": "mascu",
+            "ciudad": "Bucara",
+            "direccion": "sapa",
+            "telefono": "666",
+            "email": "@as",
+            "categoria": "as"
         }
     ]
 }

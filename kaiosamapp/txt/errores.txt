@@ -239,3 +239,4 @@
 2024-05-10 17:23:39: Error al ingresar conraseña de admin
 2024-05-10 17:25:35: invalid literal for int() with base 10: 'f'
 2024-05-10 17:43:24: invalid literal for int() with base 10: 'g'
+2024-05-11 00:59:32: invalid literal for int() with base 10: '/home/codespace/.python/current/bin/python3 /workspaces/proyecto/kaiosamapp/modules/menu_crud_admin.py'
