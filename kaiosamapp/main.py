@@ -93,6 +93,29 @@ while True:
                     print("factura_ventas")
                 elif op_m_1_4 == "2":
                     print("catalogo_servicios")
+                    
+                    continuar_m_1_4_2 = True
+                    while continuar_m_1_4_2 == True:
+                        mostrar_txt(m_1_4_2)
+                        op_m_1_4_2 = input("Seleccione una opcion:\n👉   ")
+                        if op_m_1_4_2 == "1":
+                            print("crear_servicio")
+                        elif op_m_1_4_2 == "2":
+                            print("eliminar_servicio")
+                        elif op_m_1_4_2 == "3":
+                            print("modificar_servicio")
+                        elif op_m_1_4_2 == "4":
+                            print("consultar_servicio")
+                        elif op_m_1_4_2 == "0":
+                            print("menu_anterior")
+                            continuar_m_1_4_2 = False
+                        elif op_m_1_4_2 == "00":
+                            print("Volver al menu principal")
+                            break
+                        else:
+                            opcion_no_valida()
+                            continuar_m_1_4_2 = False
+                    
                 elif op_m_1_4 == "3":
                     print("catalogo_productos")
                 elif op_m_1_4 == "4":
