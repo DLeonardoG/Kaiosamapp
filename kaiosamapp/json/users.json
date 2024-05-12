@@ -278,6 +278,21 @@
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
+        },
+        {
+            "documento": "1234",
+            "edad": 19,
+            "nombre": "roska",
+            "apellido": "Holmes",
+            "telefono": 1212121212,
+            "sexo": "maculino",
+            "ciudad": "gotica",
+            "direccion": "12 con 13",
+            "email": "dark",
+            "categoria": "f",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
         }
     ]
 }

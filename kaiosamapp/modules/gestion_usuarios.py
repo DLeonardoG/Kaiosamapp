@@ -69,8 +69,13 @@ def actualizar_user(datos):
     documento =input("Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
+            user = (datos["usuarios"][i]["nombre"],datos["usuarios"][i]["apellido"])
             print ("Actulice el nombre:")
             datos["usuarios"][i]["nombre"]=input("Ingrese el nombre nuevo: ")
+            print(user,"actualizado!")
+            return datos
+    return datos
+        
             
 def actualizar_usuario():
     while True:
@@ -85,11 +90,25 @@ def leer_user(datos):
     documento =input("Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
-            print("nombre - ",datos["usuarios"][i]["nombre"])
-            print("apellido - ",datos["usuarios"][i]["apellido"])
-            print("documento - ",datos["usuarios"][i]["documento"])
-            print("edad - ",datos["usuarios"][i]["edad"])
+            print(datos["usuarios"][i]["nombre"],datos["usuarios"][i]["apellido"])
+            print(datos["usuarios"][i]["documento"],"  -  Documento")
+            print(datos["usuarios"][i]["sexo"],"  -  Sexo")
+            print(datos["usuarios"][i]["edad"],"  -  Edad")
+            print(datos["usuarios"][i]["ciudad"],"  -  Ciudad")
+            print(datos["usuarios"][i]["direccion"],"  -  Direccion")
+            print(datos["usuarios"][i]["email"],"  -  Email")
+            print(datos["usuarios"][i]["categoria"],"  -  Categoria")
+            print(datos["usuarios"][i]["registro_servicios"],"  -  Registro de servicios")
+            print(datos["usuarios"][i]["registro_productos"],"  -  Registro de productos")
+            print(datos["usuarios"][i]["registro_pqr"],"  -  Registro de PQR")
     return datos
 
+def leer_usuario():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
+        datos = leer_user(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
+        break
+    
 #leer_user(datos)
 #guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)

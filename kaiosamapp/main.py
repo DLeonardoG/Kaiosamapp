@@ -23,10 +23,9 @@ while True:
                     elif op_m_1_1 == "2":
                         eliminar_usuario()
                     elif op_m_1_1 == "3":
-                        actualizar_usuario()                           
-                            
+                        actualizar_usuario()               
                     elif op_m_1_1 == "4":
-                        print("leer_usuario")                            
+                        leer_usuario()                            
                             
                             
                     elif op_m_1_1 == "5":
