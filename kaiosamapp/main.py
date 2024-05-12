@@ -7,6 +7,7 @@ while True:
     op = input("Ingrese una opción:\n👉  ")
     
     if op == "1":
+        continuar_m_1_4_2 = input("Desea continuar?\n��  ")
         while True:
             #clear_screen()
             mostrar_txt(m_1)
