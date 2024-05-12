@@ -560,3 +560,4 @@
 2024-05-12 07:20:13: Opcion de menu no valida
 2024-05-12 07:20:13: Opcion de menu no valida
 2024-05-12 07:20:13: Opcion de menu no valida
+2024-05-12 07:26:25: Opcion de menu no valida
