@@ -3,5 +3,6 @@
        1 . F a c t u r a - V e n t a s 🔍
        2 . C a t a l o g o - S e r v i c i o s 📪
        3 . C a t a l o g o - P r o d u c t o s 📦
-       4 . C o m p r a s - U s u a r i o 🧾
+       4 . F a c t u r a - U s u a r i o 🧾
+       5 . N u e v a - C o m p r a 🚛
 ----------------------------------------------------------

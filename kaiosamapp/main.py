@@ -1,16 +1,113 @@
-from txt_menus import *
+from importaciones import *
 
 
 while True:
     clear_screen()
     mostrar_txt(principal)
-    opcion = input("Ingrese una opción: ")
+    op = input("Ingrese una opción:\n👉  ")
     
-    if opcion == "1":
-        mostrar_txt(_1)
+    if op == "1":
+        while True:
+            #clear_screen()
+            mostrar_txt(m_1)
+            op_m_1 = input("Seleccione una opcion:\n👉   ")
+            if op_m_1 == "1":                
+                print("Gestion de usuarios")
+                mostrar_txt(m_1_1)
+                op_m_1_1 = input("Seleccione una opcion:\n👉   ")
+                if op_m_1_1 == "1":
+                    print("crear_usuario")
+                    
+                elif op_m_1_1 == "2":
+                    print("eliminar_usuario")
+                    
+                elif op_m_1_1 == "3":
+                    print("actualizar_usuario")
+                    
+                elif op_m_1_1 == "4":
+                    print("leer_usuario")
+                        
+                elif op_m_1_1 == "5":
+                    print("nueva_compra_usuario")
+                    
+                elif op_m_1_1 == "6":
+                    print("recomendaciones_usuario")    
+                    
+                        
+                elif op_m_1_1 == "0":
+                    break
+                else:
+                    print("opcion_no_valida")
+                        
+            elif op_m_1 == "2":
+                print("pqr")
+                mostrar_txt(m_1_2)
+                op_m_1_2 = input("Seleccione una opcion:\n👉   ")
+                if op_m_1_2 == "1":
+                    print("consultar_pqr")
+                    
+                elif op_m_1_2 == "2":
+                    print("registrar_pqr")
+                elif op_m_1_2 == "3":
+                    print("Eliminar_pqr")
+                elif op_m_1_2 == "0":
+                    break
+                else:
+                    print("opcion_no_valida")
+                        
+            elif op_m_1 == "3":
+                print("Analisis de clientes")
+                mostrar_txt(m_1_3)
+                op_m_1_3 = input("Seleccione una opcion:\n👉   ")
+                if op_m_1_3 == "1":
+                    print("Falta menu para analisis total o especifico")
+                    print("analisis_general")
+                elif op_m_1_3 == "2":
+                    print("analisis_cliente")
+                elif op_m_1_3 == "0":
+                    break
+                else:
+                    print("opcion_no_valida")
+                    
+            elif op_m_1 == "4":
+                print("Ventas")
+                mostrar_txt(m_1_4)
+                op_m_1_4 = input("Seleccione una opcion:\n👉   ")
+                if op_m_1_4 == "1":
+                    print("factura_ventas")
+                elif op_m_1_4 == "2":
+                    print("catalogo_servicios")
+                elif op_m_1_4 == "3":
+                    print("catalogo_productos")
+                elif op_m_1_4 == "4":
+                    print ("factura_usuario")
+                elif op_m_1_4 == "5":
+                    print ("nueva_compra_usuario")
+                elif op_m_1_4 == "0":
+                    break
+                else:
+                    print("opcion_no_valida")
+            elif op_m_1 == "0":    
+                break
+            else:
+                print("opcion_no_valida")
     
-    elif opcion == "2":
-        mostrar_txt(_2)
-        
-    elif opcion == "0":
+    elif op == "2":
+        print ("Menu de usuarios")
+        op_2 = input("Ingrese una opción: ")
+        while True:
+            if op_2 == "1":
+                print("Ha seleccionado Opción 1")
+            elif op_2 == "2":
+                print("Ha seleccionado Opción 2")
+            elif op_2 == "3":
+                print("Ha seleccionado Opción 3")
+            elif op_2 == "4":
+                print("Ha seleccionado Opción 4")
+            elif op_2 == "0":
+                break
+            else:
+                print("opcion_no_valida")
+    elif op == "0":
         print("Saliendo del programa...")
+        break
