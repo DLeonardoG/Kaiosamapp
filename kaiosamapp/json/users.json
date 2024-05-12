@@ -107,6 +107,84 @@
             "telefono": "a",
             "email": "a",
             "categoria": "a"
+        },
+        {
+            "documento": "1234",
+            "nombre": "123",
+            "apellido": "3",
+            "edad": 3,
+            "sexo": "3",
+            "ciudad": "3",
+            "direccion": "3",
+            "telefono": "3",
+            "email": "",
+            "categoria": "3"
+        },
+        {
+            "documento": "12345678",
+            "nombre": "crilin",
+            "apellido": "kaiken",
+            "edad": 18,
+            "sexo": "masculino",
+            "ciudad": "gotica",
+            "direccion": "calle 12 34",
+            "telefono": "11",
+            "email": "darkleonardo",
+            "categoria": "nuevo"
+        },
+        {
+            "documento": "23456789",
+            "nombre": "then",
+            "apellido": "quinjan",
+            "edad": 18,
+            "sexo": "masculino",
+            "ciudad": "bga",
+            "direccion": "calle 12 34",
+            "telefono": "3155370033",
+            "email": "dark gmail",
+            "categoria": "leal"
+        },
+        {
+            "documento": "12312312",
+            "nombre": "kaio",
+            "apellido": "sama",
+            "telefono": "3155370033",
+            "edad": 12,
+            "sexo": "masculino",
+            "ciudad": "g",
+            "direccion": "g",
+            "email": "dark",
+            "categoria": "leal"
+        },
+        {
+            "documento": "87654321",
+            "nombre": "supremo",
+            "apellido": "kaio",
+            "telefono": "3155370033",
+            "edad": 18,
+            "sexo": "otro",
+            "ciudad": "cartagena",
+            "direccion": "calle 10 con cra 34",
+            "email": "dark",
+            "categoria": "leal",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": 87654321,
+            "edad": 18,
+            "nombre": "carlos",
+            "apellido": "luis",
+            "telefono": 3155370033,
+            "sexo": "masculino",
+            "ciudad": "america",
+            "direccion": "a",
+            "email": "a",
+            "categoria": "a",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
         }
     ]
 }

@@ -20,7 +20,6 @@ while True:
                     op_m_1_1 = input("Seleccione una opcion:\n👉   ")
                     if op_m_1_1 == "1":
                         crear_usuario()
-                        
                     elif op_m_1_1 == "2":
                         
                         print("eliminar_usuario")                            

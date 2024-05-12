@@ -1,4 +1,4 @@
-from modules.funciones_secundarias import reportar_error_a_txt
+from modules.funciones_secundarias import reportar_error_a_txt,documento_valido,telefono_valido,int_edad,sexo,int_documento,int_telefono,str_sexo
 from modules.datos_users import *
 
 
@@ -6,34 +6,25 @@ from modules.datos_users import *
 def registrar_user(datos):
     datos = dict(datos)
     usuarios={}
-    try:
-        usuarios["documento"]=input("Ingrese el documento: ")
-        for i in range(len(datos["usuarios"])):
-            if datos["usuarios"][i]["documento"] == usuarios["documento"]:
-                print (datos["usuarios"][i]["documento"],"ya se encuentra registrado!")
-                break
-                
-    except Exception as e:
-        reportar_error_a_txt(e)
-        usuarios["documento"] = ""
-
+    documento_valido(usuarios)
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == usuarios["documento"]:
+            print (datos["usuarios"][i]["documento"],"ya se encuentra registrado!")
+            return datos
+    
+    int_edad(usuarios)
     usuarios["nombre"]=input("Ingrese el nombre: ")
     usuarios["apellido"]=input("Ingrese el apellido: ")
-    try:
-        usuarios["edad"] = int(input("Ingrese la edad: "))
-        
-    except Exception as e:
-        reportar_error_a_txt(e)
-        usuarios["edad"] = 18
-    usuarios["sexo"]=input("Ingrese el sexo (masculino, femenino, otro): ")
+    telefono_valido(usuarios)
+    sexo(usuarios)
     usuarios["ciudad"]=input("Ingrese la ciudad: ")
     usuarios["direccion"]=input("Ingrese la direccion: ")
-    usuarios["telefono"]=input("Ingrese el telefono: ")
     usuarios["email"]=input("Ingrese el email: ")
     usuarios["categoria"]=input("Ingrese la categoria: ")
+    usuarios["registro_servicios"]=[]
+    usuarios["registro_productos"]=[]
+    usuarios["registro_pqr"]=[]
 
-
-    
     datos["usuarios"].append(usuarios)
     print( usuarios["nombre"],usuarios["apellido"],"registrado con éxito!")
     return datos
@@ -44,7 +35,14 @@ def crear_usuario():
             datos = registrar_user(datos)
             guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
             break
-crear_usuario()
+#crear_usuario()
+
+
+
+
+
+
+
 
 def eliminar_user(datos):
     datos = dict(datos)

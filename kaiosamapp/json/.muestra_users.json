@@ -2,8 +2,8 @@
     "usuarios": 
     [
         {
-            "edad": 19,
             "documento": "1165987623",
+            "edad": 19,
             "nombre": "son goku",
             "apellido":"sayayin",
             "sexo":"masculino",
@@ -56,12 +56,12 @@
 
             ],
 
-            "registro_interacciones":
+            "registro_pqr":
             [
                 {
-                "interaccion":[
+                "pqr":[
                     {
-                        "tipo_de_interaccion":"servicio al cliente, reclamaciones y sugerencias.",
+                        "tipo_de_pqr":"servicio al cliente, reclamaciones y sugerencias.",
                         "motivo":"no me gusta",
                         "comentario":"que mal servicio al cliente",
                         "fecha":"92122"
