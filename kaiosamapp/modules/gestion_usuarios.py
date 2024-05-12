@@ -7,14 +7,24 @@ def registrar_user(datos):
     datos = dict(datos)
     usuarios={}
     try:
+        usuarios["documento"]=input("Ingrese el documento: ")
+        for i in range(len(datos["usuarios"])):
+            if datos["usuarios"][i]["documento"] == usuarios["documento"]:
+                print (datos["usuarios"][i]["documento"],"ya se encuentra registrado!")
+                break
+                
+    except Exception as e:
+        reportar_error_a_txt(e)
+        usuarios["documento"] = ""
+
+    usuarios["nombre"]=input("Ingrese el nombre: ")
+    usuarios["apellido"]=input("Ingrese el apellido: ")
+    try:
         usuarios["edad"] = int(input("Ingrese la edad: "))
         
     except Exception as e:
         reportar_error_a_txt(e)
         usuarios["edad"] = 18
-    usuarios["documento"]=input("Ingrese el documento: ")
-    usuarios["nombre"]=input("Ingrese el nombre: ")
-    usuarios["apellido"]=input("Ingrese el apellido: ")
     usuarios["sexo"]=input("Ingrese el sexo (masculino, femenino, otro): ")
     usuarios["ciudad"]=input("Ingrese la ciudad: ")
     usuarios["direccion"]=input("Ingrese la direccion: ")
@@ -29,10 +39,12 @@ def registrar_user(datos):
     return datos
 
 def crear_usuario():
-        datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
-        datos = registrar_user(datos)
-        guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
-
+        while True:
+            datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
+            datos = registrar_user(datos)
+            guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
+            break
+crear_usuario()
 
 def eliminar_user(datos):
     datos = dict(datos)

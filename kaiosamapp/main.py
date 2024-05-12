@@ -14,76 +14,62 @@ while True:
             op_m_1 = input("Seleccione una opcion:\n👉   ")
             if op_m_1 == "1":
                 while True:                
-                    while True:
-                        print("Gestion de usuarios")                        
-                        break
+                    print("Gestion de usuarios")                        
+                        
                     mostrar_txt(m_1_1)
                     op_m_1_1 = input("Seleccione una opcion:\n👉   ")
                     if op_m_1_1 == "1":
-                        while True:
-                            crear_usuario()                          
-                            break
+                        crear_usuario()
                         
                     elif op_m_1_1 == "2":
                         
-                        while True:
-                            print("eliminar_usuario")                            
-                            break
+                        print("eliminar_usuario")                            
+                            
                         
                     elif op_m_1_1 == "3":
-                        while True:
-                            print("actualizar_usuario")                            
-                            break
+                        print("actualizar_usuario")                            
+                            
                         
                     elif op_m_1_1 == "4":
-                        while True:
-                            print("leer_usuario")                            
-                            break
+                        print("leer_usuario")                            
+                            
                             
                     elif op_m_1_1 == "5":
-                        while True:
-                            print("nueva_compra_usuario")                            
-                            break
+                        print("nueva_compra_usuario")                            
+                            
                         
                     elif op_m_1_1 == "6":
-                        while True:
-                            print("recomendaciones_usuario")                                
-                            break
+                        print("recomendaciones_usuario")                                
+                            
                         
                     elif op_m_1_1 == "0":
-                        while True:
-                            print("menu_anterior")                            
-                            break
+                        print("menu_anterior")                            
+                            
                         break
                     else:
                         opcion_no_valida()
                         
             elif op_m_1 == "2":
                 while True:
-                    while True:
-                        print("pqr")                        
-                        break
+                    print("pqr")                        
+                        
                     mostrar_txt(m_1_2)
                     op_m_1_2 = input("Seleccione una opcion:\n👉   ")
                     if op_m_1_2 == "1":
-                        while True:
-                            print("consultar_pqr")                            
-                            break
+                        print("consultar_pqr")                            
+                            
                         
                     elif op_m_1_2 == "2":
-                        while True:
-                            print("registrar_pqr")                            
-                            break
+                        print("registrar_pqr")                            
+                            
                     elif op_m_1_2 == "3":
-                        while True:
-                            print("Eliminar_pqr")                            
-                            break
+                        print("Eliminar_pqr")                            
+                            
                     
                     
                     elif op_m_1_2 == "0":
-                        while True:
-                            print("menu_anterior")                            
-                            break
+                        print("menu_anterior")                            
+                            
                         break
 
                         
@@ -92,28 +78,23 @@ while True:
                         
             elif op_m_1 == "3":
                 while True:
-                    while True:
-                        print("Analisis de clientes")                        
-                        break
+                    print("Analisis de clientes")                        
+                        
                     mostrar_txt(m_1_3)
                     op_m_1_3 = input("Seleccione una opcion:\n👉   ")
                     if op_m_1_3 == "1":
-                        while True:
-                            print("Falta menu para analisis total o especifico")                            
-                            break
-                        while True:
-                            print("analisis_general")                            
-                            break
+                        print("Falta menu para analisis total o especifico")                            
+                            
+                        print("analisis_general")                            
+                            
                     elif op_m_1_3 == "2":
-                        while True:
-                            print("analisis_cliente")                            
-                            break
+                        print("analisis_cliente")                            
+                            
                     
                     
                     elif op_m_1_3 == "0":
-                        while True:
-                            print("menu_anterior")                            
-                            break
+                        print("menu_anterior")                            
+                            
                         break
                         
                     else:
@@ -121,42 +102,34 @@ while True:
                         
             elif op_m_1 == "4":
                 while True:
-                    while True:
-                        print("Ventas")                        
-                        break
+                    print("Ventas")                        
+                        
                     mostrar_txt(m_1_4)
                     op_m_1_4 = input("Seleccione una opcion:\n👉   ")
                     if op_m_1_4 == "1":
-                        while True:
-                            print("factura_ventas")                            
-                            break
+                        print("factura_ventas")                            
+                            
                     elif op_m_1_4 == "2":
                         while True:
-                            while True:
-                                print("catalogo_servicios")                                
-                                break
+                            print("catalogo_servicios")                                
+                                
                             mostrar_txt(m_1_4_2)
                             op_m_1_4_2 = input("Seleccione una opcion:\n👉   ")
                             if op_m_1_4_2 == "1":
-                                while True:
-                                    print("crear_servicio")                                    
-                                    break
+                                print("crear_servicio")                                    
+                                    
                             elif op_m_1_4_2 == "2":
-                                while True:
-                                    print("eliminar_servicio")                                    
-                                    break
+                                print("eliminar_servicio")                                    
+                                    
                             elif op_m_1_4_2 == "3":
-                                while True:
-                                    print("modificar_servicio")                                    
-                                    break
+                                print("modificar_servicio")                                    
+                                    
                             elif op_m_1_4_2 == "4":
-                                while True:
-                                    print("consultar_servicio")                                    
-                                    break
+                                print("consultar_servicio")                                    
+                                    
                             elif op_m_1_4_2 == "0":
-                                while True:
-                                    print("menu_anterior")                                    
-                                    break
+                                print("menu_anterior")                                    
+                                    
                                 break
                                 
                             else:
@@ -165,48 +138,39 @@ while True:
                     
                     elif op_m_1_4 == "3":
                         while True:
-                            while True:
-                                print("catalogo_productos")                                
-                                break
+                            print("catalogo_productos")                                
+                                
                             mostrar_txt(m_1_4_3)
                             op_m_1_4_3 = input("Seleccione una opcion:\n👉   ")
                             if op_m_1_4_3 == "1":
-                                while True:
-                                    print("crear_producto")                                    
-                                    break
+                                print("crear_producto")                                    
+                                    
                             elif op_m_1_4_3 == "2":
-                                while True:
-                                    print("eliminar_producto")                                    
-                                    break
+                                print("eliminar_producto")                                    
+                                    
                             elif op_m_1_4_3 == "3":
-                                while True:
-                                    print("modificar_producto")                                    
-                                    break
+                                print("modificar_producto")                                    
+                                    
                             elif op_m_1_4_3 == "4":
-                                while True:
-                                    print("consultar_producto")                                    
-                                    break
+                                print("consultar_producto")                                    
+                                    
                             elif op_m_1_4_3 == "0":
-                                while True:
-                                    print("menu_anterior")                                    
-                                    break
+                                print("menu_anterior")                                    
+                                    
                                 break
                             else:
                                 opcion_no_valida()    
                     elif op_m_1_4 == "4":
-                        while True:
-                            print ("factura_usuario")                            
-                            break
+                        print ("factura_usuario")                            
+                            
                     elif op_m_1_4 == "5":
-                        while True:
-                            print ("nueva_compra_usuario")                            
-                            break
+                        print ("nueva_compra_usuario")                            
+                            
                 
                 
                     elif op_m_1_4 == "0":
-                        while True:
-                            print("menu_anterior")                            
-                            break
+                        print("menu_anterior")                            
+                            
                         break
 
                         
@@ -215,41 +179,34 @@ while True:
             
             
             elif op_m_1 == "0":
-                while True:
-                    print("menu_anterior")                    
-                    break
+                print("menu_anterior")                    
+                    
                 break
             else:
                 opcion_no_valida()
     
     elif op == "2":
-        while True:
-            print ("Menu de usuarios")            
-            break
+        print ("Menu de usuarios")            
+            
         op_2 = input("Ingrese una opción: ")
         while True:
             if op_2 == "1":
-                while True:
-                    print("Ha seleccionado Opción 1")                    
-                    break
+                print("Ha seleccionado Opción 1")                    
+                    
             elif op_2 == "2":
-                while True:
-                    print("Ha seleccionado Opción 2")                    
-                    break
+                print("Ha seleccionado Opción 2")                    
+                    
             elif op_2 == "3":
-                while True:
-                    print("Ha seleccionado Opción 3")                    
-                    break
+                print("Ha seleccionado Opción 3")                    
+                    
             elif op_2 == "4":
-                while True:
-                    print("Ha seleccionado Opción 4")                    
-                    break
+                print("Ha seleccionado Opción 4")                    
+                    
             
             
             elif op_2 == "0":
-                while True:
-                    print("menu_anterior")                    
-                    break
+                print("menu_anterior")                    
+                    
 
 
                 break

@@ -83,6 +83,30 @@
             "telefono": "sd",
             "email": "sd",
             "categoria": "sd"
+        },
+        {
+            "edad": 18,
+            "documento": "123456789",
+            "nombre": "goku",
+            "apellido": "sonias}",
+            "sexo": "masculino",
+            "ciudad": "tierra",
+            "direccion": "calle 50 23 45",
+            "telefono": "12345",
+            "email": "dark",
+            "categoria": "nuevo"
+        },
+        {
+            "documento": "123456789",
+            "nombre": "a",
+            "apellido": "a",
+            "edad": 18,
+            "sexo": "aa",
+            "ciudad": "a",
+            "direccion": "a",
+            "telefono": "a",
+            "email": "a",
+            "categoria": "a"
         }
     ]
 }

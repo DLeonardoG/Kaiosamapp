@@ -596,3 +596,6 @@
 2024-05-12 08:55:06: Opcion de menu no valida
 2024-05-12 09:22:02: invalid literal for int() with base 10: 'f'
 2024-05-12 09:24:37: invalid literal for int() with base 10: 'ds'
+2024-05-12 13:47:58: invalid literal for int() with base 10: 'd'
+2024-05-12 14:12:00: invalid literal for int() with base 10: 'a'
+2024-05-12 14:12:00: Opcion de menu no valida
