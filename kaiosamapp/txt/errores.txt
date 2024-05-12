@@ -1127,3 +1127,71 @@
 2024-05-12 21:19:43: Opcion de menu no valida
 2024-05-12 21:19:43: Opcion de menu no valida
 2024-05-12 21:19:43: Opcion de menu no valida
+2024-05-12 22:48:06: (ValueError('Edad ', 12, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 22:48:06: (ValueError('Edad ', 3, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 22:48:06: (ValueError('Edad ', 4, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 22:48:06: (ValueError("invalid literal for int() with base 10: 'g'"), 'Error al registrar edad')
+2024-05-12 22:54:22: Error al registrar telefono
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: (ValueError("invalid literal for int() with base 10: 'z'"), 'Error al registrar edad')
+2024-05-12 22:54:22: (ValueError("invalid literal for int() with base 10: 'z'"), 'Error al registrar edad')
+2024-05-12 22:54:22: (ValueError("invalid literal for int() with base 10: 'z'"), 'Error al registrar telefono')
+2024-05-12 22:54:22: (ValueError("invalid literal for int() with base 10: 'z'"), 'Error al registrar telefono')
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 22:54:22: Opcion de menu no valida
+2024-05-12 23:21:16: Opcion de menu no valida
+2024-05-12 23:21:16: Opcion de menu no valida
+2024-05-12 23:21:16: Opcion de menu no valida
+2024-05-12 23:21:16: Opcion de menu no valida
+2024-05-12 23:21:16: Opcion de menu no valida
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'sw'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'sw'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'fr'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'gt'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'hy'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'fr'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'sw'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ec'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ce'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ce'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ce'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'c'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'e'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ce'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ce'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'c'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ec'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ec'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ec'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'e'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'e'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: ''"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ecece'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ce'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'e'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'e'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ce'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'ce'"), 'Error al registrar edad')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 's'"), 'Error al registrar telefono')
+2024-05-12 23:21:16: (ValueError("invalid literal for int() with base 10: 'qqq'"), 'Error al registrar telefono')
+2024-05-12 23:21:16: Error al registrar telefono
+2024-05-12 23:21:16: Error al registrar sexo
+2024-05-12 23:21:16: Error al registrar sexo
+2024-05-12 23:21:16: Error al registrar sexo
+2024-05-12 23:21:16: Opcion de menu no valida

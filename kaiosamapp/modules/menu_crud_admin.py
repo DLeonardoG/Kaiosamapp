@@ -3,9 +3,6 @@ from datos_users import *
 from funciones_secundarias import *
 #from menu_1 import *
 
-
-    
-
 def menu_admin_crud_users():
     #diseño_logo()
     print ("1. Crear usuario 📁")

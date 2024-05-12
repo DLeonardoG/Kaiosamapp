@@ -3,6 +3,7 @@ from txt_menus import *
 from main_funciones import *
 from diseños import *
 from modules.funciones_secundarias import clear_screen
+from modules.funciones_secundarias import opcion_no_valida
 
 #funcionamiento interno del main
 

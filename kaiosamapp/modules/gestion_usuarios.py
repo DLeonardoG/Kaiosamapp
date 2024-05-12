@@ -1,5 +1,5 @@
-from modules.funciones_secundarias import reportar_error_a_txt,telefono_valido,int_edad
-from modules.funciones_secundarias import sexo
+from modules.funciones_secundarias import reportar_error_a_txt,telefono_valido,int_edad,clear_screen,very
+from modules.funciones_secundarias import sexo,clear_screen,very
 from modules.datos_users import *
 
 def registrar_user(datos):
@@ -36,11 +36,9 @@ def crear_usuario():
             datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
             datos = registrar_user(datos)
             guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
-            very()
-            if continuar == "2":
-                break
-            else:
-                clear_screen()
+            continuar = very()
+            if continuar == "2": break
+            else: clear_screen()
 #crear_usuario()
 
 def eliminar_user(datos):
@@ -59,7 +57,9 @@ def eliminar_usuario():
         datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
         datos = eliminar_user(datos)
         guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
-        break
+        continuar = very()
+        if continuar == "2": break
+        else: clear_screen()
 
 #eliminar_user(datos)
 
@@ -81,7 +81,10 @@ def actualizar_usuario():
         datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
         datos = actualizar_user(datos)
         guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
-        break
+        continuar = very()
+        if continuar == "2": break
+        else: clear_screen()
+        
 #actualizar_user(datos)
 
 def leer_user(datos):
@@ -107,7 +110,9 @@ def leer_usuario():
         datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
         datos = leer_user(datos)
         guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
-        break
+        continuar = very()
+        if continuar == "2": break
+        else: clear_screen()
     
 #leer_user(datos)
 #guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)

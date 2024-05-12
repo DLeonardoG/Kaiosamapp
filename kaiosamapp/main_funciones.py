@@ -1,13 +1,5 @@
 from modules.funciones_secundarias import fecha,os
 
-def opcion_no_valida():
-    ruta_errores = os.path.join("kaiosamapp/txt/errores.txt")
-    with open(ruta_errores, 'a') as f:
-        mensaje_error = f"{fecha}: Opcion de menu no valida" 
-        f.write(mensaje_error + '\n')
-#opcion_no_valida()
-
-
 def mostrar_txt(ruta_archivo):
     with open(ruta_archivo, 'r') as archivo:
         contenido = archivo.read()

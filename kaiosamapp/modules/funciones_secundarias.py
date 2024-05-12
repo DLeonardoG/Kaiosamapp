@@ -2,38 +2,29 @@ import os
 import platform
 from datetime import datetime
 
-
-
-    
 def time_now():
     fecha = datetime.now()
     fecha = fecha.replace(microsecond=0)
     return fecha
-
 fecha = time_now()
 
 def clear_screen():
-    if platform.system() == 'Windows':
-        os.system('cls')
-    else:
-        os.system('clear')
-        
+    if platform.system() == 'Windows': os.system('cls')
+    else: os.system('clear')
+
 ARCHIVO = "errores.txt"
 def reportar_error_a_txt(excepcion):
     ruta_errores = os.path.join("kaiosamapp/txt/errores.txt")
     with open(ruta_errores, 'a') as f:
         mensaje_error = f"{fecha}: {excepcion}" 
         f.write(mensaje_error + '\n')
-    
-            
+
 def int_edad(usuarios):
     while True:
         try:
             usuarios["edad"] = int(input("Ingrese la edad: "))
-            if usuarios["edad"] >= 18:
-                return usuarios["edad"]
-            else:
-                raise ValueError("Edad ", usuarios["edad"]," es menor a 18")
+            if usuarios["edad"] >= 18: return usuarios["edad"]
+            else: raise ValueError("Edad ", usuarios["edad"]," es menor a 18")
         except Exception as e:
             e = e,"Error al registrar edad"
             reportar_error_a_txt(e)
@@ -45,10 +36,8 @@ def int_documento(usuarios):
             usuarios["documento"] = int(input("Ingrese el documento: "))
             if isinstance(usuarios["documento"], int):
                 cad = str(usuarios["documento"])  
-                if len(cad)>= 8 and len(cad)<= 10:
-                    return usuarios["documento"]
-                else:
-                    raise ValueError("documento", usuarios["documento"]," no es valido")
+                if len(cad)>= 8 and len(cad)<= 10: return usuarios["documento"]
+                else: raise ValueError("documento", usuarios["documento"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar documento"
             reportar_error_a_txt(e)
@@ -58,10 +47,8 @@ def int_telefono(usuarios):
     while True:
         try:
             usuarios["telefono"] = int(input("Ingrese el telefono: "))
-            if isinstance(usuarios["telefono"], int):
-                return usuarios["telefono"]
-            else:
-                raise ValueError("telefono ", usuarios["telefono"]," no es valido")
+            if isinstance(usuarios["telefono"], int): return usuarios["telefono"]
+            else: raise ValueError("telefono ", usuarios["telefono"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar telefono"
             reportar_error_a_txt(e)
@@ -75,8 +62,7 @@ def telefono_valido(usuarios):
     while True:
         int_telefono(usuarios)
         cad = str(usuarios["telefono"])
-        if len(cad) == 10:
-            break
+        if len(cad) == 10: break
         else:
             dm = "Error al registrar telefono"
             reportar_error_a_txt(dm)
@@ -86,7 +72,7 @@ def telefono_valido(usuarios):
 def sexo(usuarios):    
     while True:
         op = input("Ingrese el sexo: \n 1. Masculino \n 2. Femenino \n 3. Otro\n>>>")
-        if op == "1":
+        if op == "1": 
             usuarios["sexo"] = "Masculino"                    
             break
         elif op == "2":
@@ -101,6 +87,17 @@ def sexo(usuarios):
             print("El sexo no es valido")
             usuarios["sexo"] = ""   
 
-
-
 #def doc_existe(usuarios,datos): 
+def opcion_no_valida():
+    ruta_errores = os.path.join("kaiosamapp/txt/errores.txt")
+    with open(ruta_errores, 'a') as f:
+        mensaje_error = f"{fecha}: Opcion de menu no valida" 
+        f.write(mensaje_error + '\n')
+#opcion_no_valida()
+
+def very():
+    while True:
+        continuar = input("¿Repetir operacion?\n1 .Si\n2 .No\n��  ")
+        if continuar == "1": return "1"
+        elif continuar == "2": return "2"
+        else: opcion_no_valida()
