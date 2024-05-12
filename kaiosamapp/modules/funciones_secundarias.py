@@ -39,7 +39,6 @@ def int_edad(usuarios):
             reportar_error_a_txt(e)
             print("Usuario debe ser mayor de edad")
             
-
 def int_documento(usuarios):
     while True:
         try:
@@ -72,9 +71,6 @@ def for_doc(usuarios):
     int_documento(usuarios)
     return usuarios["documento"]
 
-    
-
-            
 def telefono_valido(usuarios):    
     while True:
         int_telefono(usuarios)
@@ -91,13 +87,13 @@ def sexo(usuarios):
     while True:
         op = input("Ingrese el sexo: \n 1. Masculino \n 2. Femenino \n 3. Otro\n>>>")
         if op == "1":
-            usuarios["sexo"] = "masculino"                    
+            usuarios["sexo"] = "Masculino"                    
             break
         elif op == "2":
-            usuarios["sexo"] = "femenino"                    
+            usuarios["sexo"] = "Femenino"                    
             break
         elif op == "3":
-            usuarios["sexo"] = "otro"                    
+            usuarios["sexo"] = "Otro"                    
             break
         else:
             dm = "Error al registrar sexo"

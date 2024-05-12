@@ -1,8 +1,6 @@
 from modules.funciones_secundarias import reportar_error_a_txt,telefono_valido,int_edad
+from modules.funciones_secundarias import sexo
 from modules.datos_users import *
-
-
-
 
 def registrar_user(datos):
     datos = dict(datos)
@@ -13,17 +11,14 @@ def registrar_user(datos):
             if datos["usuarios"][i]["documento"] == usuarios["documento"]:
                 print (datos["usuarios"][i]["documento"],"ya se encuentra registrado!")
                 return datos
-                
     except Exception as e:
         reportar_error_a_txt(e)
         usuarios["documento"] = ""
-    
     int_edad(usuarios)
     usuarios["nombre"]=input("Ingrese el nombre: ")
     usuarios["apellido"]=input("Ingrese el apellido: ")
     telefono_valido(usuarios)
-
-    usuarios["sexo"]=input("Ingrese el sexo (masculino, femenino, otro): ")
+    sexo(usuarios)
     usuarios["ciudad"]=input("Ingrese la ciudad: ")
     usuarios["direccion"]=input("Ingrese la direccion: ")
     usuarios["email"]=input("Ingrese el email: ")
@@ -41,7 +36,11 @@ def crear_usuario():
             datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
             datos = registrar_user(datos)
             guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
-            break
+            very()
+            if continuar == "2":
+                break
+            else:
+                clear_screen()
 #crear_usuario()
 
 def eliminar_user(datos):

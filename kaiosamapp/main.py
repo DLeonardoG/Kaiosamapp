@@ -15,7 +15,6 @@ while True:
             if op_m_1 == "1":
                 while True:                
                     print("Gestion de usuarios")                        
-                        
                     mostrar_txt(m_1_1)
                     op_m_1_1 = input("Seleccione una opcion:\n👉   ")
                     if op_m_1_1 == "1":

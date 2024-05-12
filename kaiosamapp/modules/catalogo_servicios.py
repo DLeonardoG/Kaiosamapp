@@ -1,7 +1,5 @@
 from datos_catalogo import *
 
-
-
 def registrar_servicio(datos):
     datos = dict(datos)
     catalogo_servicios={}
@@ -29,10 +27,14 @@ def registrar_servicio(datos):
     
 
     
+def crear_servicio():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = registrar_servicio(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
+        break
 
-
-datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
-datos = registrar_servicio(datos)
-guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
-
+def eliminar_service():
+    
+    
 

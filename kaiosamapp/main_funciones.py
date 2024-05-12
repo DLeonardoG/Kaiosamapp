@@ -1,6 +1,5 @@
 from modules.funciones_secundarias import fecha,os
 
-
 def opcion_no_valida():
     ruta_errores = os.path.join("kaiosamapp/txt/errores.txt")
     with open(ruta_errores, 'a') as f:
@@ -14,14 +13,6 @@ def mostrar_txt(ruta_archivo):
         contenido = archivo.read()
         print(contenido)
         
-def very():
-    while True:
-        continuar = input("Desea continuar?\n1 . S i\n2 . N o\n��  ")
-        if continuar == "1": 
-            return True
-        elif continuar == "2":
-            return False
-        else:
-            opcion_no_valida()
+
 #v = very()
 #print(v) 

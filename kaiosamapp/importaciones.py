@@ -4,9 +4,15 @@ from main_funciones import *
 from diseños import *
 from modules.funciones_secundarias import clear_screen
 
-#funcionamiento interno
+#funcionamiento interno del main
+
+#Gestion usuarios
 from modules.datos_users import *
 from modules.gestion_usuarios import crear_usuario,eliminar_usuario,actualizar_usuario,leer_usuario
 
+
+
+
+#Gestion ventas
 
 
