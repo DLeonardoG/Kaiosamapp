@@ -8,6 +8,7 @@
             "plan":"250 MG",
             "precio":80000,
             "duracion":"2 meses",
+            "description":"Asi como Goku es un plan grande en su transformacion de mono",
             "descuento":
             [
                 {

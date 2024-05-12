@@ -5,6 +5,7 @@ from modules.funciones_secundarias import clear_screen,very
 def registrar_servicio(datos):
     datos = dict(datos)
     catalogo_servicios={}
+    catalogo_servicios["code"] = "0001"
     try:
         catalogo_servicios["id"]=input("Ingrese el id: ")
         for i in range(len(datos["catalogo_servicios"])):
@@ -20,8 +21,16 @@ def registrar_servicio(datos):
     catalogo_servicios["precio"]=input("Ingrese el precio: ")
     catalogo_servicios["duracion"]=input("Ingrese la duracion: ")
     catalogo_servicios["descripcion"]=input("Ingrese la descripcion: ")
+    catalogo_servicios["descuento"]=[]
+    descuento = {}
+    descuento["nuevo"]=input("Ingrese el descuento para usuarios nuevos: ")
+    descuento["regular"]=input("Ingrese el descuento para usuarios regulares: ")
+    descuento["leal"]=input("Ingrese el descuento para usuarios leales: ")
     
     
+    
+    catalogo_servicios["descuento"]=input("Ingrese el descuento: ")
+    catalogo_servicios["descuento"]=input("Ingrese el descuento: ")
     datos["catalogo_servicios"].append(catalogo_servicios)
     print( catalogo_servicios["referencia"],catalogo_servicios["plan"],"registrado con éxito!")
     return datos
