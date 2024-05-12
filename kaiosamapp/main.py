@@ -7,167 +7,425 @@ while True:
     op = input("Ingrese una opción:\n👉  ")
     
     if op == "1":
-        continuar_m_1_4_2 = input("Desea continuar?\n��  ")
+        
         while True:
             #clear_screen()
             mostrar_txt(m_1)
             op_m_1 = input("Seleccione una opcion:\n👉   ")
-            if op_m_1 == "1":                
-                print("Gestion de usuarios")
-                mostrar_txt(m_1_1)
-                op_m_1_1 = input("Seleccione una opcion:\n👉   ")
-                if op_m_1_1 == "1":
-                    print("crear_usuario")
-                    
-                elif op_m_1_1 == "2":
-                    print("eliminar_usuario")
-                    
-                elif op_m_1_1 == "3":
-                    print("actualizar_usuario")
-                    
-                elif op_m_1_1 == "4":
-                    print("leer_usuario")
+            if op_m_1 == "1":
+                while True:                
+                    while True:
+                        print("Gestion de usuarios")                        
+                        veri = very()
+                        if veri == True:
+                            clear_screen()                            
+                        else:    
+                            break
+                    mostrar_txt(m_1_1)
+                    op_m_1_1 = input("Seleccione una opcion:\n👉   ")
+                    if op_m_1_1 == "1":
+                        while True:
+                            print("crear_usuario")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
                         
-                elif op_m_1_1 == "5":
-                    print("nueva_compra_usuario")
-                    
-                elif op_m_1_1 == "6":
-                    print("recomendaciones_usuario")    
-                    
-                elif op_m_1_1 == "0":
-                    print("menu_anterior")
-                    
-                elif op_m_1_1 == "00":
-                    print("Volver al menu principal")
-                    break
-                else:
-                    opcion_no_valida()
+                    elif op_m_1_1 == "2":
+                        
+                        while True:
+                            print("eliminar_usuario")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                        
+                    elif op_m_1_1 == "3":
+                        while True:
+                            print("actualizar_usuario")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                        
+                    elif op_m_1_1 == "4":
+                        while True:
+                            print("leer_usuario")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                            
+                    elif op_m_1_1 == "5":
+                        while True:
+                            print("nueva_compra_usuario")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                        
+                    elif op_m_1_1 == "6":
+                        while True:
+                            print("recomendaciones_usuario")                                
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                        
+                    elif op_m_1_1 == "0":
+                        while True:
+                            print("menu_anterior")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                        break
+                    else:
+                        opcion_no_valida()
                         
             elif op_m_1 == "2":
-                print("pqr")
-                mostrar_txt(m_1_2)
-                op_m_1_2 = input("Seleccione una opcion:\n👉   ")
-                if op_m_1_2 == "1":
-                    print("consultar_pqr")
+                while True:
+                    while True:
+                        print("pqr")                        
+                        veri = very()
+                        if veri == True:
+                            clear_screen()                            
+                        else:    
+                            break
+                    mostrar_txt(m_1_2)
+                    op_m_1_2 = input("Seleccione una opcion:\n👉   ")
+                    if op_m_1_2 == "1":
+                        while True:
+                            print("consultar_pqr")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                        
+                    elif op_m_1_2 == "2":
+                        while True:
+                            print("registrar_pqr")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                    elif op_m_1_2 == "3":
+                        while True:
+                            print("Eliminar_pqr")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
                     
-                elif op_m_1_2 == "2":
-                    print("registrar_pqr")
-                elif op_m_1_2 == "3":
-                    print("Eliminar_pqr")
-                
-                
-                elif op_m_1_2 == "0":
-                    print("menu_anterior")
+                    
+                    elif op_m_1_2 == "0":
+                        while True:
+                            print("menu_anterior")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                        break
 
-
-                elif op_m_1_2 == "00":
-                    print("Volver al menu principal")
-                    break
-                else:
-                    opcion_no_valida()
+                        
+                    else:
+                        opcion_no_valida()
                         
             elif op_m_1 == "3":
-                print("Analisis de clientes")
-                mostrar_txt(m_1_3)
-                op_m_1_3 = input("Seleccione una opcion:\n👉   ")
-                if op_m_1_3 == "1":
-                    print("Falta menu para analisis total o especifico")
-                    print("analisis_general")
-                elif op_m_1_3 == "2":
-                    print("analisis_cliente")
-                
-                
-                elif op_m_1_3 == "0":
-                    print("menu_anterior")
-                    
-                elif op_m_1_3 == "00":
-                    print("Volver al menu principal")
-                    break
-                else:
-                    opcion_no_valida()
-                    
-            elif op_m_1 == "4":
-                print("Ventas")
-                mostrar_txt(m_1_4)
-                op_m_1_4 = input("Seleccione una opcion:\n👉   ")
-                if op_m_1_4 == "1":
-                    print("factura_ventas")
-                elif op_m_1_4 == "2":
-                    print("catalogo_servicios")
-                    
-                    continuar_m_1_4_2 = True
-                    while continuar_m_1_4_2 == True:
-                        mostrar_txt(m_1_4_2)
-                        op_m_1_4_2 = input("Seleccione una opcion:\n👉   ")
-                        if op_m_1_4_2 == "1":
-                            print("crear_servicio")
-                        elif op_m_1_4_2 == "2":
-                            print("eliminar_servicio")
-                        elif op_m_1_4_2 == "3":
-                            print("modificar_servicio")
-                        elif op_m_1_4_2 == "4":
-                            print("consultar_servicio")
-                        elif op_m_1_4_2 == "0":
-                            print("menu_anterior")
-                            continuar_m_1_4_2 = False
-                        elif op_m_1_4_2 == "00":
-                            print("Volver al menu principal")
+                while True:
+                    while True:
+                        print("Analisis de clientes")                        
+                        veri = very()
+                        if veri == True:
+                            clear_screen()                            
+                        else:    
                             break
-                        else:
-                            opcion_no_valida()
-                            continuar_m_1_4_2 = False
+                    mostrar_txt(m_1_3)
+                    op_m_1_3 = input("Seleccione una opcion:\n👉   ")
+                    if op_m_1_3 == "1":
+                        while True:
+                            print("Falta menu para analisis total o especifico")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                        while True:
+                            print("analisis_general")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                    elif op_m_1_3 == "2":
+                        while True:
+                            print("analisis_cliente")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
                     
-                elif op_m_1_4 == "3":
-                    print("catalogo_productos")
-                elif op_m_1_4 == "4":
-                    print ("factura_usuario")
-                elif op_m_1_4 == "5":
-                    print ("nueva_compra_usuario")
+                    
+                    elif op_m_1_3 == "0":
+                        while True:
+                            print("menu_anterior")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                        break
+                        
+                    else:
+                        opcion_no_valida()
+                        
+            elif op_m_1 == "4":
+                while True:
+                    while True:
+                        print("Ventas")                        
+                        veri = very()
+                        if veri == True:
+                            clear_screen()                            
+                        else:    
+                            break
+                    mostrar_txt(m_1_4)
+                    op_m_1_4 = input("Seleccione una opcion:\n👉   ")
+                    if op_m_1_4 == "1":
+                        while True:
+                            print("factura_ventas")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                    elif op_m_1_4 == "2":
+                        while True:
+                            while True:
+                                print("catalogo_servicios")                                
+                                veri = very()
+                                if veri == True:
+                                    clear_screen()                                    
+                                else:    
+                                    break
+                            mostrar_txt(m_1_4_2)
+                            op_m_1_4_2 = input("Seleccione una opcion:\n👉   ")
+                            if op_m_1_4_2 == "1":
+                                while True:
+                                    print("crear_servicio")                                    
+                                    veri = very()
+                                    if veri == True:
+                                        clear_screen()                                        
+                                    else:    
+                                        break
+                            elif op_m_1_4_2 == "2":
+                                while True:
+                                    print("eliminar_servicio")                                    
+                                    veri = very()
+                                    if veri == True:
+                                        clear_screen()                                        
+                                    else:    
+                                        break
+                            elif op_m_1_4_2 == "3":
+                                while True:
+                                    print("modificar_servicio")                                    
+                                    veri = very()
+                                    if veri == True:
+                                        clear_screen()                                        
+                                    else:    
+                                        break
+                            elif op_m_1_4_2 == "4":
+                                while True:
+                                    print("consultar_servicio")                                    
+                                    veri = very()
+                                    if veri == True:
+                                        clear_screen()                                        
+                                    else:    
+                                        break
+                            elif op_m_1_4_2 == "0":
+                                while True:
+                                    print("menu_anterior")                                    
+                                    veri = very()
+                                    if veri == True:
+                                        clear_screen()                                        
+                                    else:    
+                                        break
+                                break
+                                
+                            else:
+                                opcion_no_valida()
+                                
+                    
+                    elif op_m_1_4 == "3":
+                        while True:
+                            while True:
+                                print("catalogo_productos")                                
+                                veri = very()
+                                if veri == True:
+                                    clear_screen()                                    
+                                else:    
+                                    break
+                            mostrar_txt(m_1_4_3)
+                            op_m_1_4_3 = input("Seleccione una opcion:\n👉   ")
+                            if op_m_1_4_3 == "1":
+                                while True:
+                                    print("crear_producto")                                    
+                                    veri = very()
+                                    if veri == True:
+                                        clear_screen()                                        
+                                    else:    
+                                        break
+                            elif op_m_1_4_3 == "2":
+                                while True:
+                                    print("eliminar_producto")                                    
+                                    veri = very()
+                                    if veri == True:
+                                        clear_screen()                                        
+                                    else:    
+                                        break
+                            elif op_m_1_4_3 == "3":
+                                while True:
+                                    print("modificar_producto")                                    
+                                    veri = very()
+                                    if veri == True:
+                                        clear_screen()                                        
+                                    else:    
+                                        break
+                            elif op_m_1_4_3 == "4":
+                                while True:
+                                    print("consultar_producto")                                    
+                                    veri = very()
+                                    if veri == True:
+                                        clear_screen()                                        
+                                    else:    
+                                        break
+                            elif op_m_1_4_3 == "0":
+                                while True:
+                                    print("menu_anterior")                                    
+                                    veri = very()
+                                    if veri == True:
+                                        clear_screen()                                        
+                                    else:    
+                                        break
+                                break
+                            else:
+                                opcion_no_valida()    
+                    elif op_m_1_4 == "4":
+                        while True:
+                            print ("factura_usuario")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                    elif op_m_1_4 == "5":
+                        while True:
+                            print ("nueva_compra_usuario")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
                 
                 
-                elif op_m_1_4 == "0":
-                    print("menu_anterior")
+                    elif op_m_1_4 == "0":
+                        while True:
+                            print("menu_anterior")                            
+                            veri = very()
+                            if veri == True:
+                                clear_screen()                                
+                            else:    
+                                break
+                        break
 
-                elif op_m_1_4 == "00":
-                    print("Volver al menu principal")
-                    break
-                else:
-                    opcion_no_valida()
+                        
+                    else:
+                        opcion_no_valida()
             
             
             elif op_m_1 == "0":
-                print("menu_anterior")
+                while True:
+                    print("menu_anterior")                    
+                    veri = very()
+                    if veri == True:
+                        clear_screen()                        
+                    else:    
+                        break
                 break
             else:
                 opcion_no_valida()
     
     elif op == "2":
-        print ("Menu de usuarios")
+        while True:
+            print ("Menu de usuarios")            
+            veri = very()
+            if veri == True:
+                clear_screen()                
+            else:    
+                break
         op_2 = input("Ingrese una opción: ")
         while True:
             if op_2 == "1":
-                print("Ha seleccionado Opción 1")
+                while True:
+                    print("Ha seleccionado Opción 1")                    
+                    veri = very()
+                    if veri == True:
+                        clear_screen()                        
+                    else:    
+                        break
             elif op_2 == "2":
-                print("Ha seleccionado Opción 2")
+                while True:
+                    print("Ha seleccionado Opción 2")                    
+                    veri = very()
+                    if veri == True:
+                        clear_screen()                        
+                    else:    
+                        break
             elif op_2 == "3":
-                print("Ha seleccionado Opción 3")
+                while True:
+                    print("Ha seleccionado Opción 3")                    
+                    veri = very()
+                    if veri == True:
+                        clear_screen()                        
+                    else:    
+                        break
             elif op_2 == "4":
-                print("Ha seleccionado Opción 4")
+                while True:
+                    print("Ha seleccionado Opción 4")                    
+                    veri = very()
+                    if veri == True:
+                        clear_screen()                        
+                    else:    
+                        break
             
             
             elif op_2 == "0":
-                print("menu_anterior")
+                while True:
+                    print("menu_anterior")                    
+                    veri = very()
+                    if veri == True:
+                        clear_screen()                        
+                    else:    
+                        break
 
 
-            elif op_2 == "00":
-                print("Volver al menu principal")
                 break
             else:
                 opcion_no_valida()
     elif op == "0":
         clear_screen()
         diseño_logo()
-        print ("Saliendo del programa...")
         break
     else:
         opcion_no_valida()

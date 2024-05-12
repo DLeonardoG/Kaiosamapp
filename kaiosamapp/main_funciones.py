@@ -4,6 +4,7 @@ from datetime import datetime
 
 
 
+    
 def time_now():
     fecha = datetime.now()
     fecha = fecha.replace(microsecond=0)
@@ -44,3 +45,15 @@ def mostrar_txt(ruta_archivo):
     with open(ruta_archivo, 'r') as archivo:
         contenido = archivo.read()
         print(contenido)
+        
+def very():
+    while True:
+        continuar = input("Desea continuar?\n1 . S i\n2 . N o\n��  ")
+        if continuar == "1": 
+            return True
+        elif continuar == "2":
+            return False
+        else:
+            opcion_no_valida()
+#v = very()
+#print(v) 
