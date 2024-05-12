@@ -26,8 +26,6 @@ def registrar_servicio(datos):
     print( catalogo_servicios["referencia"],catalogo_servicios["plan"],"registrado con éxito!")
     return datos
     
-
-    
 def crear_servicio():
     while True:
         datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
