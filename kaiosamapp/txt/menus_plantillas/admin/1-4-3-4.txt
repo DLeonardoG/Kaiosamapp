@@ -1,5 +1,5 @@
 -------------------------------------------------------------
-       0 . S a l i r ↩️
+       0 . S a l i r (o cualquier tecla)↩️ 
        00. M e n u - P r i n c i p a l ⚠️
        1 . C r e a r 📁
        2 . P r o d u c t o - E s p e c i f i c o 🔍

@@ -1,8 +1,7 @@
 from importaciones import *
 
-
 while True:
-    clear_screen()
+    #clear_screen()
     diseño_logo()
     mostrar_txt(principal)
     op = input("Ingrese una opción:\n👉  ")
@@ -41,7 +40,7 @@ while True:
                     print("Volver al menu principal")
                     break
                 else:
-                    print("opcion_no_valida")
+                    opcion_no_valida()
                         
             elif op_m_1 == "2":
                 print("pqr")
@@ -64,7 +63,7 @@ while True:
                     print("Volver al menu principal")
                     break
                 else:
-                    print("opcion_no_valida")
+                    opcion_no_valida()
                         
             elif op_m_1 == "3":
                 print("Analisis de clientes")
@@ -84,7 +83,7 @@ while True:
                     print("Volver al menu principal")
                     break
                 else:
-                    print("opcion_no_valida")
+                    opcion_no_valida()
                     
             elif op_m_1 == "4":
                 print("Ventas")
@@ -109,14 +108,14 @@ while True:
                     print("Volver al menu principal")
                     break
                 else:
-                    print("opcion_no_valida")
+                    opcion_no_valida()
             
             
             elif op_m_1 == "0":
                 print("menu_anterior")
                 break
             else:
-                print("opcion_no_valida")
+                opcion_no_valida()
     
     elif op == "2":
         print ("Menu de usuarios")
@@ -140,9 +139,11 @@ while True:
                 print("Volver al menu principal")
                 break
             else:
-                print("opcion_no_valida")
+                opcion_no_valida()
     elif op == "0":
         clear_screen()
         diseño_logo()
         print ("Saliendo del programa...")
         break
+    else:
+        opcion_no_valida()

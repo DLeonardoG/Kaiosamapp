@@ -1,6 +1,6 @@
 Producto
 -----------------------------------------------
-       0 . S a l i r ↩️
+       0 . S a l i r (o cualquier tecla)↩️ 
        00. M e n u - P r i n c i p a l ⚠️
        1 . A ñ a d i r 📁
        2 . E l i m i n a r 🗑️
