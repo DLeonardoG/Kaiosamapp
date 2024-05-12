@@ -75,8 +75,8 @@ def actualizar_user(datos):
             print(user,"actualizado!")
             return datos
     return datos
-        
-            
+
+
 def actualizar_usuario():
     while True:
         datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
@@ -112,3 +112,11 @@ def leer_usuario():
     
 #leer_user(datos)
 #guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
+
+
+#Falta añadir estas dos funciones OJO
+#def nueva_compra_user(datos):
+#def nueva_compra():
+
+#def recomendacion_user(datos):
+#def recomendaciones():

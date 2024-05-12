@@ -22,6 +22,22 @@
             "plan": "30 g + minutos",
             "precio": "30000",
             "duracion": "3 meses"
+        },
+        {
+            "id": "cd",
+            "tipo_servicios": "cd",
+            "referencia": "cd",
+            "plan": "jk",
+            "precio": "jk",
+            "duracion": "jk"
+        },
+        {
+            "id": "puta",
+            "tipo_servicios": "a",
+            "referencia": "a",
+            "plan": "a",
+            "precio": "a",
+            "duracion": "a"
         }
     ],
     "catalogo_productos": []

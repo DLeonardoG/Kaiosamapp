@@ -74,18 +74,6 @@
         },
         {
             "edad": 18,
-            "documento": "ds",
-            "nombre": "ds",
-            "apellido": "sd",
-            "sexo": "ds",
-            "ciudad": "ds",
-            "direccion": "sd",
-            "telefono": "sd",
-            "email": "sd",
-            "categoria": "sd"
-        },
-        {
-            "edad": 18,
             "documento": "123456789",
             "nombre": "goku",
             "apellido": "sonias}",
