@@ -1,4 +1,4 @@
-from modules.funciones_secundarias import reportar_error_a_txt,telefono_valido,int_edad,clear_screen,very
+from modules.funciones_secundarias import reportar_error_a_txt,telefono_valido,int_edad,very
 from modules.funciones_secundarias import sexo,clear_screen,very
 from modules.datos_users import *
 
