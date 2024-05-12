@@ -3,6 +3,7 @@ from importaciones import *
 
 while True:
     clear_screen()
+    diseño_logo()
     mostrar_txt(principal)
     op = input("Ingrese una opción:\n👉  ")
     
@@ -33,8 +34,11 @@ while True:
                 elif op_m_1_1 == "6":
                     print("recomendaciones_usuario")    
                     
-                        
                 elif op_m_1_1 == "0":
+                    print("menu_anterior")
+                    
+                elif op_m_1_1 == "00":
+                    print("Volver al menu principal")
                     break
                 else:
                     print("opcion_no_valida")
@@ -50,7 +54,14 @@ while True:
                     print("registrar_pqr")
                 elif op_m_1_2 == "3":
                     print("Eliminar_pqr")
+                
+                
                 elif op_m_1_2 == "0":
+                    print("menu_anterior")
+
+
+                elif op_m_1_2 == "00":
+                    print("Volver al menu principal")
                     break
                 else:
                     print("opcion_no_valida")
@@ -64,7 +75,13 @@ while True:
                     print("analisis_general")
                 elif op_m_1_3 == "2":
                     print("analisis_cliente")
+                
+                
                 elif op_m_1_3 == "0":
+                    print("menu_anterior")
+                    
+                elif op_m_1_3 == "00":
+                    print("Volver al menu principal")
                     break
                 else:
                     print("opcion_no_valida")
@@ -83,11 +100,20 @@ while True:
                     print ("factura_usuario")
                 elif op_m_1_4 == "5":
                     print ("nueva_compra_usuario")
+                
+                
                 elif op_m_1_4 == "0":
+                    print("menu_anterior")
+
+                elif op_m_1_4 == "00":
+                    print("Volver al menu principal")
                     break
                 else:
                     print("opcion_no_valida")
-            elif op_m_1 == "0":    
+            
+            
+            elif op_m_1 == "0":
+                print("menu_anterior")
                 break
             else:
                 print("opcion_no_valida")
@@ -104,10 +130,19 @@ while True:
                 print("Ha seleccionado Opción 3")
             elif op_2 == "4":
                 print("Ha seleccionado Opción 4")
+            
+            
             elif op_2 == "0":
+                print("menu_anterior")
+
+
+            elif op_2 == "00":
+                print("Volver al menu principal")
                 break
             else:
                 print("opcion_no_valida")
     elif op == "0":
-        print("Saliendo del programa...")
+        clear_screen()
+        diseño_logo()
+        print ("Saliendo del programa...")
         break
