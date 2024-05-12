@@ -6,7 +6,7 @@ from modules.funciones_secundarias import clear_screen
 
 #funcionamiento interno
 from modules.datos_users import *
-from modules.gestion_usuarios import crear_usuario
+from modules.gestion_usuarios import crear_usuario,eliminar_usuario,actualizar_usuario
 
 
 

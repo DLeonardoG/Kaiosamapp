@@ -1009,3 +1009,25 @@
 2024-05-12 18:34:16: (ValueError('documento', 1, ' no es valido'), 'Error al registrar documento')
 2024-05-12 18:34:16: Error al registrar telefono
 2024-05-12 18:43:19: (ValueError('documento', 11, ' no es valido'), 'Error al registrar documento')
+2024-05-12 18:58:17: (ValueError("invalid literal for int() with base 10: '/home/codespace/.python/current/bin/python3 /workspaces/proyecto/kaiosamapp/main.py'"), 'Error al registrar edad')
+2024-05-12 18:59:03: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 18:59:37: Error al registrar telefono
+2024-05-12 18:59:37: Error al registrar telefono
+2024-05-12 19:00:55: (ValueError("invalid literal for int() with base 10: '/home/codespace/.python/current/bin/python3 /workspaces/proyecto/kaiosamapp/modules/gestion_usuarios.py'"), 'Error al registrar edad')
+2024-05-12 19:00:55: (ValueError("invalid literal for int() with base 10: '/home/codespace/.python/current/bin/python3 /workspaces/proyecto/kaiosamapp/modules/gestion_usuarios.py'"), 'Error al registrar edad')
+2024-05-12 19:03:31: Opcion de menu no valida
+2024-05-12 19:03:31: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 19:03:31: (ValueError('Edad ', 12, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 19:03:31: Error al registrar telefono
+2024-05-12 19:03:31: Opcion de menu no valida
+2024-05-12 19:05:54: Opcion de menu no valida
+2024-05-12 19:05:54: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 19:05:54: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 19:05:54: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 19:05:54: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 19:05:54: (ValueError('Edad ', 11, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 19:05:54: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 19:05:54: Error al registrar telefono
+2024-05-12 19:05:54: Opcion de menu no valida
+2024-05-12 19:05:54: Opcion de menu no valida
+2024-05-12 19:10:09: Opcion de menu no valida

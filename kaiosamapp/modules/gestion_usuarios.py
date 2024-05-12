@@ -3,15 +3,21 @@ from modules.datos_users import *
 
 
 
+
 def registrar_user(datos):
     datos = dict(datos)
     usuarios={}
-    usuarios["documento"] = int(input("Ingrese el documento: "))
-    for i in range(len(datos["usuarios"])):
-        if datos["usuarios"][i]["documento"] == usuarios["documento"]:
-            print (datos["usuarios"][i]["documento"],"ya se encuentra registrado!")
-            return datos
-            #break
+    try:
+        usuarios["documento"]=input("Ingrese el documento: ")
+        for i in range(len(datos["usuarios"])):
+            if datos["usuarios"][i]["documento"] == usuarios["documento"]:
+                print (datos["usuarios"][i]["documento"],"ya se encuentra registrado!")
+                return datos
+                
+    except Exception as e:
+        reportar_error_a_txt(e)
+        usuarios["documento"] = ""
+    
     int_edad(usuarios)
     usuarios["nombre"]=input("Ingrese el nombre: ")
     usuarios["apellido"]=input("Ingrese el apellido: ")
@@ -36,14 +42,7 @@ def crear_usuario():
             datos = registrar_user(datos)
             guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
             break
-crear_usuario()
-
-
-
-
-
-
-
+#crear_usuario()
 
 def eliminar_user(datos):
     datos = dict(datos)
@@ -56,6 +55,13 @@ def eliminar_user(datos):
             break
     return datos
 
+def eliminar_usuario():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
+        datos = eliminar_user(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
+        break
+
 #eliminar_user(datos)
 
 def actualizar_user(datos):
@@ -65,6 +71,13 @@ def actualizar_user(datos):
         if datos["usuarios"][i]["documento"] == documento:
             print ("Actulice el nombre:")
             datos["usuarios"][i]["nombre"]=input("Ingrese el nombre nuevo: ")
+            
+def actualizar_usuario():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
+        datos = actualizar_user(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
+        break
 #actualizar_user(datos)
 
 def leer_user(datos):
