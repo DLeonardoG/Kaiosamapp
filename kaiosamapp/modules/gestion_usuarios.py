@@ -1,4 +1,4 @@
-from modules.funciones_secundarias import reportar_error_a_txt,documento_valido,telefono_valido,int_edad,sexo,int_documento,int_telefono,str_sexo
+from modules.funciones_secundarias import reportar_error_a_txt,telefono_valido,int_edad
 from modules.datos_users import *
 
 
@@ -6,17 +6,18 @@ from modules.datos_users import *
 def registrar_user(datos):
     datos = dict(datos)
     usuarios={}
-    documento_valido(usuarios)
+    usuarios["documento"] = int(input("Ingrese el documento: "))
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == usuarios["documento"]:
             print (datos["usuarios"][i]["documento"],"ya se encuentra registrado!")
             return datos
-    
+            #break
     int_edad(usuarios)
     usuarios["nombre"]=input("Ingrese el nombre: ")
     usuarios["apellido"]=input("Ingrese el apellido: ")
     telefono_valido(usuarios)
-    sexo(usuarios)
+
+    usuarios["sexo"]=input("Ingrese el sexo (masculino, femenino, otro): ")
     usuarios["ciudad"]=input("Ingrese la ciudad: ")
     usuarios["direccion"]=input("Ingrese la direccion: ")
     usuarios["email"]=input("Ingrese el email: ")
@@ -24,7 +25,7 @@ def registrar_user(datos):
     usuarios["registro_servicios"]=[]
     usuarios["registro_productos"]=[]
     usuarios["registro_pqr"]=[]
-
+    
     datos["usuarios"].append(usuarios)
     print( usuarios["nombre"],usuarios["apellido"],"registrado con éxito!")
     return datos
@@ -35,7 +36,7 @@ def crear_usuario():
             datos = registrar_user(datos)
             guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
             break
-#crear_usuario()
+crear_usuario()
 
 
 

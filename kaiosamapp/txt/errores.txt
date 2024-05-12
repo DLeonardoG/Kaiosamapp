@@ -817,3 +817,195 @@
 2024-05-12 17:00:02: Opcion de menu no valida
 2024-05-12 17:00:02: Opcion de menu no valida
 2024-05-12 17:03:12: Opcion de menu no valida
+2024-05-12 17:03:12: Opcion de menu no valida
+2024-05-12 17:07:14: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:07:14: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:07:14: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:07:14: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:07:14: (ValueError('Edad ', 11, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:07:14: (ValueError("invalid literal for int() with base 10: ''"), 'Error al registrar edad')
+2024-05-12 17:07:14: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:07:14: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:07:14: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:07:14: (ValueError('Edad ', 1, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:07:14: Error al registrar telefono
+2024-05-12 17:07:14: Error al registrar telefono
+2024-05-12 17:07:14: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:07:14: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:07:14: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:07:14: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:07:14: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:07:14: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:07:14: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:07:14: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:12:18: (ValueError("invalid literal for int() with base 10: '1wd'"), 'Error al registrar documento')
+2024-05-12 17:12:18: (ValueError("invalid literal for int() with base 10: 'das'"), 'Error al registrar documento')
+2024-05-12 17:12:18: (ValueError('Edad ', 13, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:12:18: (ValueError("invalid literal for int() with base 10: 'f'"), 'Error al registrar telefono')
+2024-05-12 17:12:18: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:12:18: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:12:18: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:12:18: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:12:18: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:12:18: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:12:18: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:14:48: Error al registrar telefono
+2024-05-12 17:14:48: Error al registrar telefono
+2024-05-12 17:14:48: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:14:48: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:14:48: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:14:48: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:14:48: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:16:30: Error al registrar telefono
+2024-05-12 17:16:30: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:16:30: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:16:30: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:16:30: (ValueError('sexo ', 'mm', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:16:30: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:16:30: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:16:30: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:16:30: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:16:30: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:16:30: (KeyError('sexo'), 'Error al registrar sexo')
+2024-05-12 17:18:52: Error al registrar telefono
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:18:52: El sexo no es un sexo valido
+2024-05-12 17:22:28: Error al registrar documento
+2024-05-12 17:22:28: (ValueError('sexo ', 'fff', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:22:28: (ValueError('sexo ', 'ff', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:22:28: (ValueError('sexo ', 'ff', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:22:28: (ValueError('sexo ', '/home/codespace/.python/current/bin/python3 /workspaces/proyecto/kaiosamapp/main.py', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:32:25: (ValueError('Edad ', 3, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 17:32:25: (ValueError('sexo ', 'd', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:32:25: (ValueError('sexo ', 'd', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:32:25: (ValueError('sexo ', 'd', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:32:25: (ValueError('sexo ', 's', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:32:25: (ValueError('sexo ', 'g', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:32:25: (ValueError('sexo ', '1', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:32:25: (ValueError('sexo ', '1', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:33:51: Opcion de menu no valida
+2024-05-12 17:33:51: Error al registrar telefono
+2024-05-12 17:33:51: (ValueError('sexo ', 'd', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:33:51: (ValueError('sexo ', '1', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:33:51: (ValueError('sexo ', '1', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:33:51: (ValueError('sexo ', '1', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:33:51: (ValueError('sexo ', '1', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:33:51: (ValueError('sexo ', '1', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:33:51: (ValueError('sexo ', '', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:33:51: (ValueError('sexo ', '11', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:33:51: (ValueError('sexo ', '1', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:33:51: (ValueError('sexo ', '', ' no es valido'), 'Error al registrar sexo')
+2024-05-12 17:41:05: (ValueError("invalid literal for int() with base 10: 'n'"), 'Error al registrar telefono')
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:41:05: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar telefono
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:42:26: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar documento
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:45:17: Error al registrar sexo
+2024-05-12 17:52:59: Error al registrar telefono
+2024-05-12 17:52:59: Error al registrar sexo
+2024-05-12 17:52:59: Error al registrar sexo
+2024-05-12 17:52:59: Error al registrar sexo
+2024-05-12 17:56:32: Error al registrar documento
+2024-05-12 18:11:02: Error al registrar documento
+2024-05-12 18:11:02: Error al registrar documento
+2024-05-12 18:12:51: Opcion de menu no valida
+2024-05-12 18:12:51: Error al registrar documento
+2024-05-12 18:14:04: Error al registrar documento
+2024-05-12 18:14:04: Error al registrar documento
+2024-05-12 18:14:04: Error al registrar documento
+2024-05-12 18:14:21: Error al registrar documento
+2024-05-12 18:14:21: (ValueError("invalid literal for int() with base 10: ''"), 'Error al registrar edad')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'dehd'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ede'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'd'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'e'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ded'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ed'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ed'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ed'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ed'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ed'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ed'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ed'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ed'"), 'Error al registrar documento')
+2024-05-12 18:14:55: (ValueError("invalid literal for int() with base 10: 'ed'"), 'Error al registrar documento')
+2024-05-12 18:23:14: (ValueError("invalid literal for int() with base 10: 'sd'"), 'Error al registrar edad')
+2024-05-12 18:23:14: (ValueError("invalid literal for int() with base 10: 'sa'"), 'Error al registrar edad')
+2024-05-12 18:23:14: (ValueError("invalid literal for int() with base 10: 'd12'"), 'Error al registrar edad')
+2024-05-12 18:23:14: (ValueError('Edad ', 17, ' es menor a 18'), 'Error al registrar edad')
+2024-05-12 18:27:02: Opcion de menu no valida
+2024-05-12 18:27:02: (ValueError('documento', 1, ' no es valido'), 'Error al registrar documento')
+2024-05-12 18:27:02: (ValueError('documento', 1, ' no es valido'), 'Error al registrar documento')
+2024-05-12 18:34:16: (ValueError('documento', 1, ' no es valido'), 'Error al registrar documento')
+2024-05-12 18:34:16: (ValueError('documento', 1, ' no es valido'), 'Error al registrar documento')
+2024-05-12 18:34:16: (ValueError('documento', 1, ' no es valido'), 'Error al registrar documento')
+2024-05-12 18:34:16: Error al registrar telefono
+2024-05-12 18:43:19: (ValueError('documento', 11, ' no es valido'), 'Error al registrar documento')

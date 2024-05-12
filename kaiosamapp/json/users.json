@@ -185,6 +185,66 @@
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
+        },
+        {
+            "documento": 78978978,
+            "edad": 78,
+            "nombre": "n",
+            "apellido": "n",
+            "telefono": 7897897897,
+            "sexo": "Masculino",
+            "ciudad": "gotica",
+            "direccion": "f",
+            "email": "f",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": 78978978,
+            "edad": 19,
+            "nombre": "g",
+            "apellido": "g",
+            "telefono": 3155370033,
+            "sexo": "masculino",
+            "ciudad": "gotica",
+            "direccion": "a",
+            "email": "a",
+            "categoria": "a",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": 78978978,
+            "edad": 31,
+            "nombre": "g",
+            "apellido": "g",
+            "telefono": 5555555555,
+            "sexo": "masculino",
+            "ciudad": "g",
+            "direccion": "g",
+            "email": "g",
+            "categoria": "g",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": 11111111,
+            "edad": 111,
+            "nombre": "111",
+            "apellido": "11",
+            "telefono": 1111111111,
+            "sexo": "masculino",
+            "ciudad": "1",
+            "direccion": "1",
+            "email": "1",
+            "categoria": "1",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
         }
     ]
 }

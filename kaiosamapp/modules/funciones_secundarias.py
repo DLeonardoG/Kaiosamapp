@@ -45,9 +45,11 @@ def int_documento(usuarios):
         try:
             usuarios["documento"] = int(input("Ingrese el documento: "))
             if isinstance(usuarios["documento"], int):
-                return usuarios["documento"]
-            else:
-                raise ValueError("documento", usuarios["documento"]," no es valido")
+                cad = str(usuarios["documento"])  
+                if len(cad)>= 8 and len(cad)<= 10:
+                    return usuarios["documento"]
+                else:
+                    raise ValueError("documento", usuarios["documento"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar documento"
             reportar_error_a_txt(e)
@@ -66,17 +68,12 @@ def int_telefono(usuarios):
             reportar_error_a_txt(e)
             print("Ingrese un telefono valido")
 
-def documento_valido(usuarios):  
-    while True:
-        int_documento(usuarios)
-        cad = str(usuarios["documento"])  
-        if len(cad)>= 8 and len(cad)<= 10:
-            break
-        else:
-            dm = "Error al registrar documento"
-            reportar_error_a_txt(dm)
-            print("El documento debe tener entre 8 y 10 digitos")
-            usuarios["documento"] = ""
+def for_doc(usuarios):
+    int_documento(usuarios)
+    return usuarios["documento"]
+
+    
+
             
 def telefono_valido(usuarios):    
     while True:
@@ -89,37 +86,25 @@ def telefono_valido(usuarios):
             reportar_error_a_txt(dm)
             print("El numero de telefono debe tener 10 digitos")
             usuarios["telefono"] = ""
-
             
-def str_sexo(usuarios):
-    while True:
-        try:
-            sexo = input("S e x o\nm . m a s c u l i n o\nf . f e m e n i n o\no . o t r o\n>>> ")
-            if isinstance(sexo, str):
-                return usuarios["sexo"]
-            else:
-                raise ValueError("sexo ", sexo," no es valido")
-        except Exception as e:
-            e = e,"Error al registrar sexo"
-            reportar_error_a_txt(e)
-            print("Ingrese un sexo valido")
-
 def sexo(usuarios):    
     while True:
-        str_sexo(usuarios)
-        
-        if len(sexo) == "m":
-            usuarios["sexo"] = "masculino"
+        op = input("Ingrese el sexo: \n 1. Masculino \n 2. Femenino \n 3. Otro\n>>>")
+        if op == "1":
+            usuarios["sexo"] = "masculino"                    
             break
-        elif len(sexo) == "f":
-            usuarios["sexo"] = "femenino"
+        elif op == "2":
+            usuarios["sexo"] = "femenino"                    
             break
-        elif len(sexo) == "o":
-            usuarios["sexo"] = "otro"
+        elif op == "3":
+            usuarios["sexo"] = "otro"                    
             break
         else:
-            dm = "El sexo no es un sexo valido"
+            dm = "Error al registrar sexo"
             reportar_error_a_txt(dm)
-            print("El sexo ",sexo," no es un sexo valido")
-            usuarios["sexo"] = ""
+            print("El sexo no es valido")
+            usuarios["sexo"] = ""   
+
+
+
 #def doc_existe(usuarios,datos): 
