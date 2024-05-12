@@ -1,5 +1,5 @@
-from funciones_secundarias import reportar_error_a_txt
-from datos_users import *
+from modules.funciones_secundarias import reportar_error_a_txt
+from modules.datos_users import *
 
 
 
@@ -28,7 +28,10 @@ def registrar_user(datos):
     print( usuarios["nombre"],usuarios["apellido"],"registrado con éxito!")
     return datos
 
-#registrar_user(datos)
+def crear_usuario():
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
+        datos = registrar_user(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
 
 
 def eliminar_user(datos):

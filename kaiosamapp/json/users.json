@@ -59,6 +59,30 @@
             "telefono": "666",
             "email": "dark",
             "categoria": "nuevo"
+        },
+        {
+            "edad": 18,
+            "documento": "123456",
+            "nombre": "lloro",
+            "apellido": "de felicidad",
+            "sexo": "masculino",
+            "ciudad": "cdv",
+            "direccion": "cdvbd",
+            "telefono": "cdvd",
+            "email": "cdcd",
+            "categoria": "nuevo"
+        },
+        {
+            "edad": 18,
+            "documento": "ds",
+            "nombre": "ds",
+            "apellido": "sd",
+            "sexo": "ds",
+            "ciudad": "ds",
+            "direccion": "sd",
+            "telefono": "sd",
+            "email": "sd",
+            "categoria": "sd"
         }
     ]
 }

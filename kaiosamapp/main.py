@@ -1,7 +1,7 @@
 from importaciones import *
 
 while True:
-    #clear_screen()
+    clear_screen()
     diseño_logo()
     mostrar_txt(principal)
     op = input("Ingrese una opción:\n👉  ")
@@ -21,7 +21,7 @@ while True:
                     op_m_1_1 = input("Seleccione una opcion:\n👉   ")
                     if op_m_1_1 == "1":
                         while True:
-                            print("crear_usuario")                            
+                            crear_usuario()                          
                             break
                         
                     elif op_m_1_1 == "2":

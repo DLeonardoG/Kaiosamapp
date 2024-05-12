@@ -1,4 +1,4 @@
-from kaiosamapp.modules.gestion_usuarios import *
+from gestion_usuarios import *
 from datos_users import *
 from funciones_secundarias import *
 #from menu_1 import *
