@@ -82,7 +82,7 @@
             "caracteristicas": 
             [
                 {
-                    "color":"negro",
+                    "color":"negro", 
                     "memoria":"128G",
                     "generacion":"5G",
                     "camara": "48 MP",
@@ -136,12 +136,7 @@
             "marca":"apple",
             "caracteristicas": [
                 {
-                    "color":"azul",
-                    "memoria":"1tb ",
-                    "ram":"Ram 24gb",
-                    "generacion":"Intel Core I9",
-                    "resolucion":"Led 16",      
-                    "procesador":"13900h"             
+                    "color":"azul", "memoria":"1tb ", "ram":"Ram 24gb", "generacion":"Intel Core I9", "resolucion":"Led 16", "procesador":"13900h"
                 }
         
             ],

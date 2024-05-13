@@ -1,4 +1,4 @@
-from modules.funciones_secundarias import reportar_error_a_txt
+from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida
 
 def int_id(catalogo_productos):
     while True:
@@ -22,17 +22,66 @@ def id_valido(catalogo_productos):
             print("El numero de id debe tener 5 digitos")
             catalogo_productos["id"] = ""
             
+def int_modelo(catalogo_productos):
+    while True:
+        try:
+            catalogo_productos["caracteristicas"]["modelo"] = int(input("Ingrese el modelo del kame TV: "))
+            if isinstance(catalogo_productos["caracteristicas"]["modelo"], int) and catalogo_productos["caracteristicas"]["modelo"] >= 2016: 
+                catalogo_productos["caracteristicas"]["modelo"] = str(catalogo_productos["caracteristicas"]["modelo"])
+                break
+            else: raise ValueError("El modelo del kame TV ", catalogo_productos["caracteristicas"]["modelo"]," no es valido")
+        except Exception as e:
+            e = e,"Error al registrar modelo del kame TV"
+            reportar_error_a_txt(e)
+            print("Ingrese un modelo del kame TV valido")
+            
 def tipo_productos(catalogo_productos):    
     while True:
         op = input("Ingrese el tipo de Kame producto: \n    1. Kame celular\n    2. kame tv\n    3. kame computador\n    4. Combo Dragon\n>>    ")
         if op == "1": 
-            catalogo_productos["tipo_productos"] = "kame_celular"                    
+            catalogo_productos["tipo_productos"] = "kame_celular"
+            catalogo_productos["caracteristicas"]={"color":"negro", "memoria":"128G", "generacion":"5G", "camara": "48 MP", "resolucion":"2.778 x 1.284 píxeles", "bateria":"4.383 mah"}
+            catalogo_productos["caracteristicas"]["color"] = input("Ingrese el color (o colores disponibles) del kame celular: ")
+            catalogo_productos["caracteristicas"]["memoria"] = input("Ingrese la memoria del kame celular: ")
+            catalogo_productos["caracteristicas"]["generacion"] = input("Ingrese la generacion del kame celular: ")
+            catalogo_productos["caracteristicas"]["camara"] = input("Ingrese la camara del kame celular: ")
+            catalogo_productos["caracteristicas"]["resolucion"] = input("Ingrese la resolucion del kame celular: ")
+            catalogo_productos["caracteristicas"]["bateria"] = input("Ingrese la bateria del kame celular: ")
+            catalogo_productos["code_unico"] = "0012"
             break
         elif op == "2":
-            catalogo_productos["tipo_productos"] = "kame_tv"                    
+            catalogo_productos["tipo_productos"] = "kame_tv"
+            catalogo_productos["caracteristicas"]={"resolucion":"Full HD", "pulgadas":"40", "smart_tv":"si", "modelo":"2024"}
+            catalogo_productos["caracteristicas"]["resolucion"] = input("Ingrese la resolucion del kame TV: ")                 
+            catalogo_productos["caracteristicas"]["pulgadas"] = input("Ingrese las pulgadas del kame TV: ")
+            while True:
+                smart_tv = input("¿Es Smart TV?\n    1 . Si\n    2 . No\n��  ")
+                if smart_tv == "1": 
+                    smart_tv = "si"
+                    break
+                elif smart_tv == "2": 
+                    smart_tv = "no"
+                    break
+                else: opcion_no_valida()     
+            catalogo_productos["caracteristicas"]["smart_tv"] = smart_tv
+            while True:
+                voice = input("¿El kame TV tiene comando de voice?\n    1 . Si\n    2 . No\n��  ")
+                if voice == "1": 
+                    voice = "si"
+                    break
+                elif voice == "2": 
+                    voice = "no"
+                    break
+                else: opcion_no_valida()     
+            catalogo_productos["caracteristicas"]["voice"] = voice
+            int_modelo(catalogo_productos)
+            catalogo_productos["code_unico"] = "0022"
             break
         elif op == "3":
-            catalogo_productos["tipo_productos"] = "kame_computador"                    
+            catalogo_productos["tipo_productos"] = "kame_computador"  
+            catalogo_productos["caracteristicas"]={"color":"azul", "memoria":"1tb ", "ram":"Ram 24gb", "generacion":"Intel Core I9", "resolucion":"Led 16", "procesador":"13900h"}
+            catalogo_productos["caracteristicas"]["pulgadas"] = input("Ingrese las pulgadas del kame TV: ")
+            catalogo_productos["code_unico"] = "0032"            
             break
         else:
             dm = "Error al registrar tipo_productos"

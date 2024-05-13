@@ -22,7 +22,7 @@ def crear_product(datos):
     catalogo_productos["referencia"]=input("Ingrese la referencia: ")
     catalogo_productos["marca"]=input("Ingrese el marca: ")
     int_precio(catalogo_productos)
-    catalogo_productos["duracion"]=input("Ingrese la duracion: ")
+    catalogo_productos["garantia"]=input("Ingrese la garantia: ")
     catalogo_productos["descripcion"]=input("Ingrese la descripcion: ")
     int_cantidad_total(catalogo_productos)
     catalogo_productos["cantidad_vendida"]=0
