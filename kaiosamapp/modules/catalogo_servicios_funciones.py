@@ -1,6 +1,5 @@
 from modules.funciones_secundarias import reportar_error_a_txt
 
-
 def int_id(catalogo_servicios):
     while True:
         try:
@@ -25,7 +24,7 @@ def id_valido(catalogo_servicios):
             
 def tipo_servicios(catalogo_servicios):    
     while True:
-        op = input("Ingrese el tipo_servicios: \n    1. Fibra optica Namekusei\n    2. Pospago Roshi\n    3. Prepago Krillin\n    4. Combo Dragon\n>>    ")
+        op = input("Ingrese el tipo de servicios: \n    1. Fibra optica Namekusei\n    2. Pospago Roshi\n    3. Prepago Krillin\n    4. Combo Dragon\n>>    ")
         if op == "1": 
             catalogo_servicios["tipo_servicios"] = "fibra_optica_namekusei"                    
             break

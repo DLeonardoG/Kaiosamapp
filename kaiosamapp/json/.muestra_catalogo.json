@@ -74,7 +74,7 @@
         {
             
             "id":"123",
-            "tipo_producto": "celular",
+            "tipo_producto": "kame_celular",
             "referencia":"iphone 15",
             "precio": 10000,
             
@@ -104,7 +104,7 @@
         {
             
             "id":"12345",
-            "tipo_producto": "tv",
+            "tipo_producto": "kame_tv",
             "referencia":"smart tv",
             "precio": 20000,
             "marca":"lg",
@@ -130,7 +130,7 @@
         {
             
             "id":"1234",
-            "tipo_producto": "portatil",
+            "tipo_producto": "kame_computador",
             "referencia":"Portatil Asus",
             "precio": 10,
             "marca":"apple",

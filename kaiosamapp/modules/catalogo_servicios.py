@@ -5,7 +5,7 @@ from modules.catalogo_servicios_funciones import id_valido,tipo_servicios,int_pr
 from modules.catalogo_servicios_funciones import int_nuevo,int_regular,int_leal,int_cantidad_total
 from modules.catalogo_servicios_funciones import modificar
 
-def crear_servicie(datos):
+def crear_service(datos):
     datos = dict(datos)
     catalogo_servicios={}
     catalogo_servicios["code"] = "0001"
@@ -38,7 +38,7 @@ def crear_servicie(datos):
 def crear_servicio():
     while True:
         datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
-        datos = crear_servicie(datos)
+        datos = crear_service(datos)
         guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
         continuar = very()
         if continuar == "2": break
