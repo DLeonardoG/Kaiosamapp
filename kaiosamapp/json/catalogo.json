@@ -41,7 +41,7 @@
         },
         {
             "code": "0001",
-            "id": 12345,
+            "id": "12342",
             "tipo_servicios": "pospago",
             "referencia": "oozaru",
             "plan": "min + ilimidatos",
@@ -74,6 +74,51 @@
                 "nuevo": "10",
                 "regular": "1",
                 "leal": "40"
+            }
+        },
+        {
+            "code": "0001",
+            "id": "98765",
+            "tipo_servicios": "fibra_optica_namekusei",
+            "referencia": "pik",
+            "plan": "el mejor ",
+            "precio": 10,
+            "duracion": "2",
+            "descripcion": "el mejor",
+            "descuento": {
+                "nuevo": "d",
+                "regular": "x",
+                "leal": "x"
+            }
+        },
+        {
+            "code": "0001",
+            "id": "12345",
+            "tipo_servicios": "pospago_roshi",
+            "referencia": "f",
+            "plan": "d",
+            "precio": 12,
+            "duracion": "2 meses",
+            "descripcion": "buenisimo",
+            "descuento": {
+                "nuevo": "w",
+                "regular": "w",
+                "leal": "w"
+            }
+        },
+        {
+            "code": "0001",
+            "id": "23456",
+            "tipo_servicios": "combo_dragon",
+            "referencia": "mejor combo dragon",
+            "plan": "minutos mas datos",
+            "precio": 90000,
+            "duracion": "1 mws",
+            "descripcion": "es el mejor como yo",
+            "descuento": {
+                "nuevo": 2,
+                "regular": 1,
+                "leal": 6
             }
         }
     ],

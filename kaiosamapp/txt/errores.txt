@@ -1217,3 +1217,34 @@
 2024-05-13 00:28:19: Error al registrar id
 2024-05-13 00:35:31: Error al registrar id
 2024-05-13 00:41:18: Error al registrar telefono
+2024-05-13 01:04:51: Error al registrar id
+2024-05-13 01:04:51: Error al registrar id
+2024-05-13 01:04:51: Error al registrar id
+2024-05-13 01:04:51: Error al registrar id
+2024-05-13 01:04:51: Error al registrar id
+2024-05-13 01:04:51: (ValueError("invalid literal for int() with base 10: 'd'"), 'Error al registrar precio')
+2024-05-13 01:04:51: (ValueError("invalid literal for int() with base 10: 'c'"), 'Error al registrar precio')
+2024-05-13 01:04:51: (ValueError("invalid literal for int() with base 10: 'x'"), 'Error al registrar precio')
+2024-05-13 01:04:51: (ValueError("invalid literal for int() with base 10: 's'"), 'Error al registrar precio')
+2024-05-13 01:15:21: Opcion de menu no valida
+2024-05-13 01:15:21: Opcion de menu no valida
+2024-05-13 01:15:21: Opcion de menu no valida
+2024-05-13 01:15:21: Opcion de menu no valida
+2024-05-13 01:15:21: Opcion de menu no valida
+2024-05-13 01:15:21: Opcion de menu no valida
+2024-05-13 01:15:21: Opcion de menu no valida
+2024-05-13 01:15:21: Opcion de menu no valida
+2024-05-13 01:15:21: Error al registrar id
+2024-05-13 01:15:21: Error al registrar id
+2024-05-13 01:15:21: (ValueError("invalid literal for int() with base 10: 'd'"), 'Error al registrar precio')
+2024-05-13 01:15:21: (ValueError("invalid literal for int() with base 10: 'd'"), 'Error al registrar precio')
+2024-05-13 01:15:21: (ValueError("invalid literal for int() with base 10: 'x'"), 'Error al registrar precio')
+2024-05-13 01:31:26: (ValueError("invalid literal for int() with base 10: 's'"), 'Error al registrar id')
+2024-05-13 01:31:26: (ValueError("invalid literal for int() with base 10: 'd'"), 'Error al registrar id')
+2024-05-13 01:31:26: (ValueError("invalid literal for int() with base 10: 's'"), 'Error al registrar id')
+2024-05-13 01:31:26: Error al registrar id
+2024-05-13 01:31:26: Error al registrar id
+2024-05-13 01:31:26: (ValueError("invalid literal for int() with base 10: 'f'"), 'Error al registrar descuento para usuarios nuevos')
+2024-05-13 01:31:26: (ValueError("invalid literal for int() with base 10: 'c'"), 'Error al registrar descuento para usuarios nuevos')
+2024-05-13 01:31:26: (ValueError("invalid literal for int() with base 10: 's'"), 'Error al registrar descuento para usuarios nuevos')
+2024-05-13 01:31:26: (ValueError("invalid literal for int() with base 10: 'a'"), 'Error al registrar descuento para usuarios nuevos')
