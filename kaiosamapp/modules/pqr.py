@@ -1,14 +1,13 @@
 from modules.datos_pqr import *
 from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida
 from modules.funciones_secundarias import clear_screen,very,fecha
-from modules.pqr_funciones import id_valido,tipo_pqr
+from modules.pqr_funciones import id_valido,tipo_pqr,contador_id
 
 def create_pqr(datos):
     datos = dict(datos)
     pqr={}
     pqr["code"] = "0003"
-    id = 00000
-    id += 1
+    id = contador_id()
     pqr["id"] = id
     tipo_pqr(pqr)
     pqr["motivo"]=input("Ingrese el motivo: ")
@@ -17,7 +16,7 @@ def create_pqr(datos):
     pqr["repuesta"] = ""
 
     datos["pqr"].append(pqr)
-    print( pqr["comentario"],pqr["marca"],"registrado con éxito!")
+    print( "El id de PQR es ", pqr["id"],"PQR registrada con exito!")
     return datos
 
 def registrar_pqr():
@@ -30,7 +29,7 @@ def registrar_pqr():
         else: clear_screen()
         
 
-def consultar_pqr():
+
 
 
 

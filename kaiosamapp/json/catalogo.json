@@ -142,6 +142,24 @@
                 "regular": 1,
                 "leal": 2
             }
+        },
+        {
+            "code": "0001",
+            "id": "12345",
+            "tipo_servicios": "fibra_optica_namekusei",
+            "code_unico": "0011",
+            "referencia": "valeria",
+            "plan": "pegarle a valeria",
+            "precio": 1100,
+            "duracion": "ma\u00f1ana",
+            "descripcion": "me gusta programar",
+            "cantidad_total": 100,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 12,
+                "regular": 45,
+                "leal": 0
+            }
         }
     ],
     "catalogo_productos": [

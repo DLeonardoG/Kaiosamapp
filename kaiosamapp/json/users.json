@@ -331,21 +331,6 @@
             "registro_pqr": []
         },
         {
-            "documento": "f",
-            "edad": 34,
-            "nombre": "luis",
-            "apellido": "arciniegas",
-            "telefono": 2323232323,
-            "sexo": "Masculino",
-            "ciudad": "f",
-            "direccion": "f",
-            "email": "f",
-            "categoria": "f",
-            "registro_servicios": [],
-            "registro_productos": [],
-            "registro_pqr": []
-        },
-        {
             "documento": "098",
             "edad": 90,
             "nombre": "gothen",
@@ -365,6 +350,21 @@
                     "fecha": "90473847"
                 }
             ],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": "1097123228",
+            "edad": 18,
+            "nombre": "Valerona",
+            "apellido": "Mantilla Gomez",
+            "telefono": 3152813518,
+            "sexo": "Femenino",
+            "ciudad": "Bucaramanga",
+            "direccion": "Cra 20 8-25",
+            "email": "valeriamg@gmail.com",
+            "categoria": "nuevo",
+            "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
         }

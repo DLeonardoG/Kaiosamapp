@@ -1,6 +1,5 @@
+import csv
 from modules.funciones_secundarias import reportar_error_a_txt
-from modules.pqr_funciones import int_nuevo,int_regular,int_leal,int_cantidad_total
-from modules.pqr_funciones import modificar
 
 def int_id(pqr):
     while True:
@@ -50,3 +49,29 @@ def tipo_pqr(pqr):
             reportar_error_a_txt("Error al registrar tipo de PQR")
             print("Ingrese un tipo de PQR valido")
             pqr["tipo_pqr"] = ""
+def contador_id():
+    class idPQR:
+        def __init__(self, archivo):
+            self.archivo = archivo
+            self.id_id = self.cargar_id()
+        def cargar_id(self):
+            try:
+                with open(self.archivo, 'r') as f:
+                    reader = csv.reader(f)
+                    return int(next(reader)[0])
+            except FileNotFoundError:
+                return 0
+        def guardar_id(self):
+            with open(self.archivo, 'w') as f:
+                writer = csv.writer(f)
+                writer.writerow(['{:05d}'.format(self.id_id)])
+        def registrar_pqr(self):
+            self.id_id += 1
+            self.guardar_id()
+        def obtener_id(self):
+            return '{:06d}'.format(self.id_id)
+    id = idPQR('id_pqr.csv')
+    print("id inicial:", id.obtener_id())
+    id.registrar_pqr()
+    id_pqrs = id.obtener_id()
+    return id_pqrs
