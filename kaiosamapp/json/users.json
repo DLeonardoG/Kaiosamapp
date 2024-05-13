@@ -212,21 +212,6 @@
         },
         {
             "documento": "11111111",
-            "edad": 11111111,
-            "nombre": "11111111",
-            "apellido": "1",
-            "telefono": 3155370033,
-            "sexo": "31",
-            "ciudad": "31",
-            "direccion": "31",
-            "email": "31",
-            "categoria": "31",
-            "registro_servicios": [],
-            "registro_productos": [],
-            "registro_pqr": []
-        },
-        {
-            "documento": "11111111",
             "edad": 45,
             "nombre": "54",
             "apellido": "",
@@ -357,6 +342,29 @@
             "email": "f",
             "categoria": "f",
             "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": "098",
+            "edad": 90,
+            "nombre": "gothen",
+            "apellido": "saiya",
+            "telefono": 3131131331,
+            "sexo": "Masculino",
+            "ciudad": "bucaros",
+            "direccion": "cra 89",
+            "email": "vaido",
+            "categoria": "nuevo",
+            "registro_servicios": [
+                {
+                    "id": "123456",
+                    "tipo_servicios": "fibra_optica_namekusei",
+                    "referencia": "Oozaru",
+                    "precio": 80.0,
+                    "fecha": "90473847"
+                }
+            ],
             "registro_productos": [],
             "registro_pqr": []
         }

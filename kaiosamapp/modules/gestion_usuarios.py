@@ -48,8 +48,11 @@ def eliminar_user(datos):
         if datos["usuarios"][i]["documento"] == documento:
             user = (datos["usuarios"][i]["nombre"],datos["usuarios"][i]["apellido"])
             datos["usuarios"].pop(i)
-            print(user,"eliminado!")
-            break
+            separador = " "
+            user = separador.join(map(str, user))
+            print(user,"eliminado...")
+            return datos
+    print("Usuario no existente...")    
     return datos
 
 def eliminar_usuario():
@@ -73,6 +76,7 @@ def actualizar_user(datos):
             datos["usuarios"][i]["nombre"]=input("Ingrese el nombre nuevo: ")
             print(user,"actualizado!")
             return datos
+    print("Usuario no existente...")    
     return datos
 
 
@@ -90,7 +94,7 @@ def actualizar_usuario():
 def leer_user(datos):
     datos = dict(datos)
     documento =input("Ingrese el documento del usuario: ")
-    for i in range(len(datos["usuarios"])):
+    """for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
             print(datos["usuarios"][i]["nombre"],datos["usuarios"][i]["apellido"])
             print(datos["usuarios"][i]["documento"],"  -  Documento")
@@ -102,7 +106,37 @@ def leer_user(datos):
             print(datos["usuarios"][i]["categoria"],"  -  Categoria")
             print(datos["usuarios"][i]["registro_servicios"],"  -  Registro de servicios")
             print(datos["usuarios"][i]["registro_productos"],"  -  Registro de productos")
+            print(datos["usuarios"][i]["registro_pqr"],"  -  Registro de PQR")"""
+            
+    
+
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == documento:
+            max_length = max(len(datos["usuarios"][i]["nombre"] + " " + datos["usuarios"][i]["apellido"]) for i in range(len(datos["usuarios"])))
+            print(datos["usuarios"][i]["nombre"], datos["usuarios"][i]["apellido"])
+            print(datos["usuarios"][i]["documento"].rjust(max_length), "  -  Documento")
+            print(datos["usuarios"][i]["sexo"].rjust(max_length), "  -  Sexo")
+            print(str(datos["usuarios"][i]["edad"]).rjust(max_length), "  -  Edad")
+            print(datos["usuarios"][i]["ciudad"].rjust(max_length), "  -  Ciudad")
+            print(datos["usuarios"][i]["direccion"].rjust(max_length), "  -  Direccion")
+            print(str(datos["usuarios"][i]["telefono"]).rjust(max_length), "  -  Telefono")
+            print(datos["usuarios"][i]["email"].rjust(max_length), "  -  Email")
+            print(datos["usuarios"][i]["categoria"].rjust(max_length), "  -  Categoria")
+            print(i)
+            print(("---------          Registro de servicios          ---------"))
+            for sn in range(len(datos["usuarios"][i]["registro_servicios"])):
+                max_length_sn = max(len(datos["usuarios"][i]["registro_servicios"][sn]["referencia"] + " " + datos["usuarios"][i]["registro_servicios"][sn]["tipo_servicios"]) for sn_ in range(len(datos["usuarios"][i]["registro_servicios"])))
+                print("")
+                print(datos["usuarios"][i]["registro_servicios"][sn]["referencia"].rjust(max_length_sn) + "   -  " + datos["usuarios"][i]["registro_servicios"][sn]["tipo_servicios"])
+                print(datos["usuarios"][i]["registro_servicios"][sn]["id"].rjust(max_length_sn), "  -  id")
+                print(datos["usuarios"][i]["registro_servicios"][sn]["fecha"].rjust(max_length_sn), "  -  fecha")
+                print(str(datos["usuarios"][i]["registro_servicios"][sn]["precio"]).rjust(max_length_sn), "  -  precio")
+                        
+            print(datos["usuarios"][i]["registro_productos"],"  -  Registro de productos")
             print(datos["usuarios"][i]["registro_pqr"],"  -  Registro de PQR")
+            return datos
+    
+    print("Usuario no existente...")  
     return datos
 
 def leer_usuario():

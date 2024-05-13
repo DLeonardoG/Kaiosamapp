@@ -188,3 +188,36 @@
 2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar descuento para usuarios leales')
 2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: '3e'"), 'Error al registrar descuento para usuarios leales')
 2024-05-13 06:49:55: Opcion de menu no valida
+2024-05-13 11:37:23: (ValueError("invalid literal for int() with base 10: 'f'"), 'Error al registrar edad')
+2024-05-13 11:37:23: (ValueError("invalid literal for int() with base 10: 'f'"), 'Error al registrar edad')
+2024-05-13 11:37:23: (ValueError("invalid literal for int() with base 10: 'd'"), 'Error al registrar edad')
+2024-05-13 11:37:23: (ValueError("invalid literal for int() with base 10: 's'"), 'Error al registrar edad')
+2024-05-13 11:37:23: (ValueError("invalid literal for int() with base 10: 'wd'"), 'Error al registrar telefono')
+2024-05-13 11:37:23: (ValueError("invalid literal for int() with base 10: 'dw'"), 'Error al registrar telefono')
+2024-05-13 11:37:23: Error al registrar telefono
+2024-05-13 11:37:23: Error al registrar telefono
+2024-05-13 11:37:23: (ValueError("invalid literal for int() with base 10: 'dw'"), 'Error al registrar telefono')
+2024-05-13 11:37:23: (ValueError("invalid literal for int() with base 10: 'xz'"), 'Error al registrar telefono')
+2024-05-13 11:37:23: (ValueError("invalid literal for int() with base 10: 'cv'"), 'Error al registrar telefono')
+2024-05-13 11:37:23: Error al registrar telefono
+2024-05-13 11:37:23: Error al registrar sexo
+2024-05-13 11:37:23: Error al registrar sexo
+2024-05-13 11:37:23: Error al registrar sexo
+2024-05-13 11:37:23: Error al registrar sexo
+2024-05-13 11:37:23: Error al registrar sexo
+2024-05-13 11:37:23: Error al registrar sexo
+2024-05-13 11:37:23: Opcion de menu no valida
+2024-05-13 11:37:23: Opcion de menu no valida
+2024-05-13 11:37:23: Opcion de menu no valida
+2024-05-13 11:37:23: Opcion de menu no valida
+2024-05-13 11:37:23: Opcion de menu no valida
+2024-05-13 12:01:02: Opcion de menu no valida
+2024-05-13 12:01:02: Opcion de menu no valida
+2024-05-13 12:47:34: Opcion de menu no valida
+2024-05-13 12:53:34: Opcion de menu no valida
+2024-05-13 13:42:33: Opcion de menu no valida
+2024-05-13 13:49:18: Opcion de menu no valida
+2024-05-13 14:08:53: Opcion de menu no valida
+2024-05-13 14:12:27: Opcion de menu no valida
+2024-05-13 14:32:04: Opcion de menu no valida
+2024-05-13 14:32:53: Opcion de menu no valida
