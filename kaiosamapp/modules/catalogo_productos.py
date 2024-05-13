@@ -18,9 +18,9 @@ def crear_product(datos):
     except Exception as e:
         reportar_error_a_txt(e)
         catalogo_productos["id"] = ""
-    tipo_productos(catalogo_productos)
     catalogo_productos["referencia"]=input("Ingrese la referencia: ")
     catalogo_productos["marca"]=input("Ingrese el marca: ")
+    tipo_productos(catalogo_productos)
     int_precio(catalogo_productos)
     catalogo_productos["garantia"]=input("Ingrese la garantia: ")
     catalogo_productos["descripcion"]=input("Ingrese la descripcion: ")
@@ -46,7 +46,7 @@ def crear_producto():
 
 def eliminar_product(datos):
     datos = dict(datos)
-    id =input("Ingrese el id del servicio: ")
+    id =input("Ingrese el id del Producto: ")
     for i in range(len(datos["catalogo_productos"])):
         if datos["catalogo_productos"][i]["id"] == id:
             marca = (datos["catalogo_productos"][i]["referencia"],datos["catalogo_productos"][i]["marca"])
@@ -54,9 +54,9 @@ def eliminar_product(datos):
             separador = " "
             marca = separador.join(map(str, marca))
             print(marca,"eliminado...")
-            #print("Servicio eliminado!")
+            #print("Producto eliminado!")
             return datos
-    print("Servicio no existente...")    
+    print("Producto no existente...")    
     return datos
 
 def eliminar_producto():
@@ -71,11 +71,12 @@ def eliminar_producto():
 
 def modificar_product(datos):
     datos = dict(datos)
-    id =input("Ingrese el id del servicio: ")
+    id =input("Ingrese el id del Producto: ")
     for i in range(len(datos["catalogo_productos"])):
         if datos["catalogo_productos"][i]["id"] == id:
             modificar(datos,i)
             return datos
+    print("Producto no existente...")     
     return datos
 
 def modificar_producto():
@@ -89,12 +90,12 @@ def modificar_producto():
         
 def consultar_product(datos):
     datos = dict(datos)
-    id =input("Ingrese el id del servicio: ")
+    id =input("Ingrese el id del Producto: ")
     for i in range(len(datos["catalogo_productos"])):
         if datos["catalogo_productos"][i]["id"] == id:
             print(datos["catalogo_productos"][i])
             return datos
-    print("Servicio no existente...")    
+    print("Producto no existente...")    
     return datos
 
 def consultar_producto():

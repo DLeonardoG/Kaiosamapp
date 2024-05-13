@@ -106,7 +106,70 @@
                 "regular": 2,
                 "leal": 3
             }
+        },
+        {
+            "code": "0001",
+            "id": "56789",
+            "tipo_servicios": "combo_dragon",
+            "code_unico": "0041",
+            "referencia": "Esfera de 1 estrella",
+            "plan": "mas datos y minutos",
+            "precio": 890000,
+            "duracion": "1 mes",
+            "descripcion": "es el mejor plan de hogar que jamas tendras",
+            "cantidad_total": 0,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": -9,
+                "regular": -4,
+                "leal": 0
+            }
+        },
+        {
+            "code": "0001",
+            "id": "12121",
+            "tipo_servicios": "fibra_optica_namekusei",
+            "code_unico": "0011",
+            "referencia": "12",
+            "plan": "12",
+            "precio": 12000,
+            "duracion": "1 mes",
+            "descripcion": "weswoot",
+            "cantidad_total": 10,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 12,
+                "regular": 1,
+                "leal": 2
+            }
         }
     ],
-    "catalogo_productos": []
+    "catalogo_productos": [
+        {
+            "code": "0002",
+            "id": "78787",
+            "referencia": "gg",
+            "marca": "gg",
+            "tipo_productos": "kame_celular",
+            "caracteristicas": {
+                "color": "color",
+                "memoria": "hi",
+                "generacion": "hi",
+                "camara": "hi",
+                "resolucion": "hi",
+                "bateria": "hi"
+            },
+            "code_unico": "0012",
+            "precio": 1000,
+            "garantia": "1 q\u00f1o",
+            "descripcion": "es muyy bueno",
+            "cantidad_total": 0,
+            "cantidad_vendida": 1,
+            "descuento": {
+                "nuevo": 0,
+                "regular": 0,
+                "leal": 0
+            }
+        }
+    ]
 }

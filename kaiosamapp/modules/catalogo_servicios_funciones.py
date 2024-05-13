@@ -4,7 +4,8 @@ def int_id(catalogo_servicios):
     while True:
         try:
             catalogo_servicios["id"] = int(input("Ingrese el id: "))
-            if isinstance(catalogo_servicios["id"], int): return catalogo_servicios["id"]
+            if isinstance(catalogo_servicios["id"], int) and catalogo_servicios["id"] > -1: 
+                return catalogo_servicios["id"]
             else: raise ValueError("id ", catalogo_servicios["id"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar id"
@@ -26,16 +27,20 @@ def tipo_servicios(catalogo_servicios):
     while True:
         op = input("Ingrese el tipo de servicios: \n    1. Fibra optica Namekusei\n    2. Pospago Roshi\n    3. Prepago Krillin\n    4. Combo Dragon\n>>    ")
         if op == "1": 
-            catalogo_servicios["tipo_servicios"] = "fibra_optica_namekusei"                    
+            catalogo_servicios["tipo_servicios"] = "fibra_optica_namekusei"
+            catalogo_servicios["code_unico"] = "0011"             
             break
         elif op == "2":
-            catalogo_servicios["tipo_servicios"] = "pospago_roshi"                    
+            catalogo_servicios["tipo_servicios"] = "pospago_roshi"
+            catalogo_servicios["code_unico"] = "0021" 
             break
         elif op == "3":
-            catalogo_servicios["tipo_servicios"] = "prepago_Krilin"                    
+            catalogo_servicios["tipo_servicios"] = "prepago_Krilin"
+            catalogo_servicios["code_unico"] = "0031" 
             break
         elif op == "4":
-            catalogo_servicios["tipo_servicios"] = "combo_dragon"                    
+            catalogo_servicios["tipo_servicios"] = "combo_dragon"
+            catalogo_servicios["code_unico"] = "0041"                     
             break
         else:
             dm = "Error al registrar tipo_servicios"
@@ -47,7 +52,7 @@ def int_precio(catalogo_servicios):
     while True:
         try:
             catalogo_servicios["precio"] = int(input("Ingrese el precio: "))
-            if isinstance(catalogo_servicios["precio"], int): 
+            if isinstance(catalogo_servicios["precio"], int) and catalogo_servicios["precio"] > 1000: 
                 catalogo_servicios["precio"] = catalogo_servicios["precio"]
                 break
             else: raise ValueError("precio ", catalogo_servicios["precio"]," no es valido")
@@ -60,7 +65,7 @@ def int_nuevo(catalogo_servicios):
     while True:
         try:
             catalogo_servicios["descuento"]["nuevo"] = int(input("Ingrese el descuento para usuarios nuevos: "))
-            if isinstance(catalogo_servicios["descuento"]["nuevo"], int): 
+            if isinstance(catalogo_servicios["descuento"]["nuevo"], int) and catalogo_servicios["descuento"]["nuevo"] >= 0:
                 catalogo_servicios["descuento"]["nuevo"] = catalogo_servicios["descuento"]["nuevo"]
                 break
             else: raise ValueError("El descuento para usuarios nuevos ", catalogo_servicios["descuento"]["nuevo"]," no es valido")
@@ -73,7 +78,7 @@ def int_regular(catalogo_servicios):
     while True:
         try:
             catalogo_servicios["descuento"]["regular"] = int(input("Ingrese el descuento para usuarios regulares: "))
-            if isinstance(catalogo_servicios["descuento"]["regular"], int): 
+            if isinstance(catalogo_servicios["descuento"]["regular"], int) and catalogo_servicios["descuento"]["regular"] >= 0:
                 catalogo_servicios["descuento"]["regular"] = catalogo_servicios["descuento"]["regular"]
                 break
             else: raise ValueError("El descuento para usuarios regulares ", catalogo_servicios["descuento"]["regular"]," no es valido")
@@ -86,7 +91,7 @@ def int_leal(catalogo_servicios):
     while True:
         try:
             catalogo_servicios["descuento"]["leal"] = int(input("Ingrese el descuento para usuarios leales: "))
-            if isinstance(catalogo_servicios["descuento"]["leal"], int): 
+            if isinstance(catalogo_servicios["descuento"]["leal"], int) and catalogo_servicios["descuento"]["leal"] >= 0: 
                 catalogo_servicios["descuento"]["leal"] = catalogo_servicios["descuento"]["leal"]
                 break
             else: raise ValueError("El descuento para usuarios leales ", catalogo_servicios["descuento"]["leal"]," no es valido")
@@ -99,7 +104,7 @@ def int_cantidad_total(catalogo_servicios):
     while True:
         try:
             catalogo_servicios["cantidad_total"] = int(input("Ingrese la catidad total: "))
-            if isinstance(catalogo_servicios["cantidad_total"], int): 
+            if isinstance(catalogo_servicios["cantidad_total"], int) and catalogo_servicios["cantidad_total"] > 0:
                 catalogo_servicios["cantidad_total"] = catalogo_servicios["cantidad_total"]
                 break
             else: raise ValueError("La cantidad total ", catalogo_servicios["cantidad_total"]," no es valido")
@@ -112,7 +117,7 @@ def mod_int_precio(datos,i):
     while True:
         try:
             datos["catalogo_servicios"][i]["precio"] = int(input("Ingrese el precio nuevo: "))
-            if isinstance(datos["catalogo_servicios"][i]["precio"], int): 
+            if isinstance(datos["catalogo_servicios"][i]["precio"], int) and datos["catalogo_servicios"][i]["precio"] > 1000: 
                 datos["catalogo_servicios"][i]["precio"] = datos["catalogo_servicios"][i]["precio"]
                 return datos                    
             else: raise ValueError("precio ", datos["catalogo_servicios"][i]["precio"]," no es valido")
@@ -125,7 +130,7 @@ def mod_int_cantidad_total(datos,i):
     while True:
         try:
             datos["catalogo_servicios"][i]["cantidad_total"] = int(input("Ingrese la catidad total nueva: "))
-            if isinstance(datos["catalogo_servicios"][i]["cantidad_total"], int): 
+            if isinstance(datos["catalogo_servicios"][i]["cantidad_total"], int) and datos["catalogo_servicios"][i]["cantidad_total"] >= 0: 
                 datos["catalogo_servicios"][i]["cantidad_total"] = datos["catalogo_servicios"][i]["cantidad_total"]
                 return datos                    
             else: raise ValueError("La cantidad total ", datos["catalogo_servicios"][i]["cantidad_total"]," no es valido")
@@ -138,9 +143,9 @@ def mod_int_cantidad_vendida(datos,i):
     while True:
         try:
             datos["catalogo_servicios"][i]["cantidad_vendida"] = int(input("Ingrese la catidad vendida nueva: "))
-            if isinstance(datos["catalogo_servicios"][i]["cantidad_vendida"], int): 
+            if isinstance(datos["catalogo_servicios"][i]["cantidad_vendida"], int) and datos["catalogo_servicios"][i]["cantidad_vendida"] >= 0:
                 datos["catalogo_servicios"][i]["cantidad_vendida"] = datos["catalogo_servicios"][i]["cantidad_vendida"]
-                return datos                    
+                return datos
             else: raise ValueError("La cantidad vendida ", datos["catalogo_servicios"][i]["cantidad_vendida"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar cantidad vendida"
@@ -151,7 +156,7 @@ def mod_int_nuevo(datos,i):
     while True:
         try:
             datos["catalogo_servicios"][i]["descuento"]["nuevo"] = int(input("Ingrese el descuento para usuarios nuevos: "))
-            if isinstance(datos["catalogo_servicios"][i]["descuento"]["nuevo"], int): 
+            if isinstance(datos["catalogo_servicios"][i]["descuento"]["nuevo"], int) and datos["catalogo_servicios"][i]["descuento"]["nuevo"] >= 0:
                 datos["catalogo_servicios"][i]["descuento"]["nuevo"] = datos["catalogo_servicios"][i]["descuento"]["nuevo"]
                 break
             else: raise ValueError("El descuento para usuarios nuevos ", datos["catalogo_servicios"][i]["descuento"]["nuevo"]," no es valido")
@@ -164,7 +169,7 @@ def mod_int_regular(datos,i):
     while True:
         try:
             datos["catalogo_servicios"][i]["descuento"]["regular"] = int(input("Ingrese el descuento para usuarios regulares: "))
-            if isinstance(datos["catalogo_servicios"][i]["descuento"]["regular"], int): 
+            if isinstance(datos["catalogo_servicios"][i]["descuento"]["regular"], int) and datos["catalogo_servicios"][i]["descuento"]["regular"] >= 0:
                 datos["catalogo_servicios"][i]["descuento"]["regular"] = datos["catalogo_servicios"][i]["descuento"]["regular"]
                 break
             else: raise ValueError("El descuento para usuarios regulares ", datos["catalogo_servicios"][i]["descuento"]["regular"]," no es valido")
@@ -177,7 +182,7 @@ def mod_int_leal(datos,i):
     while True:
         try:
             datos["catalogo_servicios"][i]["descuento"]["leal"] = int(input("Ingrese el descuento para usuarios leales: "))
-            if isinstance(datos["catalogo_servicios"][i]["descuento"]["leal"], int): 
+            if isinstance(datos["catalogo_servicios"][i]["descuento"]["leal"], int) and datos["catalogo_servicios"][i]["descuento"]["leal"] >= 0:
                 datos["catalogo_servicios"][i]["descuento"]["leal"] = datos["catalogo_servicios"][i]["descuento"]["leal"]
                 break
             else: raise ValueError("El descuento para usuarios leales ", datos["catalogo_servicios"][i]["descuento"]["leal"]," no es valido")

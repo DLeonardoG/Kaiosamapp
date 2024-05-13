@@ -22,3 +22,5 @@ from modules.gestion_usuarios import crear_usuario,eliminar_usuario,actualizar_u
 from modules.catalogo_servicios import crear_servicio,eliminar_servicio
 from modules.catalogo_servicios import modificar_servicio,consultar_servicio
 #Gestion productos
+from modules.catalogo_productos import crear_producto,eliminar_producto
+from modules.catalogo_productos import modificar_producto,consultar_producto

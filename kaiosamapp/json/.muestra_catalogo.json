@@ -136,7 +136,13 @@
             "marca":"apple",
             "caracteristicas": [
                 {
-                    "color":"azul", "memoria":"1tb ", "ram":"Ram 24gb", "generacion":"Intel Core I9", "resolucion":"Led 16", "procesador":"13900h"
+                    "color":"azul", 
+                    "memoria":"1tb ",
+                    "ram":"Ram 24gb",
+                    "generacion":"Intel Core I9",
+                    "pantalla":"Led 16",      
+                    "procesador":"13900h",
+                    "bateria": "13900h"  
                 }
         
             ],
