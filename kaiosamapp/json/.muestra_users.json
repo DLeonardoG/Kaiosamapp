@@ -12,6 +12,7 @@
             "telefono": 3155370033,
             "email":"gokuball@gmail.com",
             "categoria": "nuevo",
+            "cantidad_compras": 0,
             "registro_servicios":
             [
                 {

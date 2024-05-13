@@ -43,7 +43,27 @@ def crear_servicio():
         if continuar == "2": break
         else: clear_screen()
 
-#def eliminar_service():
+def eliminar_service(datos):
+    datos = dict(datos)
+    id =input("Ingrese el id del servicio: ")
+    for i in range(len(datos["catalogo_servicios"])):
+        if datos["catalogo_servicios"][i]["id"] == id:
+            #plan = (datos["catalogo_servicios"][i]["referencia"],datos["catalogo_servicios"][i]["plan"])
+            datos["catalogo_servicios"].pop(i)
+            #print(plan,"eliminado...")
+            print("Servicio eliminado!")
+            return datos
+    print("Servicio no existente...")    
+    return datos
+
+def eliminar_servicio():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = eliminar_service(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
+        continuar = very()
+        if continuar == "2": break
+        else: clear_screen()
     
     
 

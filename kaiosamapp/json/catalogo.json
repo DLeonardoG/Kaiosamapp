@@ -24,22 +24,6 @@
             "duracion": "3 meses"
         },
         {
-            "id": "cd",
-            "tipo_servicios": "cd",
-            "referencia": "cd",
-            "plan": "jk",
-            "precio": "jk",
-            "duracion": "jk"
-        },
-        {
-            "id": "puta",
-            "tipo_servicios": "a",
-            "referencia": "a",
-            "plan": "a",
-            "precio": "a",
-            "duracion": "a"
-        },
-        {
             "code": "0001",
             "id": "12342",
             "tipo_servicios": "pospago",
@@ -89,21 +73,6 @@
                 "nuevo": "d",
                 "regular": "x",
                 "leal": "x"
-            }
-        },
-        {
-            "code": "0001",
-            "id": "12345",
-            "tipo_servicios": "pospago_roshi",
-            "referencia": "f",
-            "plan": "d",
-            "precio": 12,
-            "duracion": "2 meses",
-            "descripcion": "buenisimo",
-            "descuento": {
-                "nuevo": "w",
-                "regular": "w",
-                "leal": "w"
             }
         },
         {

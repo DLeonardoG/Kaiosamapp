@@ -112,7 +112,7 @@ while True:
                                 crear_servicio()                                    
                                     
                             elif op_m_1_4_2 == "2":
-                                print("eliminar_servicio")                                    
+                                eliminar_servicio()                                  
                                     
                             elif op_m_1_4_2 == "3":
                                 print("modificar_servicio")                                    

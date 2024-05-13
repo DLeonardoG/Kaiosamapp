@@ -98,3 +98,10 @@
 2024-05-10 16:24:26: Error al ingresar conraseña de admin
 2024-05-10 16:24:26: Error al ingresar conraseña de admin
 2024-05-10 16:24:26: Error al ingresar conraseña de admin
+2024-05-13 03:23:45: Error al registrar id
+2024-05-13 03:23:45: (ValueError("invalid literal for int() with base 10: 'd'"), 'Error al registrar id')
+2024-05-13 03:23:45: (ValueError("invalid literal for int() with base 10: 'c'"), 'Error al registrar id')
+2024-05-13 03:23:45: Error al registrar id
+2024-05-13 03:23:45: (ValueError("invalid literal for int() with base 10: 'gogo'"), 'Error al registrar precio')
+2024-05-13 03:23:45: (ValueError("invalid literal for int() with base 10: 'p'"), 'Error al registrar cantidad total')
+2024-05-13 03:23:45: (ValueError("invalid literal for int() with base 10: 'p'"), 'Error al registrar cantidad total')
