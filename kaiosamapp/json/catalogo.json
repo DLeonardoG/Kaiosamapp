@@ -120,6 +120,40 @@
                 "regular": 1,
                 "leal": 6
             }
+        },
+        {
+            "code": "0001",
+            "id": "90909",
+            "tipo_servicios": "combo_dragon",
+            "referencia": "combito",
+            "plan": "mejor",
+            "precio": 30000,
+            "duracion": "1 mes",
+            "descripcion": "epa",
+            "cantidad_total": 90,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 10,
+                "regular": 21,
+                "leal": 35
+            }
+        },
+        {
+            "code": "0001",
+            "id": "78787",
+            "tipo_servicios": "fibra_optica_namekusei",
+            "referencia": "gola",
+            "plan": "estoy feliz",
+            "precio": 120,
+            "duracion": "todo el tiempo",
+            "descripcion": "que programe",
+            "cantidad_total": 23,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 23,
+                "regular": 34,
+                "leal": 50
+            }
         }
     ],
     "catalogo_productos": []

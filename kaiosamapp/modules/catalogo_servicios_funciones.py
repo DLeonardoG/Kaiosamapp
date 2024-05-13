@@ -95,3 +95,16 @@ def int_leal(catalogo_servicios):
             e = e,"Error al registrar descuento para usuarios leales"
             reportar_error_a_txt(e)
             print("Ingrese un descuento para usuarios leales valido")
+            
+def int_cantidad_total(catalogo_servicios):
+    while True:
+        try:
+            catalogo_servicios["cantidad_total"] = int(input("Ingrese la catidad total: "))
+            if isinstance(catalogo_servicios["cantidad_total"], int): 
+                catalogo_servicios["cantidad_total"] = catalogo_servicios["cantidad_total"]
+                break
+            else: raise ValueError("La cantidad total ", catalogo_servicios["cantidad_total"]," no es valido")
+        except Exception as e:
+            e = e,"Error al registrar cantidad total"
+            reportar_error_a_txt(e)
+            print("Ingrese una cantidad total valida")
