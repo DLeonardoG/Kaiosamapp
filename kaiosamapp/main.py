@@ -109,7 +109,7 @@ while True:
                             mostrar_txt(m_1_4_2)
                             op_m_1_4_2 = input("Seleccione una opcion:\n👉   ")
                             if op_m_1_4_2 == "1":
-                                print("crear_servicio")                                    
+                                crear_servicio()                                    
                                     
                             elif op_m_1_4_2 == "2":
                                 print("eliminar_servicio")                                    

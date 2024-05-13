@@ -38,6 +38,43 @@
             "plan": "a",
             "precio": "a",
             "duracion": "a"
+        },
+        {
+            "code": "0001",
+            "id": 12345,
+            "tipo_servicios": "pospago",
+            "referencia": "oozaru",
+            "plan": "min + ilimidatos",
+            "precio": "70000",
+            "duracion": "1 mes",
+            "descripcion": "al igual que la transformacion de Goku es grande",
+            "descuento": "2"
+        },
+        {
+            "code": "0001",
+            "id": 89891,
+            "tipo_servicios": "cotra",
+            "referencia": "cotra",
+            "plan": "cotra",
+            "precio": "20000",
+            "duracion": "1 mes",
+            "descripcion": "muy bueno",
+            "descuento": "3"
+        },
+        {
+            "code": "0001",
+            "id": 65432,
+            "tipo_servicios": "contra",
+            "referencia": "contra",
+            "plan": "",
+            "precio": "1222",
+            "duracion": "3 meses",
+            "descripcion": "buenisimo",
+            "descuento": {
+                "nuevo": "10",
+                "regular": "1",
+                "leal": "40"
+            }
         }
     ],
     "catalogo_productos": []

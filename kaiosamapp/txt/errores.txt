@@ -1195,3 +1195,25 @@
 2024-05-12 23:21:16: Error al registrar sexo
 2024-05-12 23:21:16: Error al registrar sexo
 2024-05-12 23:21:16: Opcion de menu no valida
+2024-05-13 00:12:17: Opcion de menu no valida
+2024-05-13 00:15:32: Error al registrar id
+2024-05-13 00:15:32: Error al registrar id
+2024-05-13 00:15:32: (ValueError("invalid literal for int() with base 10: 'd'"), 'Error al registrar id')
+2024-05-13 00:15:32: (ValueError("invalid literal for int() with base 10: 'f'"), 'Error al registrar id')
+2024-05-13 00:15:32: (ValueError("invalid literal for int() with base 10: 'g'"), 'Error al registrar id')
+2024-05-13 00:15:32: (ValueError("invalid literal for int() with base 10: 'a'"), 'Error al registrar id')
+2024-05-13 00:15:32: Error al registrar id
+2024-05-13 00:15:32: Error al registrar id
+2024-05-13 00:25:01: Error al registrar id
+2024-05-13 00:25:01: Error al registrar id
+2024-05-13 00:25:01: Error al registrar id
+2024-05-13 00:25:01: Error al registrar id
+2024-05-13 00:25:01: Error al registrar id
+2024-05-13 00:28:19: Error al registrar id
+2024-05-13 00:28:19: Error al registrar id
+2024-05-13 00:28:19: (ValueError("invalid literal for int() with base 10: 'f'"), 'Error al registrar id')
+2024-05-13 00:28:19: (ValueError("invalid literal for int() with base 10: 'vr'"), 'Error al registrar id')
+2024-05-13 00:28:19: Error al registrar id
+2024-05-13 00:28:19: Error al registrar id
+2024-05-13 00:35:31: Error al registrar id
+2024-05-13 00:41:18: Error al registrar telefono

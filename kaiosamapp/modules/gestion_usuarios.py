@@ -1,5 +1,5 @@
-from modules.funciones_secundarias import reportar_error_a_txt,telefono_valido,int_edad,very
-from modules.funciones_secundarias import sexo,clear_screen,very
+from modules.funciones_secundarias import reportar_error_a_txt,very,clear_screen
+from modules.gestion_usuarios_funciones import telefono_valido,int_edad,sexo
 from modules.datos_users import *
 
 def registrar_user(datos):

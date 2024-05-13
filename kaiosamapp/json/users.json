@@ -25,18 +25,6 @@
             "categoria": "nuevo"
         },
         {
-            "edad": 34,
-            "documento": "3",
-            "nombre": "23",
-            "apellido": "23",
-            "sexo": "3",
-            "ciudad": "2323",
-            "direccion": "23",
-            "telefono": "23",
-            "email": "23",
-            "categoria": "2"
-        },
-        {
             "edad": 18,
             "documento": "666",
             "nombre": "Nicolas",
@@ -255,7 +243,7 @@
         {
             "documento": "1",
             "edad": 119,
-            "nombre": "1",
+            "nombre": "carloss",
             "apellido": "1",
             "telefono": 9999999999,
             "sexo": "1",
@@ -353,6 +341,21 @@
             "direccion": "s",
             "email": "s",
             "categoria": "s",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": "f",
+            "edad": 34,
+            "nombre": "luis",
+            "apellido": "arciniegas",
+            "telefono": 2323232323,
+            "sexo": "Masculino",
+            "ciudad": "f",
+            "direccion": "f",
+            "email": "f",
+            "categoria": "f",
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
