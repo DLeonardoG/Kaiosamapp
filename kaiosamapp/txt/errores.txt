@@ -105,3 +105,86 @@
 2024-05-13 03:23:45: (ValueError("invalid literal for int() with base 10: 'gogo'"), 'Error al registrar precio')
 2024-05-13 03:23:45: (ValueError("invalid literal for int() with base 10: 'p'"), 'Error al registrar cantidad total')
 2024-05-13 03:23:45: (ValueError("invalid literal for int() with base 10: 'p'"), 'Error al registrar cantidad total')
+2024-05-13 04:25:42: Opcion de menu no valida
+2024-05-13 04:25:42: Opcion de menu no valida
+2024-05-13 04:25:42: Error al registrar id
+2024-05-13 04:25:42: (ValueError("invalid literal for int() with base 10: 'dc'"), 'Error al registrar id')
+2024-05-13 04:25:42: (ValueError("invalid literal for int() with base 10: 'fsd'"), 'Error al registrar id')
+2024-05-13 04:25:42: (ValueError("invalid literal for int() with base 10: 'sdf'"), 'Error al registrar id')
+2024-05-13 04:25:42: Error al registrar id
+2024-05-13 04:25:42: Opcion de menu no valida
+2024-05-13 04:36:28: Opcion de menu no valida
+2024-05-13 04:40:49: Opcion de menu no valida
+2024-05-13 04:46:33: Error al registrar id
+2024-05-13 04:46:33: Error al registrar id
+2024-05-13 05:40:26: Opcion de menu no valida
+2024-05-13 05:42:49: Opcion de menu no valida
+2024-05-13 05:42:49: Opcion de menu no valida
+2024-05-13 05:42:49: Opcion de menu no valida
+2024-05-13 05:42:49: Error al registrar tipo_servicios
+2024-05-13 06:28:28: (ValueError("invalid literal for int() with base 10: 'cf'"), 'Error al registrar cantidad total')
+2024-05-13 06:28:28: (ValueError("invalid literal for int() with base 10: 'cd'"), 'Error al registrar cantidad total')
+2024-05-13 06:28:28: (ValueError("invalid literal for int() with base 10: 'xs'"), 'Error al registrar cantidad total')
+2024-05-13 06:28:28: (ValueError("invalid literal for int() with base 10: 'za'"), 'Error al registrar cantidad total')
+2024-05-13 06:28:28: Error al registrar descuento
+2024-05-13 06:28:28: Error al registrar descuento
+2024-05-13 06:28:28: Error al registrar descuento
+2024-05-13 06:28:28: Error al registrar descuento
+2024-05-13 06:28:28: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar cantidad total')
+2024-05-13 06:28:28: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar cantidad total')
+2024-05-13 06:28:28: (ValueError("invalid literal for int() with base 10: 'd'"), 'Error al registrar cantidad vendida')
+2024-05-13 06:28:28: (ValueError("invalid literal for int() with base 10: 'sd'"), 'Error al registrar cantidad vendida')
+2024-05-13 06:44:14: (ValueError("invalid literal for int() with base 10: 'bf'"), 'Error al registrar precio')
+2024-05-13 06:44:14: (ValueError("invalid literal for int() with base 10: 'bf'"), 'Error al registrar precio')
+2024-05-13 06:44:14: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar cantidad total')
+2024-05-13 06:44:14: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar cantidad total')
+2024-05-13 06:44:14: (ValueError("invalid literal for int() with base 10: ''"), 'Error al registrar cantidad vendida')
+2024-05-13 06:44:14: (ValueError("invalid literal for int() with base 10: 'fr'"), 'Error al registrar cantidad vendida')
+2024-05-13 06:44:14: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar cantidad vendida')
+2024-05-13 06:44:14: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar cantidad vendida')
+2024-05-13 06:49:55: Opcion de menu no valida
+2024-05-13 06:49:55: Opcion de menu no valida
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: Error al registrar tipo_servicios
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: '2nn'"), 'Error al registrar precio')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: '2m'"), 'Error al registrar precio')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: '2m'"), 'Error al registrar precio')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: '3m'"), 'Error al registrar precio')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: 'ca'"), 'Error al registrar precio')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: '|'"), 'Error al registrar precio')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar descuento para usuarios nuevos')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar descuento para usuarios nuevos')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: '2w'"), 'Error al registrar descuento para usuarios nuevos')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: '2w'"), 'Error al registrar descuento para usuarios nuevos')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: 'c'"), 'Error al registrar descuento para usuarios regulares')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: '3ee'"), 'Error al registrar descuento para usuarios regulares')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar descuento para usuarios leales')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: 'de'"), 'Error al registrar descuento para usuarios leales')
+2024-05-13 06:49:55: (ValueError("invalid literal for int() with base 10: '3e'"), 'Error al registrar descuento para usuarios leales')
+2024-05-13 06:49:55: Opcion de menu no valida

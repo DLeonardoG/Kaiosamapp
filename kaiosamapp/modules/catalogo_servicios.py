@@ -3,6 +3,7 @@ from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida
 from modules.funciones_secundarias import clear_screen,very
 from modules.catalogo_servicios_funciones import id_valido,tipo_servicios,int_precio
 from modules.catalogo_servicios_funciones import int_nuevo,int_regular,int_leal,int_cantidad_total
+from modules.catalogo_servicios_funciones import modificar
 
 def crear_servicie(datos):
     datos = dict(datos)
@@ -48,10 +49,12 @@ def eliminar_service(datos):
     id =input("Ingrese el id del servicio: ")
     for i in range(len(datos["catalogo_servicios"])):
         if datos["catalogo_servicios"][i]["id"] == id:
-            #plan = (datos["catalogo_servicios"][i]["referencia"],datos["catalogo_servicios"][i]["plan"])
+            plan = (datos["catalogo_servicios"][i]["referencia"],datos["catalogo_servicios"][i]["plan"])
             datos["catalogo_servicios"].pop(i)
-            #print(plan,"eliminado...")
-            print("Servicio eliminado!")
+            separador = " "
+            plan = separador.join(map(str, plan))
+            print(plan,"eliminado...")
+            #print("Servicio eliminado!")
             return datos
     print("Servicio no existente...")    
     return datos
@@ -65,5 +68,21 @@ def eliminar_servicio():
         if continuar == "2": break
         else: clear_screen()
     
-    
 
+def modificar_service(datos):
+    datos = dict(datos)
+    id =input("Ingrese el id del servicio: ")
+    for i in range(len(datos["catalogo_servicios"])):
+        if datos["catalogo_servicios"][i]["id"] == id:
+            modificar(datos,i)
+            return datos
+    return datos
+
+def modificar_servicio():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = modificar_service(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
+        continuar = very()
+        if continuar == "2": break
+        else: clear_screen()
