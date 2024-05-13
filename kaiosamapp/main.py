@@ -118,7 +118,7 @@ while True:
                                 modificar_servicio()                                    
                                     
                             elif op_m_1_4_2 == "4":
-                                print("consultar_servicio")                                    
+                                consultar_servicio()                                    
                                     
                             elif op_m_1_4_2 == "0":
                                 print("menu_anterior")                                    

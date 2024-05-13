@@ -199,8 +199,7 @@ def mod_int_descuento(datos,i):
         elif op == "3":
             mod_int_leal(datos,i)
             print(datos["catalogo_servicios"][i]["descuento"]["leal"],"modificado con éxito!")
-        elif op == "0":
-            return datos
+        elif op == "0": return datos
         else:
             dm = "Error al registrar descuento"
             reportar_error_a_txt(dm)
@@ -230,10 +229,8 @@ def modificar(datos,i):
         elif op == "7":
             mod_int_cantidad_vendida(datos,i)
             print(datos["catalogo_servicios"][i]["cantidad_vendida"],"modificado con éxito!")         
-        elif op == "8":
-            mod_int_descuento(datos,i)
-        elif op == "0":
-            return datos        
+        elif op == "8": mod_int_descuento(datos,i)
+        elif op == "0": return datos        
         else:
             dm = "Error al registrar tipo_servicios"
             reportar_error_a_txt(dm)

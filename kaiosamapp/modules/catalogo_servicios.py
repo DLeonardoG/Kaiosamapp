@@ -86,3 +86,22 @@ def modificar_servicio():
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
+        
+def consultar_service(datos):
+    datos = dict(datos)
+    id =input("Ingrese el id del servicio: ")
+    for i in range(len(datos["catalogo_servicios"])):
+        if datos["catalogo_servicios"][i]["id"] == id:
+            print(datos["catalogo_servicios"][i])
+            return datos
+    print("Servicio no existente...")    
+    return datos
+
+def consultar_servicio():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = consultar_service(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
+        continuar = very()
+        if continuar == "2": break
+        else: clear_screen()
