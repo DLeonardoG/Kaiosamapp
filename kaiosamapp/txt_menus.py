@@ -1,7 +1,6 @@
 
 from main_funciones import mostrar_txt
 
-
 principal = "kaiosamapp/txt/menus_plantillas/principal.txt"
 
 #Menu ADMINISTRADOR
@@ -15,8 +14,6 @@ m_1_4_2_4 = "kaiosamapp/txt/menus_plantillas/admin/1-4-2-4.txt"
 m_1_4_3 = "kaiosamapp/txt/menus_plantillas/admin/1-4-3.txt"
 m_1_4_3_4 = "kaiosamapp/txt/menus_plantillas/admin/1-4-3-4.txt"
 
-
-#print(m_1)
 #mostrar_txt(principal)
 #mostrar_txt(m_1)
 #mostrar_txt(m_1_1)
