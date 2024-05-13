@@ -62,7 +62,10 @@
                 {
                 "pqr":[
                     {
+                        "code":"0003",
+                        "id" : "12345",
                         "tipo_de_pqr":"servicio al cliente, reclamaciones y sugerencias.",
+                        "code_unico":["0013","0023","0033","0043"],
                         "motivo":"no me gusta",
                         "comentario":"que mal servicio al cliente",
                         "fecha":"92122"

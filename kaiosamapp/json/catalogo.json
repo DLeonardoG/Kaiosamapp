@@ -147,28 +147,28 @@
     "catalogo_productos": [
         {
             "code": "0002",
-            "id": "78787",
-            "referencia": "gg",
-            "marca": "gg",
+            "id": "12345",
+            "referencia": "12345",
+            "marca": "fr",
             "tipo_productos": "kame_celular",
             "caracteristicas": {
-                "color": "color",
-                "memoria": "hi",
-                "generacion": "hi",
-                "camara": "hi",
-                "resolucion": "hi",
-                "bateria": "hi"
+                "color": "de",
+                "memoria": "de",
+                "generacion": "ed",
+                "camara": "d",
+                "resolucion": "ed",
+                "bateria": "ed"
             },
             "code_unico": "0012",
-            "precio": 1000,
-            "garantia": "1 q\u00f1o",
-            "descripcion": "es muyy bueno",
-            "cantidad_total": 0,
-            "cantidad_vendida": 1,
+            "precio": 5000,
+            "garantia": "de",
+            "descripcion": "de",
+            "cantidad_total": 78,
+            "cantidad_vendida": 0,
             "descuento": {
-                "nuevo": 0,
-                "regular": 0,
-                "leal": 0
+                "nuevo": 2,
+                "regular": 2,
+                "leal": 2
             }
         }
     ]
