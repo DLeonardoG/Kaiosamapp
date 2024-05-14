@@ -22,16 +22,6 @@
         },
         {
             "code": "0003",
-            "id": "000009",
-            "tipo_pqr": "pregunta",
-            "code_unico": "0013",
-            "motivo": "sw",
-            "comentario": "sw",
-            "fecha": "2024-05-14 00:26:11",
-            "repuesta": ""
-        },
-        {
-            "code": "0003",
             "id": "000011",
             "tipo_pqr": "queja",
             "code_unico": "0023",

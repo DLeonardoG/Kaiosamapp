@@ -1,87 +1,18 @@
 {
-    "catalogo_servicios": [
-        {
-            "code": "0001",
-            "id": "12121",
-            "tipo_servicios": "fibra_optica_namekusei",
-            "code_unico": "0011",
-            "referencia": "12",
-            "plan": "12",
-            "precio": 12000,
-            "duracion": "1 mes",
-            "descripcion": "weswoot",
-            "cantidad_total": 10,
-            "cantidad_vendida": 0,
-            "descuento": {
-                "nuevo": 12,
-                "regular": 1,
-                "leal": 2
-            }
-        },
-        {
-            "code": "0001",
-            "id": "12345",
-            "tipo_servicios": "fibra_optica_namekusei",
-            "code_unico": "0011",
-            "referencia": "valeria",
-            "plan": "pegarle a valeria",
-            "precio": 1100,
-            "duracion": "ma\u00f1ana",
-            "descripcion": "me gusta programar",
-            "cantidad_total": 100,
-            "cantidad_vendida": 0,
-            "descuento": {
-                "nuevo": 12,
-                "regular": 45,
-                "leal": 0
-            }
-        },
-        {
-            "code": "0001",
-            "id": "98765",
-            "tipo_servicios": "combo_dragon",
-            "code_unico": "0041",
-            "referencia": "sw",
-            "plan": "sw",
-            "precio": 55555,
-            "duracion": "3 dias",
-            "descripcion": "estoy feliz",
-            "cantidad_total": 12,
-            "cantidad_vendida": 0,
-            "descuento": {
-                "nuevo": 2,
-                "regular": 2,
-                "leal": 2
-            }
-        }
-    ],
-    "catalogo_productos": [
-        {
-            "code": "0002",
-            "id": "12345",
-            "referencia": "12345",
-            "marca": "fr",
-            "tipo_productos": "kame_celular",
-            "caracteristicas": {
-                "color": "de",
-                "memoria": "de",
-                "generacion": "ed",
-                "camara": "d",
-                "resolucion": "ed",
-                "bateria": "ed"
-            },
-            "code_unico": "0012",
-            "precio": 5000,
-            "garantia": "de",
-            "descripcion": "de",
-            "cantidad_total": 78,
-            "cantidad_vendida": 0,
-            "descuento": {
-                "nuevo": 2,
-                "regular": 2,
-                "leal": 2
-            }
-        }
-    ],
-    "facturas" : []
+    "code": "0001",
+    "id": "12345",
+    "tipo_servicios": "fibra_optica_namekusei",
+    "code_unico": "0011",
+    "referencia": "valeria",
+    "plan": "pegarle a valeria",
+    "precio": 1100,
+    "duracion": "ma\u00f1ana",
+    "descripcion": "me gusta programar",
+    "cantidad_total": 100,
+    "cantidad_vendida": 0,
+    "descuento": {
+        "nuevo": 12,
+        "regular": 45,
+        "leal": 0
+    }
 }

@@ -3,21 +3,23 @@ while True:
     clear_screen()
     diseño_logo()
     mostrar_txt(principal)
-    print_("Ingrese una opción:\n👉  ")
-    op = input()
+    op = input("Seleccione una opcion:\n👉   ")
+    line()
     if op == "1":
         
         while True:
             #clear_screen()
+            clear_screen()
             mostrar_txt(m_1)
-            print_("Seleccione una opcion:\n👉   ")
-            op_m_1 = input()
+            op_m_1 = input("Seleccione una opcion:\n👉   ")
+            line()
             if op_m_1 == "1":
                 while True:                
                     print("Gestion de usuarios")                        
+                    clear_screen()
                     mostrar_txt(m_1_1)
-                    print_("Seleccione una opcion:\n👉   ")
-                    op_m_1_1 = input()
+                    op_m_1_1 = input("Seleccione una opcion:\n👉   ")
+                    line()
                     if op_m_1_1 == "1": crear_usuario()
                     elif op_m_1_1 == "2": eliminar_usuario()
                     elif op_m_1_1 == "3": actualizar_usuario()               
@@ -32,9 +34,10 @@ while True:
             elif op_m_1 == "2":
                 while True:
                     print("pqr")
+                    clear_screen()
                     mostrar_txt(m_1_2)
-                    print_("Seleccione una opcion:\n👉   ")
-                    op_m_1_2 = input()
+                    op_m_1_2 = input("Seleccione una opcion:\n👉   ")
+                    line()
                     if op_m_1_2 == "1": consultar_pqr()
                     elif op_m_1_2 == "2": registrar_pqr()
                     elif op_m_1_2 == "3": eliminar_pqr()
@@ -46,9 +49,10 @@ while True:
             elif op_m_1 == "3":
                 while True:
                     print("Analisis de clientes")
+                    clear_screen()
                     mostrar_txt(m_1_3)
-                    print_("Seleccione una opcion:\n👉   ")
-                    op_m_1_3 = input()
+                    op_m_1_3 = input("Seleccione una opcion:\n👉   ")
+                    line()
                     if op_m_1_3 == "1": 
                         print("Falta menu para analisis total o especifico")                            
                         print("analisis_general")
@@ -61,16 +65,18 @@ while True:
             elif op_m_1 == "4":
                 while True:
                     print("Ventas")
+                    clear_screen()
                     mostrar_txt(m_1_4)
-                    print_("Seleccione una opcion:\n👉   ")
-                    op_m_1_4 = input()
+                    op_m_1_4 = input("Seleccione una opcion:\n👉   ")
+                    line()
                     if op_m_1_4 == "1": print("factura_ventas")
                     elif op_m_1_4 == "2": 
                         while True:
                             print("catalogo_servicios")
+                            clear_screen()
                             mostrar_txt(m_1_4_2)
-                            print_("Seleccione una opcion:\n👉   ")
-                            op_m_1_4_2 = input()
+                            op_m_1_4_2 = input("Seleccione una opcion:\n👉   ")
+                            line()
                             if op_m_1_4_2 == "1": crear_servicio()                                    
                             elif op_m_1_4_2 == "2": eliminar_servicio()
                             elif op_m_1_4_2 == "3": modificar_servicio()
@@ -84,9 +90,10 @@ while True:
                     elif op_m_1_4 == "3":
                         while True:
                             print("catalogo_productos")
+                            clear_screen()
                             mostrar_txt(m_1_4_3)
-                            print_("Seleccione una opcion:\n👉   ")
-                            op_m_1_4_3 = input()
+                            op_m_1_4_3 = input("Seleccione una opcion:\n👉   ")
+                            line()
                             if op_m_1_4_3 == "1": crear_producto()
                             elif op_m_1_4_3 == "2": eliminar_producto()
                             elif op_m_1_4_3 == "3": modificar_producto()
