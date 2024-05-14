@@ -164,8 +164,7 @@ def buscando_producto(datos):
 
 
 def compra_producto(datos):
-    RUTA_BASE_DE_DATOS_CATALOGO ="kaiosamapp/json/catalogo.json"
-    datos_catalogo = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+   
     
     buscando_producto(datos_catalogo)
     datos_catalogo = dict(datos_catalogo)
