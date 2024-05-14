@@ -3,19 +3,21 @@ while True:
     clear_screen()
     diseño_logo()
     mostrar_txt(principal)
-    op = input("Ingrese una opción:\n👉  ")
-    
+    print_("Ingrese una opción:\n👉  ")
+    op = input()
     if op == "1":
         
         while True:
             #clear_screen()
             mostrar_txt(m_1)
-            op_m_1 = input("Seleccione una opcion:\n👉   ")
+            print_("Seleccione una opcion:\n👉   ")
+            op_m_1 = input()
             if op_m_1 == "1":
                 while True:                
                     print("Gestion de usuarios")                        
                     mostrar_txt(m_1_1)
-                    op_m_1_1 = input("Seleccione una opcion:\n👉   ")
+                    print_("Seleccione una opcion:\n👉   ")
+                    op_m_1_1 = input()
                     if op_m_1_1 == "1": crear_usuario()
                     elif op_m_1_1 == "2": eliminar_usuario()
                     elif op_m_1_1 == "3": actualizar_usuario()               
@@ -31,7 +33,8 @@ while True:
                 while True:
                     print("pqr")
                     mostrar_txt(m_1_2)
-                    op_m_1_2 = input("Seleccione una opcion:\n👉   ")
+                    print_("Seleccione una opcion:\n👉   ")
+                    op_m_1_2 = input()
                     if op_m_1_2 == "1": consultar_pqr()
                     elif op_m_1_2 == "2": registrar_pqr()
                     elif op_m_1_2 == "3": eliminar_pqr()
@@ -44,7 +47,8 @@ while True:
                 while True:
                     print("Analisis de clientes")
                     mostrar_txt(m_1_3)
-                    op_m_1_3 = input("Seleccione una opcion:\n👉   ")
+                    print_("Seleccione una opcion:\n👉   ")
+                    op_m_1_3 = input()
                     if op_m_1_3 == "1": 
                         print("Falta menu para analisis total o especifico")                            
                         print("analisis_general")
@@ -58,13 +62,15 @@ while True:
                 while True:
                     print("Ventas")
                     mostrar_txt(m_1_4)
-                    op_m_1_4 = input("Seleccione una opcion:\n👉   ")
+                    print_("Seleccione una opcion:\n👉   ")
+                    op_m_1_4 = input()
                     if op_m_1_4 == "1": print("factura_ventas")
                     elif op_m_1_4 == "2": 
                         while True:
                             print("catalogo_servicios")
                             mostrar_txt(m_1_4_2)
-                            op_m_1_4_2 = input("Seleccione una opcion:\n👉   ")
+                            print_("Seleccione una opcion:\n👉   ")
+                            op_m_1_4_2 = input()
                             if op_m_1_4_2 == "1": crear_servicio()                                    
                             elif op_m_1_4_2 == "2": eliminar_servicio()
                             elif op_m_1_4_2 == "3": modificar_servicio()
@@ -79,7 +85,8 @@ while True:
                         while True:
                             print("catalogo_productos")
                             mostrar_txt(m_1_4_3)
-                            op_m_1_4_3 = input("Seleccione una opcion:\n👉   ")
+                            print_("Seleccione una opcion:\n👉   ")
+                            op_m_1_4_3 = input()
                             if op_m_1_4_3 == "1": crear_producto()
                             elif op_m_1_4_3 == "2": eliminar_producto()
                             elif op_m_1_4_3 == "3": modificar_producto()
@@ -102,7 +109,7 @@ while True:
             else: opcion_no_valida()
     elif op == "2": 
         print ("Menu de usuarios")
-        op_2 = input("Ingrese una opción: ")
+        op_2 = input()("Ingrese una opción: ")
         while True:
             if op_2 == "1": print("Ha seleccionado Opción 1")
             elif op_2 == "2": print("Ha seleccionado Opción 2")

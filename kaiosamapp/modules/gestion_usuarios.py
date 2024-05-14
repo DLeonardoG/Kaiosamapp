@@ -1,4 +1,4 @@
-from modules.funciones_secundarias import reportar_error_a_txt,very,clear_screen
+from modules.funciones_secundarias import reportar_error_a_txt,very,clear_screen,line,linen,print_
 from modules.gestion_usuarios_funciones import telefono_valido,int_edad,sexo,int_documento
 from modules.catalogo_productos import id_valido
 #from modules.catalogo_productos_funciones import mostrar_productos,mostrar_tipos_productos
@@ -10,24 +10,24 @@ def registrar_user(datos):
     int_documento(usuarios)
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == usuarios["documento"]:
-            print (datos["usuarios"][i]["documento"],"ya se encuentra registrado!")
+            print_ (datos["usuarios"][i]["documento"],"ya se encuentra registrado :)")
             return datos
 
     int_edad(usuarios)
-    usuarios["nombre"]=input("Ingrese el nombre: ")
-    usuarios["apellido"]=input("Ingrese el apellido: ")
+    usuarios["nombre"]=input("                      Ingrese el nombre: ")
+    usuarios["apellido"]=input("                        Ingrese el apellido: ")
     telefono_valido(usuarios)
     sexo(usuarios)
-    usuarios["ciudad"]=input("Ingrese la ciudad: ")
-    usuarios["direccion"]=input("Ingrese la direccion: ")
-    usuarios["email"]=input("Ingrese el email: ")
-    usuarios["categoria"]=input("Ingrese la categoria: ")
+    usuarios["ciudad"]=input("                      Ingrese la ciudad: ")
+    usuarios["direccion"]=input("                       Ingrese la direccion: ")
+    usuarios["email"]=input("                       Ingrese el email: ")
     usuarios["registro_servicios"]=[]
     usuarios["registro_productos"]=[]
     usuarios["registro_pqr"]=[]
     
     datos["usuarios"].append(usuarios)
-    print( usuarios["nombre"],usuarios["apellido"],"registrado con éxito!")
+    line()
+    print_( usuarios["nombre"],usuarios["apellido"],"registrado con éxito!")
     return datos
 
 def crear_usuario():
@@ -38,20 +38,19 @@ def crear_usuario():
             continuar = very()
             if continuar == "2": break
             else: clear_screen()
-#crear_usuario()
 
 def eliminar_user(datos):
     datos = dict(datos)
-    documento =input("Ingrese el documento del usuario: ")
+    documento =input("                      Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
             user = (datos["usuarios"][i]["nombre"],datos["usuarios"][i]["apellido"])
             datos["usuarios"].pop(i)
             separador = " "
             user = separador.join(map(str, user))
-            print(user,"eliminado...")
+            print_(user,"eliminado...")
             return datos
-    print("Usuario no existente...")    
+    print_("Usuario no existente...")    
     return datos
 
 def eliminar_usuario():
@@ -67,15 +66,15 @@ def eliminar_usuario():
 
 def actualizar_user(datos):
     datos = dict(datos)
-    documento =input("Ingrese el documento del usuario: ")
+    documento =input("                      Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
             user = (datos["usuarios"][i]["nombre"],datos["usuarios"][i]["apellido"])
-            print ("Actulice el nombre:")
-            datos["usuarios"][i]["nombre"]=input("Ingrese el nombre nuevo: ")
-            print(user,"actualizado!")
+            print_ ("Actulice el nombre:")
+            datos["usuarios"][i]["nombre"]=input("                      Ingrese el nombre nuevo: ")
+            print_(user,"actualizado!")
             return datos
-    print("Usuario no existente...")    
+    print_("Usuario no existente...")    
     return datos
 
 
@@ -92,34 +91,34 @@ def actualizar_usuario():
 
 def leer_user(datos):
     datos = dict(datos)
-    documento =input("Ingrese el documento del usuario: ")
+    documento =input("                      Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
             max_length = max(len(datos["usuarios"][i]["nombre"] + " " + datos["usuarios"][i]["apellido"]) for i in range(len(datos["usuarios"])))
-            print(datos["usuarios"][i]["nombre"], datos["usuarios"][i]["apellido"])
-            print(datos["usuarios"][i]["documento"].rjust(max_length), "  -  Documento")
-            print(datos["usuarios"][i]["sexo"].rjust(max_length), "  -  Sexo")
-            print(str(datos["usuarios"][i]["edad"]).rjust(max_length), "  -  Edad")
-            print(datos["usuarios"][i]["ciudad"].rjust(max_length), "  -  Ciudad")
-            print(datos["usuarios"][i]["direccion"].rjust(max_length), "  -  Direccion")
-            print(str(datos["usuarios"][i]["telefono"]).rjust(max_length), "  -  Telefono")
-            print(datos["usuarios"][i]["email"].rjust(max_length), "  -  Email")
-            print(datos["usuarios"][i]["categoria"].rjust(max_length), "  -  Categoria")
-            print(i)
-            print(("---------          Registro de servicios          ---------"))
+            print_(datos["usuarios"][i]["nombre"], datos["usuarios"][i]["apellido"])
+            print_(datos["usuarios"][i]["documento"].rjust(max_length), "  -  Documento")
+            print_(datos["usuarios"][i]["sexo"].rjust(max_length), "  -  Sexo")
+            print_(str(datos["usuarios"][i]["edad"]).rjust(max_length), "  -  Edad")
+            print_(datos["usuarios"][i]["ciudad"].rjust(max_length), "  -  Ciudad")
+            print_(datos["usuarios"][i]["direccion"].rjust(max_length), "  -  Direccion")
+            print_(str(datos["usuarios"][i]["telefono"]).rjust(max_length), "  -  Telefono")
+            print_(datos["usuarios"][i]["email"].rjust(max_length), "  -  Email")
+            print_(datos["usuarios"][i]["categoria"].rjust(max_length), "  -  Categoria")
+            print_(i)
+            print_(("---------          Registro de servicios          ---------"))
             for sn in range(len(datos["usuarios"][i]["registro_servicios"])):
                 max_length_sn = max(len(datos["usuarios"][i]["registro_servicios"][sn]["referencia"] + " " + datos["usuarios"][i]["registro_servicios"][sn]["tipo_servicios"]) for sn_ in range(len(datos["usuarios"][i]["registro_servicios"])))
-                print("")
-                print(datos["usuarios"][i]["registro_servicios"][sn]["referencia"].rjust(max_length_sn) + "   -  " + datos["usuarios"][i]["registro_servicios"][sn]["tipo_servicios"])
-                print(datos["usuarios"][i]["registro_servicios"][sn]["id"].rjust(max_length_sn), "  -  id")
-                print(datos["usuarios"][i]["registro_servicios"][sn]["fecha"].rjust(max_length_sn), "  -  fecha")
-                print(str(datos["usuarios"][i]["registro_servicios"][sn]["precio"]).rjust(max_length_sn), "  -  precio")
+                print_("")
+                print_(datos["usuarios"][i]["registro_servicios"][sn]["referencia"].rjust(max_length_sn) + "   -  " + datos["usuarios"][i]["registro_servicios"][sn]["tipo_servicios"])
+                print_(datos["usuarios"][i]["registro_servicios"][sn]["id"].rjust(max_length_sn), "  -  id")
+                print_(datos["usuarios"][i]["registro_servicios"][sn]["fecha"].rjust(max_length_sn), "  -  fecha")
+                print_(str(datos["usuarios"][i]["registro_servicios"][sn]["precio"]).rjust(max_length_sn), "  -  precio")
                         
-            print(datos["usuarios"][i]["registro_productos"],"  -  Registro de productos")
-            print(datos["usuarios"][i]["registro_pqr"],"  -  Registro de PQR")
+            print_(datos["usuarios"][i]["registro_productos"],"  -  Registro de productos")
+            print_(datos["usuarios"][i]["registro_pqr"],"  -  Registro de PQR")
             return datos
     
-    print("Usuario no existente...")  
+    print_("Usuario no existente...")  
     return datos
 
 def leer_usuario():
@@ -133,14 +132,14 @@ def leer_usuario():
         
 def new_compra_user(datos):
     datos = dict(datos)
-    documento =input("Ingrese el documento del usuario: ")
+    documento =input("                      Ingrese el documento del usuario: ")
     
     #mostrar_productos,mostrar_tipos_productos
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
             datos["usuarios"][i]["registro_productos"].append(new_compra_user(datos))
             return datos
-    print("Usuario no existente...")    
+    print_("Usuario no existente...")    
     return datos
 
 def buscando_producto(datos):
@@ -150,7 +149,7 @@ def buscando_producto(datos):
         catalogo_productos["id"]=id_valido(catalogo_productos)
         for i in range(len(datos["catalogo_productos"])):
             if datos["catalogo_productos"][i]["id"] == catalogo_productos["id"]:
-                print (datos["catalogo_productos"][i]["id"],"ya se encuentra registrado!")
+                print_ (datos["catalogo_productos"][i]["id"],"ya se encuentra registrado!")
                 
     except Exception as e:
         reportar_error_a_txt(e)
@@ -168,12 +167,12 @@ def compra_producto(datos):
     
     buscando_producto(datos_catalogo)
     datos_catalogo = dict(datos_catalogo)
-    documento =input("Ingrese el documento del usuario: ")
+    documento =input("                      Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
             #datos["usuarios"][i]["registro_productos"]=[]
             datos["usuarios"][i]["registro_productos"].append(buscando_producto(datos))
-            print(datos["usuarios"][i]["registro_productos"])
+            print_(datos["usuarios"][i]["registro_productos"])
             guardar_datos(datos_catalogo, RUTA_BASE_DE_DATOS_USERS)
             break
     return datos

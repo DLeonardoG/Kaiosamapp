@@ -382,6 +382,21 @@
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
+        },
+        {
+            "documento": "123412345",
+            "edad": 21,
+            "nombre": "Goku",
+            "apellido": "San",
+            "telefono": 3154567832,
+            "sexo": "Masculino",
+            "ciudad": "Bucaramanga",
+            "direccion": "Calle 10",
+            "email": "darkgmail.com",
+            "categoria": "3",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
         }
     ]
 }
