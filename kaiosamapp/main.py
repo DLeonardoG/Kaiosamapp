@@ -32,7 +32,7 @@ while True:
                     print("pqr")
                     mostrar_txt(m_1_2)
                     op_m_1_2 = input("Seleccione una opcion:\n👉   ")
-                    if op_m_1_2 == "1": print("consultar_pqr")
+                    if op_m_1_2 == "1": consultar_pqr()
                     elif op_m_1_2 == "2": registrar_pqr()
                     elif op_m_1_2 == "3": print("Eliminar_pqr")
                     elif op_m_1_2 == "0":

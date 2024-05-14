@@ -30,17 +30,30 @@ def registrar_pqr():
         
 
 
+def consult_pqr(datos):
+    datos = dict(datos)
+    id =input("Ingrese el id del PQR: ")
+    for i in range(len(datos["pqr"])):
+        if datos["pqr"][i]["id"] == id:
+            max_length = max(len(datos["pqr"][i]["tipo_pqr"] + " " + datos["pqr"][i]["motivo"]) for i in range(len(datos["pqr"])))
+            print("----------------------------------------------------------------------------")
+            print(datos["pqr"][i]["tipo_pqr"]).title().rjust(max_length)
+            print("----------------------------------------------------------------------------")
+            print(datos["pqr"][i]["id"].rjust(max_length), "  -  id")
+            print(datos["pqr"][i]["motivo"].rjust(max_length), "  -  motivo")
+            print(datos["pqr"][i]["comentario"].rjust(max_length), "  -  comentario")
+            print(datos["pqr"][i]["fecha"].rjust(max_length), "  -  fecha")
+            print(datos["pqr"][i]["repuesta"].rjust(max_length), "  -  repuesta")
+            print("----------------------------------------------------------------------------")
+            return datos
+    print("PQR no existente...")
+    return datos
 
-
-
-
-def consultar_pqr(datos):
-    try:
-        pqr["id"]=id_valido(pqr)
-        for i in range(len(datos["pqr"])):
-            if datos["pqr"][i]["id"] == pqr["id"]:
-                print (datos["pqr"][i]["id"],"ya se encuentra registrado!")
-                return datos
-    except Exception as e:
-        reportar_error_a_txt(e)
-        pqr["id"] = ""
+def consultar_pqr():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_PQR)
+        datos = consult_pqr(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_PQR)
+        continuar = very()
+        if continuar == "2": break
+        else: clear_screen()

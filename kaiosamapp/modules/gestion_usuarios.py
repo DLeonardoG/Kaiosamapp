@@ -94,22 +94,6 @@ def actualizar_usuario():
 def leer_user(datos):
     datos = dict(datos)
     documento =input("Ingrese el documento del usuario: ")
-    """for i in range(len(datos["usuarios"])):
-        if datos["usuarios"][i]["documento"] == documento:
-            print(datos["usuarios"][i]["nombre"],datos["usuarios"][i]["apellido"])
-            print(datos["usuarios"][i]["documento"],"  -  Documento")
-            print(datos["usuarios"][i]["sexo"],"  -  Sexo")
-            print(datos["usuarios"][i]["edad"],"  -  Edad")
-            print(datos["usuarios"][i]["ciudad"],"  -  Ciudad")
-            print(datos["usuarios"][i]["direccion"],"  -  Direccion")
-            print(datos["usuarios"][i]["email"],"  -  Email")
-            print(datos["usuarios"][i]["categoria"],"  -  Categoria")
-            print(datos["usuarios"][i]["registro_servicios"],"  -  Registro de servicios")
-            print(datos["usuarios"][i]["registro_productos"],"  -  Registro de productos")
-            print(datos["usuarios"][i]["registro_pqr"],"  -  Registro de PQR")"""
-            
-    
-
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
             max_length = max(len(datos["usuarios"][i]["nombre"] + " " + datos["usuarios"][i]["apellido"]) for i in range(len(datos["usuarios"])))
