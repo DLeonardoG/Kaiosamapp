@@ -1,19 +1,17 @@
 from modules.funciones_secundarias import reportar_error_a_txt,very,clear_screen
-from modules.gestion_usuarios_funciones import telefono_valido,int_edad,sexo
+from modules.gestion_usuarios_funciones import telefono_valido,int_edad,sexo,int_documento
+from modules.catalogo_productos_funciones import mostrar_productos,mostrar_tipos_productos
 from modules.datos_users import *
 
 def registrar_user(datos):
     datos = dict(datos)
     usuarios={}
-    try:
-        usuarios["documento"]=input("Ingrese el documento: ")
-        for i in range(len(datos["usuarios"])):
-            if datos["usuarios"][i]["documento"] == usuarios["documento"]:
-                print (datos["usuarios"][i]["documento"],"ya se encuentra registrado!")
-                return datos
-    except Exception as e:
-        reportar_error_a_txt(e)
-        usuarios["documento"] = ""
+    int_documento(usuarios)
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == usuarios["documento"]:
+            print (datos["usuarios"][i]["documento"],"ya se encuentra registrado!")
+            return datos
+
     int_edad(usuarios)
     usuarios["nombre"]=input("Ingrese el nombre: ")
     usuarios["apellido"]=input("Ingrese el apellido: ")
@@ -135,6 +133,8 @@ def leer_usuario():
 def new_compra_user(datos):
     datos = dict(datos)
     documento =input("Ingrese el documento del usuario: ")
+    
+    #mostrar_productos,mostrar_tipos_productos
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
             datos["usuarios"][i]["registro_productos"].append(new_compra_user(datos))

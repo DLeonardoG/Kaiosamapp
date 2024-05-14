@@ -58,6 +58,6 @@ def print_(*args, **kwargs):
     print(' ' * espacio_blancos + texto.center(ancho_consola - 2 * espacio_blancos))
 print_("Este texto", "está centrado", "en la mitad", "de la consola", ancho_espacios=2)
 
-def imprimir_linea_horizontal(caracter='-'):
+def line():
     ancho_consola = shutil.get_terminal_size().columns
-    print(caracter * ancho_consola)
+    return print("-" * ancho_consola)

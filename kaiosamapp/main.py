@@ -84,6 +84,8 @@ while True:
                             elif op_m_1_4_3 == "2": eliminar_producto()
                             elif op_m_1_4_3 == "3": modificar_producto()
                             elif op_m_1_4_3 == "4": consultar_producto()
+                            elif op_m_1_4_3 == "5": mostrar_productos()
+                            elif op_m_1_4_3 == "6": mostrar_tipos_productos()
                             elif op_m_1_4_3 == "0":
                                 print("menu_anterior")
                                 break

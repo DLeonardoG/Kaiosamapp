@@ -1,5 +1,5 @@
 from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida,print_
-
+from modules.funciones_secundarias import line
 def int_id(catalogo_productos):
     while True:
         try:
@@ -102,66 +102,102 @@ def tipo_productos(catalogo_productos):
             print_("La opcion no es valida")
             catalogo_productos["tipo_productos"] = ""  
             
+def kame_celular(datos):
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["code_unico"] == "0012":
+            line()
+            print_(datos["catalogo_productos"][i]["tipo_productos"])
+            line()
+            print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
+            print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
+            print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
+            print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
+            print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
+            print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
+            print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
+            line()
+            print_("----  Caracteristicas ----")
+            line()
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["color"] , "  -   Color")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["memoria"] , "  -   Memoria")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["generacion"], "  -   Generacion")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["camara"], "  -   Camara")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["resolucion"], "  -   Resolucion")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["bateria"], "  -   Bateria")
+            line()
+    return datos
+            
+def kame_tv(datos):
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["code_unico"] == "0022":
+            line()
+            print_(datos["catalogo_productos"][i]["tipo_productos"])
+            line()
+            print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
+            print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
+            print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
+            print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
+            print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
+            print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
+            print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
+            line()
+            print_("----  Caracteristicas ----")
+            line()
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["resolucion"], "  -   Resolucion")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["pulgadas"], "  -   Pulgadas")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["smart_tv"], "  -   Smart TV")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["modelo"], "  -   Modelo")
+            line()
+    return datos
+
+def kame_computador(datos):
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["code_unico"] == "0032":
+            line()
+            print_(datos["catalogo_productos"][i]["tipo_productos"])
+            line()
+            print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
+            print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
+            print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
+            print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
+            print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
+            print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
+            print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
+            line()
+            print_("----  Caracteristicas ----")
+            line()
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["color"], "  -   Color")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["memoria"], " -   Memoria")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["generacion"], " -   Generacion")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["ram"] , " -   Ram")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["pantalla"], " -   Pantalla")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["procesador"], "  -   Procesador")
+            print_(datos["catalogo_productos"][i]["caracteristicas"]["bateria"], " -   Bateria")
+            line()
+    return datos
+
 def mostrar_tipo_productos(datos):    
     while True:
+        line()
         op = input("Ingrese el tipo de Kame producto: \n    0. Salir\n    1. Kame celular\n    2. kame tv\n    3. kame computador\n>>    ")
+        line()
         if op == "1": 
-            for i in range(len(datos["catalogo_productos"])):
-                if datos["catalogo_productos"][i]["code_unico"] == "0012":
-                    print_(datos["catalogo_productos"][i]["tipo_productos"], "  -   Tipo de producto")
-                    print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
-                    print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
-                    print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
-                    print_("----  Caracteristicas ----")
-                    print_(datos["catalogo_productos"][i]["caracteristicas"]["color"])
-                    print_(datos["catalogo_productos"][i]["caracteristicas"]["memoria"])
-                    print_(datos["catalogo_productos"][i]["caracteristicas"]["generacion"])
-                    print_(datos["catalogo_productos"][i]["caracteristicas"]["camara"])
-                    print_(datos["catalogo_productos"][i]["caracteristicas"]["resolucion"])
-                    print_(datos["catalogo_productos"][i]["caracteristicas"]["bateria"])
-                    print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
-                    print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
-                    print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
-                    print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
-                    print_(datos["catalogo_productos"][i]["cantidad_vendida"], "  -   Cantidad vendida")
-            return datos
+            kame_celular(datos)
         elif op == "2":
-            for i in range(len(datos["catalogo_productos"])):
-                if datos["catalogo_productos"][i]["code_unico"] == "0022":
-                    print_(datos["catalogo_productos"][i]["tipo_productos"], "  -   Tipo de producto")
-                    print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
-                    print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
-                    print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
-                    print_("----  Caracteristicas ----")
-                    
-                    print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
-                    print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
-                    print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
-                    print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
-                    print_(datos["catalogo_productos"][i]["cantidad_vendida"], "  -   Cantidad vendida")
-            return datos
+            kame_tv(datos)
         elif op == "3":
-            for i in range(len(datos["catalogo_productos"])):
-                if datos["catalogo_productos"][i]["code_unico"] == "0012":
-                    print_(datos["catalogo_productos"][i]["tipo_productos"], "  -   Tipo de producto")
-                    print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
-                    print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
-                    print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
-                    print_("----  Caracteristicas ----")
-                    
-                    print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
-                    print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
-                    print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
-                    print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
-                    print_(datos["catalogo_productos"][i]["cantidad_vendida"], "  -   Cantidad vendida")
-            return datos
+            kame_computador(datos)
         elif op == "0":
+            line()
             print_("Regresando...")
+            line()
             return datos
         else:
             dm = "Error al registrar tipo_productos"
             reportar_error_a_txt(dm)
             print_("El tipo de servicio no es valido")
+            
+
             
 def int_precio(catalogo_productos):
     while True:

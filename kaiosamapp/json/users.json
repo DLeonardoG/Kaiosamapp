@@ -367,6 +367,21 @@
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
+        },
+        {
+            "documento": "987654321",
+            "edad": 19,
+            "nombre": "goku",
+            "apellido": "son",
+            "telefono": 1231231231,
+            "sexo": "Masculino",
+            "ciudad": "bug",
+            "direccion": "baba",
+            "email": "dark",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
         }
     ]
 }

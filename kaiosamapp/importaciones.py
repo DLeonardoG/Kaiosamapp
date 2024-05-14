@@ -20,5 +20,5 @@ from modules.pqr import registrar_pqr,consultar_pqr,eliminar_pqr
 from modules.catalogo_servicios import crear_servicio,eliminar_servicio,mostrar_servicios
 from modules.catalogo_servicios import modificar_servicio,consultar_servicio,mostrar_tipos_servicios
 #Gestion productos
-from modules.catalogo_productos import crear_producto,eliminar_producto
-from modules.catalogo_productos import modificar_producto,consultar_producto
+from modules.catalogo_productos import crear_producto,eliminar_producto,mostrar_tipos_productos
+from modules.catalogo_productos import modificar_producto,consultar_producto,mostrar_productos

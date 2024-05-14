@@ -1,4 +1,5 @@
 from modules.funciones_secundarias import reportar_error_a_txt
+from modules.catalogo_productos_funciones import mostrar_productos,mostrar_tipos_productos
 
 def int_edad(usuarios):
     while True:
@@ -17,12 +18,16 @@ def int_documento(usuarios):
             usuarios["documento"] = int(input("Ingrese el documento: "))
             if isinstance(usuarios["documento"], int):
                 cad = str(usuarios["documento"])  
-                if len(cad)>= 8 and len(cad)<= 10: return usuarios["documento"]
+                if len(cad)>= 8 and len(cad)<= 10: 
+                    usuarios["documento"] = cad
+                    return usuarios["documento"]
                 else: raise ValueError("documento", usuarios["documento"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar documento"
             reportar_error_a_txt(e)
             print("Ingrese un documento valido")
+            
+
 
 def int_telefono(usuarios):
     while True:
@@ -55,6 +60,48 @@ def sexo(usuarios):
         elif op == "2":
             usuarios["sexo"] = "Femenino"                    
             break
+        elif op == "3":
+            usuarios["sexo"] = "Otro"                    
+            break
+        else:
+            dm = "Error al registrar sexo"
+            reportar_error_a_txt(dm)
+            print("El sexo no es valido")
+            usuarios["sexo"] = ""   
+
+def compra(usuarios):    
+    while True:
+        op = input("Compra de... \n 1. Masculino \n 2. Femenino \n 3. Otro\n>>>")
+        if op == "1": 
+            usuarios["sexo"] = "Masculino"                    
+            break
+        elif op == "2":
+            while True:
+                op_l = input("Lectura de... \n 0. Salir\n 1. Todos los servicios \n 2. Sercicio especifico\n>>>")
+                if op_l == "1": 
+                    mostrar_productos()
+                    while True:
+                        op_l_2 = input("¿Realizar compra? \n 1. Si \n 2. No")
+                        if op_l_2 == "1":
+                            input("Ingrese el  id del producto a comprar: ")
+                            
+                        elif op_l_2 == "2": break
+                        elif op_l_2 == "0":
+                            print("menu_anterior")
+                            break
+                        else: opcion_no_valida()                    
+                elif op_l == "2":
+                    mostrar_tipos_productos()         
+                    break
+                elif op_l == "0":
+                    print("menu_anterior")
+                    break
+                else:
+                    dm = "Error al registrar sexo"
+                    reportar_error_a_txt(dm)
+                    print("El sexo no es valido")
+                    usuarios["sexo"] = ""                   
+            
         elif op == "3":
             usuarios["sexo"] = "Otro"                    
             break
