@@ -71,7 +71,7 @@ def actualizar_user(datos):
     documento =input("Ingrese el documento del usuario: ")
     for i in range(len(datos["usuarios"])):
         if datos["usuarios"][i]["documento"] == documento:
-            user = str(datos["usuarios"][i]["nombre"],datos["usuarios"][i]["apellido"])
+            user = (datos["usuarios"][i]["nombre"],datos["usuarios"][i]["apellido"])
             print_ ("Actualice la categoria: ")
             datos["usuarios"][i]["categoria"]=input("Ingrese la categoria: ")
             print_(user,"actualizado!")
@@ -307,6 +307,7 @@ def nueva_compra_usuario (datos):
             break
     guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
     return datos
+
 #leer_user(datos)
 #guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
 

@@ -54,7 +54,7 @@ def telefono_valido(usuarios):
             
 def sexo(usuarios):    
     while True:
-        op = input("      Ingrese el sexo: \n         1. Masculino         \n 2. Femenino \n       3. Otro\n    >>   ")
+        op = input("Ingrese el sexo: \n1. Masculino\n2. Femenino\n3. Otro\n>>  ")
         if op == "1": 
             usuarios["sexo"] = "Masculino"                    
             break

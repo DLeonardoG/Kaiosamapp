@@ -127,9 +127,10 @@ def mostrar_productos():
 def mostrar_types_productos(datos):
     datos = dict(datos)
     datos["catalogo_productos"]
-    for i in range(len(datos["catalogo_productos"])):
-        mostrar_tipo_productos(datos)
-        return datos
+    mostrar_tipo_productos(datos)
+    return datos
+
+
     
 def mostrar_tipos_productos():
     while True:

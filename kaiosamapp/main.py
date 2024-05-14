@@ -24,7 +24,7 @@ while True:
                     elif op_m_1_1 == "2": eliminar_usuario()
                     elif op_m_1_1 == "3": actualizar_usuario()               
                     elif op_m_1_1 == "4": leer_usuario()                            
-                    elif op_m_1_1 == "5": nueva_compra_usuario()
+                    elif op_m_1_1 == "5": #nueva_compra_usuario()
                     elif op_m_1_1 == "6": print("recomendaciones_usuario")                                
                     elif op_m_1_1 == "0":
                         print("menu_anterior")                            

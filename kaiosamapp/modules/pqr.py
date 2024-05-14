@@ -1,6 +1,6 @@
 from modules.datos_pqr import *
-from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida
-from modules.funciones_secundarias import clear_screen,very,_fecha_
+from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida,line
+from modules.funciones_secundarias import clear_screen,very,_fecha_,print_
 from modules.pqr_funciones import id_valido,tipo_pqr,contador_id
 
 def create_pqr(datos):
@@ -9,20 +9,20 @@ def create_pqr(datos):
     pqr["code"] = "0003"
     id = contador_id()
     pqr["id"] = id
-    print("----------------------------------------------------------------")
+    line()
     tipo_pqr(pqr)
-    print("----------------------------------------------------------------")
-    pqr["motivo"]=input("                   Ingrese el motivo: ")
-    pqr["comentario"]=input("                   Ingrese el comentario: ")
-    print("----------------------------------------------------------------")
+    line()
+    pqr["motivo"]=input("Ingrese el motivo: ")
+    pqr["comentario"]=input("Ingrese el comentario: ")
+    line()
     pqr["fecha"]= _fecha_
     pqr["repuesta"] = ""
 
     datos["pqr"].append(pqr)
     clear_screen()
-    print("----------------------------------------------------------------------------------------")
+    line()
     print( "           La solicitud ha sido sido recibida bajo el numero ", pqr["id"],"\ncon este podra hacerle seguimiento a su solicitud")
-    print("----------------------------------------------------------------------------------------")
+    line()
     return datos
 
 def registrar_pqr():
@@ -38,27 +38,36 @@ def registrar_pqr():
 
 def consult_pqr(datos):
     datos = dict(datos)
-    print("----------------------------------------------------------------------------")
+    line()
     id =input("                       Ingrese el numero del PQR: ")
-    print("----------------------------------------------------------------------------")
+    line()
     clear_screen()
     for i in range(len(datos["pqr"])):
         if datos["pqr"][i]["id"] == id:
-            max_length = max(len(datos["pqr"][i]["tipo_pqr"] + " " + datos["pqr"][i]["motivo"]) for i in range(len(datos["pqr"])))
-            print("----------------------------------------------------------------------------")
-            print(((datos["pqr"][i]["tipo_pqr"]).title()).rjust(max_length), "  -   Tipo de PQR")
-            print("----------------------------------------------------------------------------")
-            print(datos["pqr"][i]["id"].rjust(max_length), "  -   Id")
-            print(datos["pqr"][i]["motivo"].rjust(max_length), "  -   Motivo")
-            print(datos["pqr"][i]["comentario"].rjust(max_length), "  -   Comentario")
-            print(datos["pqr"][i]["fecha"].rjust(max_length), "  -   Fecha")
-            print(datos["pqr"][i]["repuesta"].rjust(max_length), "  -   Repuesta")
-            print("----------------------------------------------------------------------------")
+            line()
+            print_("Tipo de PQR")
+            print_(datos["pqr"][i]["tipo_pqr"])
+            line()
+            print_("Id")
+            print_(datos["pqr"][i]["id"])
+            line()
+            print_("Motivo de PQR")
+            print(datos["pqr"][i]["motivo"])
+            line()
+            print_("Comentario")
+            print(datos["pqr"][i]["comentario"])
+            line()
+            print_("Fecha")
+            print(datos["pqr"][i]["fecha"])
+            line()
+            print_("Repuesta")
+            print(datos["pqr"][i]["repuesta"])
+            line()
             return datos
     clear_screen()
-    print("----------------------------------------------------------------------------")    
+    line()    
     print("                        PQR",id,"no existente...")
-    print("----------------------------------------------------------------------------")
+    line()
     return datos
 
 def consultar_pqr():
@@ -72,23 +81,23 @@ def consultar_pqr():
         
 def eliminate_pqr(datos):
     datos = dict(datos)
-    print("----------------------------------------------------------------------------")
+    line()
     id =input("                   Ingrese el numero de PQR 💀: ")
-    print("----------------------------------------------------------------------------")
+    line()
     for i in range(len(datos["pqr"])):
         if datos["pqr"][i]["id"] == id:
             plan = (datos["pqr"][i]["tipo_pqr"]," - ",datos["pqr"][i]["motivo"])
             datos["pqr"].pop(i)
             separador = " "
             plan = separador.join(map(str, plan))
-            print("----------------------------------------------------------------------------")
+            line()
             print(                       plan," - eliminado...")
-            print("----------------------------------------------------------------------------")
+            line()
             return datos
     clear_screen()
-    print("----------------------------------------------------------------------------")    
+    line()    
     print("                          ",id,"no existe...")    
-    print("----------------------------------------------------------------------------")
+    line()
     return datos
 
 def eliminar_pqr():

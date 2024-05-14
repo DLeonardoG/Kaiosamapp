@@ -140,9 +140,8 @@ def mostrar_servicios():
 def mostrar_types_servicios(datos):
     datos = dict(datos)
     datos["catalogo_servicios"]
-    for i in range(len(datos["catalogo_servicios"])):
-        mostrar_tipo_servicios(datos)
-        return datos
+    mostrar_tipo_servicios(datos)
+    return datos
     
 def mostrar_tipos_servicios():
     while True:

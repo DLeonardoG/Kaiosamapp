@@ -411,6 +411,36 @@
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
+        },
+        {
+            "documento": "123445676",
+            "edad": 34,
+            "nombre": "34",
+            "apellido": "df",
+            "telefono": 1212121223,
+            "sexo": "Masculino",
+            "ciudad": "fgg",
+            "direccion": "ds",
+            "email": "sd",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": "1234567895",
+            "edad": 19,
+            "nombre": "rodhi",
+            "apellido": "fr",
+            "telefono": 2342342342,
+            "sexo": "Otro",
+            "ciudad": "fr",
+            "direccion": "fr",
+            "email": "f",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
         }
     ]
 }
