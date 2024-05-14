@@ -86,7 +86,7 @@
         },
         {
             "documento": "12345678",
-            "nombre": "crilin",
+            "nombre": "deivi",
             "apellido": "kaiken",
             "edad": 18,
             "sexo": "masculino",
@@ -393,7 +393,21 @@
             "ciudad": "Bucaramanga",
             "direccion": "Calle 10",
             "email": "darkgmail.com",
-            "categoria": "3",
+            "categoria": "123",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": "1234567890",
+            "edad": 23,
+            "nombre": "juan",
+            "apellido": "carlos",
+            "telefono": 1212121212,
+            "sexo": "Masculino",
+            "ciudad": "Buacaramanga",
+            "direccion": "21 con 56",
+            "email": "@gamil.com",
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []

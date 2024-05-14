@@ -63,3 +63,6 @@ def very():
             clear_screen()
             return "2"
         else: opcion_no_valida()
+        
+def es():
+    print("")

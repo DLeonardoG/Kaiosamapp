@@ -139,3 +139,15 @@ def mostrar_tipos_productos():
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
+        
+def agregar_producto(datos):
+    datos = dict(datos)
+    id =input("Ingrese el id del Producto: ")
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["id"] == id:
+            product = datos["catalogo_productos"][i]
+            
+            return product
+    print("Producto no existente...")    
+    return datos
+
