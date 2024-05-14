@@ -456,6 +456,66 @@
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
+        },
+        {
+            "documento": "1002295869",
+            "edad": 112,
+            "nombre": "18",
+            "apellido": "22",
+            "telefono": 4545454545,
+            "sexo": "Otro",
+            "ciudad": "lok city",
+            "direccion": "debako del puente",
+            "email": "ded",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": "12124312",
+            "edad": 9999,
+            "nombre": "gay\u00e7\u00e7",
+            "apellido": "Holmes",
+            "telefono": 1234123412,
+            "sexo": "Femenino",
+            "ciudad": "guguta",
+            "direccion": "deodke",
+            "email": "linsa",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": "2123123123",
+            "edad": 123,
+            "nombre": "12",
+            "apellido": "gomes",
+            "telefono": 1234567891,
+            "sexo": "Masculino",
+            "ciudad": "gugr",
+            "direccion": "calle 200",
+            "email": "dark email",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
+        },
+        {
+            "documento": "1111111111",
+            "edad": 150,
+            "nombre": "4546",
+            "apellido": "pere",
+            "telefono": 1245785612,
+            "sexo": "Otro",
+            "ciudad": "hjkh",
+            "direccion": "khkh",
+            "email": "gjgh",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
         }
     ]
 }

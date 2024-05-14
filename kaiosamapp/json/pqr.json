@@ -29,6 +29,46 @@
             "comentario": "wewe",
             "fecha": "2024-05-14 01:01:21",
             "repuesta": ""
+        },
+        {
+            "code": "0003",
+            "id": "000012",
+            "tipo_pqr": "reclamo",
+            "code_unico": "0033",
+            "motivo": "que mal servicio",
+            "comentario": "paque mucho por eso\u00e7",
+            "fecha": "2024-05-14 17:17:55",
+            "repuesta": ""
+        },
+        {
+            "code": "0003",
+            "id": "000013",
+            "tipo_pqr": "sugerencia",
+            "code_unico": "0043",
+            "motivo": "me gustas",
+            "comentario": "mucho",
+            "fecha": "2024-05-14 17:19:22",
+            "repuesta": ""
+        },
+        {
+            "code": "0003",
+            "id": "000014",
+            "tipo_pqr": "pregunta",
+            "code_unico": "0013",
+            "motivo": "me orino",
+            "comentario": "por que si",
+            "fecha": "2024-05-14 18:00:26",
+            "repuesta": ""
+        },
+        {
+            "code": "0003",
+            "id": "000015",
+            "tipo_pqr": "sugerencia",
+            "code_unico": "0043",
+            "motivo": "dyedge",
+            "comentario": "fdewd",
+            "fecha": "2024-05-14 18:00:26",
+            "repuesta": ""
         }
     ]
 }

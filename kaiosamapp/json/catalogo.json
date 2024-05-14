@@ -1,18 +1,158 @@
 {
-    "code": "0001",
-    "id": "12345",
-    "tipo_servicios": "fibra_optica_namekusei",
-    "code_unico": "0011",
-    "referencia": "valeria",
-    "plan": "pegarle a valeria",
-    "precio": 1100,
-    "duracion": "ma\u00f1ana",
-    "descripcion": "me gusta programar",
-    "cantidad_total": 100,
-    "cantidad_vendida": 0,
-    "descuento": {
-        "nuevo": 12,
-        "regular": 45,
-        "leal": 0
-    }
+    "catalogo_servicios": [
+        {
+            "code": "0001",
+            "id": "12121",
+            "tipo_servicios": "fibra_optica_namekusei",
+            "code_unico": "0011",
+            "referencia": "12",
+            "plan": "12",
+            "precio": 12000,
+            "duracion": "1 mes",
+            "descripcion": "weswoot",
+            "cantidad_total": 10,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 12,
+                "regular": 1,
+                "leal": 2
+            }
+        },
+        {
+            "code": "0001",
+            "id": "12345",
+            "tipo_servicios": "fibra_optica_namekusei",
+            "code_unico": "0011",
+            "referencia": "valeria",
+            "plan": "pegarle a valeria",
+            "precio": 1100,
+            "duracion": "ma\u00f1ana",
+            "descripcion": "me gusta programar",
+            "cantidad_total": 100,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 12,
+                "regular": 45,
+                "leal": 0
+            }
+        },
+        {
+            "code": "0001",
+            "id": "98765",
+            "tipo_servicios": "combo_dragon",
+            "code_unico": "0041",
+            "referencia": "sw",
+            "plan": "sw",
+            "precio": 55555,
+            "duracion": "3 dias",
+            "descripcion": "estoy feliz",
+            "cantidad_total": 12,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 2,
+                "regular": 2,
+                "leal": 2
+            }
+        },
+        {
+            "code": "0001",
+            "id": "98732",
+            "tipo_servicios": "combo_dragon",
+            "code_unico": "0041",
+            "referencia": "jaja",
+            "plan": "el mejor",
+            "precio": 600000,
+            "duracion": "t mes",
+            "descripcion": "rl mrjodr plan ",
+            "cantidad_total": 2,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 23,
+                "regular": 23,
+                "leal": 23
+            }
+        }
+    ],
+    "catalogo_productos": [
+        {
+            "code": "0002",
+            "id": "12345",
+            "referencia": "12345",
+            "marca": "fr",
+            "tipo_productos": "kame_celular",
+            "caracteristicas": {
+                "color": "de",
+                "memoria": "de",
+                "generacion": "ed",
+                "camara": "d",
+                "resolucion": "ed",
+                "bateria": "ed"
+            },
+            "code_unico": "0012",
+            "precio": 5000,
+            "garantia": "de",
+            "descripcion": "de",
+            "cantidad_total": 78,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 2,
+                "regular": 2,
+                "leal": 2
+            }
+        },
+        {
+            "code": "0002",
+            "id": "25434",
+            "referencia": "reere",
+            "marca": "34343",
+            "tipo_productos": "kame_computador",
+            "caracteristicas": {
+                "color": "como",
+                "memoria": "mco",
+                "ram": "de",
+                "generacion": "w",
+                "pantalla": "3",
+                "procesador": "de",
+                "bateria": "ce"
+            },
+            "code_unico": "0032",
+            "precio": 1000,
+            "garantia": "12999\u00e7",
+            "descripcion": "121",
+            "cantidad_total": 3456,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 4325,
+                "regular": 235,
+                "leal": 235
+            }
+        },
+        {
+            "code": "0002",
+            "id": "45126",
+            "referencia": "789456123",
+            "marca": "",
+            "tipo_productos": "kame_celular",
+            "caracteristicas": {
+                "color": "rojo",
+                "memoria": "hiku\u00e7",
+                "generacion": "hkhk",
+                "camara": "bhkj",
+                "resolucion": "jhkh",
+                "bateria": "khk"
+            },
+            "code_unico": "0012",
+            "precio": 20000,
+            "garantia": "1a\u00f1o",
+            "descripcion": "hjkhklh",
+            "cantidad_total": 2,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 20,
+                "regular": 12,
+                "leal": 45
+            }
+        }
+    ],
+    "facturas": []
 }
