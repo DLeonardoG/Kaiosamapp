@@ -70,6 +70,7 @@ while True:
                             elif op_m_1_4_2 == "3": modificar_servicio()
                             elif op_m_1_4_2 == "4": consultar_servicio()
                             elif op_m_1_4_2 == "5": mostrar_servicios()
+                            elif op_m_1_4_2 == "6": mostrar_tipos_servicios()
                             elif op_m_1_4_2 == "0":
                                 print("menu_anterior")
                                 break

@@ -1,7 +1,7 @@
 from modules.datos_catalogo import *
 from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida
-from modules.funciones_secundarias import clear_screen,very
-from modules.catalogo_servicios_funciones import id_valido,tipo_servicios,int_precio
+from modules.funciones_secundarias import clear_screen,very,print_
+from modules.catalogo_servicios_funciones import id_valido,tipo_servicios,int_precio,mostrar_tipo_servicios
 from modules.catalogo_servicios_funciones import int_nuevo,int_regular,int_leal,int_cantidad_total
 from modules.catalogo_servicios_funciones import modificar
 
@@ -13,7 +13,7 @@ def crear_service(datos):
         catalogo_servicios["id"]=id_valido(catalogo_servicios)
         for i in range(len(datos["catalogo_servicios"])):
             if datos["catalogo_servicios"][i]["id"] == catalogo_servicios["id"]:
-                print (datos["catalogo_servicios"][i]["id"],"ya se encuentra registrado!")
+                print_(datos["catalogo_servicios"][i]["id"],"ya se encuentra registrado!")
                 return datos
     except Exception as e:
         reportar_error_a_txt(e)
@@ -32,7 +32,7 @@ def crear_service(datos):
     int_leal(catalogo_servicios)
     
     datos["catalogo_servicios"].append(catalogo_servicios)
-    print( catalogo_servicios["referencia"],catalogo_servicios["plan"],"registrado con éxito!")
+    print_( catalogo_servicios["referencia"],catalogo_servicios["plan"],"registrado con éxito!")
     return datos
     
 def crear_servicio():
@@ -46,22 +46,22 @@ def crear_servicio():
 
 def eliminar_service(datos):
     datos = dict(datos)
-    print("----------------------------------------------------------------------------")
+    print_("----------------------------------------------------------------------------")
     id =input("                     Ingrese el id del servicio 💀: ")
-    print("----------------------------------------------------------------------------")
+    print_("----------------------------------------------------------------------------")
     for i in range(len(datos["catalogo_servicios"])):
         if datos["catalogo_servicios"][i]["id"] == id:
             plan = (datos["catalogo_servicios"][i]["referencia"],datos["catalogo_servicios"][i]["plan"])
             datos["catalogo_servicios"].pop(i)
             separador = " "
             plan = separador.join(map(str, plan))
-            print("----------------------------------------------------------------------------")
-            print(                           plan,"eliminado...")
-            print("----------------------------------------------------------------------------")
+            print_("----------------------------------------------------------------------------")
+            print_(                           plan,"eliminado...")
+            print_("----------------------------------------------------------------------------")
             return datos
-    print("----------------------------------------------------------------------------")    
-    print("                          ",plan,"no existe...")    
-    print("----------------------------------------------------------------------------")
+    print_("----------------------------------------------------------------------------")    
+    print_("                          ",plan,"no existe...")    
+    print_("----------------------------------------------------------------------------")
     return datos
 
 def eliminar_servicio():
@@ -83,7 +83,7 @@ def modificar_service(datos):
         if datos["catalogo_servicios"][i]["id"] == id:
             modificar(datos,i)
             return datos
-    print("Producto no existente...")   
+    print_("Producto no existente...")   
     return datos
 
 def modificar_servicio():
@@ -100,9 +100,9 @@ def consultar_service(datos):
     id =input("Ingrese el id del servicio: ")
     for i in range(len(datos["catalogo_servicios"])):
         if datos["catalogo_servicios"][i]["id"] == id:
-            print(datos["catalogo_servicios"][i])
+            print_(datos["catalogo_servicios"][i])
             return datos
-    print("Servicio no existente...")    
+    print_("Servicio no existente...")    
     return datos
 
 def consultar_servicio():
@@ -117,29 +117,37 @@ def consultar_servicio():
 def listar_service(datos):
     datos = dict(datos)
     for i in range(len(datos["catalogo_servicios"])):
-        max_length = max(len(datos["catalogo_servicios"][i]["tipo_servicios"] + " " + datos["catalogo_servicios"][i]["referencia"]) for i in range(len(datos["catalogo_servicios"])))
-        print("----------------------------------------------------------------------------")
-        print(((datos["catalogo_servicios"][i]["tipo_catalogo_servicios"]).title()).rjust(max_length), "  -   Tipo de catalogo_servicios")
-        print("----------------------------------------------------------------------------")
-        print(datos["catalogo_servicios"][i]["id"]
-        print("------------------------------------------------------------------------------")
-        print(datos["catalogo_servicios"][i]["tipo_servicios"])
-        print("------------------------------------------------------------------------------")
-        print(datos["catalogo_servicios"][i]["id"]).rjust(max_length), "  -   Id")
-        print(datos["catalogo_servicios"][i]["referencia"]).rjust(max_length), "  -   Referencia"
-        print(datos["catalogo_servicios"][i]["plan"])
-        print(datos["catalogo_servicios"][i]["precio"])
-        print(datos["catalogo_servicios"][i]["duracion"])
-        print(datos["catalogo_servicios"][i]["descripcion"])
-        print(datos["catalogo_servicios"][i]["cantidad_total"])
-        print(datos["catalogo_servicios"][i]["cantidad_vendida"])
-        print("------------------------------------------------------------------------------")
+        print_(datos["catalogo_servicios"][i]["tipo_servicios"], "  -   Tipo de catalogo_servicios")
+        print_(datos["catalogo_servicios"][i]["id"] + "  -   Id")
+        print_(datos["catalogo_servicios"][i]["referencia"], "  -   Referencia")
+        print_(datos["catalogo_servicios"][i]["plan"], "  -   Plan")
+        print_(datos["catalogo_servicios"][i]["precio"], "  -   Precio")
+        print_(datos["catalogo_servicios"][i]["duracion"], "  -   Duracion")
+        print_(datos["catalogo_servicios"][i]["descripcion"], " - Descripcion")
+        print_(datos["catalogo_servicios"][i]["cantidad_total"], "  -   Cantidad Total")
+        print_(datos["catalogo_servicios"][i]["cantidad_vendida"], "  -   Cantidad vendida")
     return datos
 
 def mostrar_servicios():
     while True:
         datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
         datos = listar_service(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
+        continuar = very()
+        if continuar == "2": break
+        else: clear_screen()
+
+def mostrar_types_servicios(datos):
+    datos = dict(datos)
+    datos["catalogo_servicios"]
+    for i in range(len(datos["catalogo_servicios"])):
+        mostrar_tipo_servicios(datos)
+        return datos
+    
+def mostrar_tipos_servicios():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = mostrar_types_servicios(datos)
         guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
         continuar = very()
         if continuar == "2": break

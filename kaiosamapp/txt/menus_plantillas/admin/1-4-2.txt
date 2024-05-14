@@ -7,4 +7,5 @@ Servicio
        3 . M o d i f i c a r 🔄
        4 . C o n s u l t a r 👁️
        5 . M o s t r a r - T o d o s 📋
+       6 . M o s t r a r - A p a r t e 
 -----------------------------------------------

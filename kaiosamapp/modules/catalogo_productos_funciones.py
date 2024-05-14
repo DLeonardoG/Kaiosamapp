@@ -1,4 +1,4 @@
-from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida
+from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida,print_
 
 def int_id(catalogo_productos):
     while True:
@@ -10,7 +10,7 @@ def int_id(catalogo_productos):
         except Exception as e:
             e = e,"Error al registrar id"
             reportar_error_a_txt(e)
-            print("Ingrese un id valido")
+            print_("Ingrese un id valido")
             
 def id_valido(catalogo_productos):    
     while True:
@@ -20,7 +20,7 @@ def id_valido(catalogo_productos):
         else:
             dm = "Error al registrar id"
             reportar_error_a_txt(dm)
-            print("El numero de id debe tener 5 digitos")
+            print_("El numero de id debe tener 5 digitos")
             catalogo_productos["id"] = ""
             
 def int_modelo(catalogo_productos,name):
@@ -35,7 +35,7 @@ def int_modelo(catalogo_productos,name):
         except Exception as e:
             e = (e,"Error al registrar modelo de ",name)
             reportar_error_a_txt(e)
-            print("Ingrese un modelo de ",name," valido")
+            print_("Ingrese un modelo de ",name," valido")
             
 def tipo_productos(catalogo_productos):    
     while True:
@@ -99,8 +99,69 @@ def tipo_productos(catalogo_productos):
         else:
             dm = "Error al registrar tipo_productos"
             reportar_error_a_txt(dm)
-            print("La opcion no es valida")
+            print_("La opcion no es valida")
             catalogo_productos["tipo_productos"] = ""  
+            
+def mostrar_tipo_productos(datos):    
+    while True:
+        op = input("Ingrese el tipo de Kame producto: \n    0. Salir\n    1. Kame celular\n    2. kame tv\n    3. kame computador\n>>    ")
+        if op == "1": 
+            for i in range(len(datos["catalogo_productos"])):
+                if datos["catalogo_productos"][i]["code_unico"] == "0012":
+                    print_(datos["catalogo_productos"][i]["tipo_productos"], "  -   Tipo de producto")
+                    print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
+                    print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
+                    print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
+                    print_("----  Caracteristicas ----")
+                    print_(datos["catalogo_productos"][i]["caracteristicas"]["color"])
+                    print_(datos["catalogo_productos"][i]["caracteristicas"]["memoria"])
+                    print_(datos["catalogo_productos"][i]["caracteristicas"]["generacion"])
+                    print_(datos["catalogo_productos"][i]["caracteristicas"]["camara"])
+                    print_(datos["catalogo_productos"][i]["caracteristicas"]["resolucion"])
+                    print_(datos["catalogo_productos"][i]["caracteristicas"]["bateria"])
+                    print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
+                    print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
+                    print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
+                    print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
+                    print_(datos["catalogo_productos"][i]["cantidad_vendida"], "  -   Cantidad vendida")
+            return datos
+        elif op == "2":
+            for i in range(len(datos["catalogo_productos"])):
+                if datos["catalogo_productos"][i]["code_unico"] == "0022":
+                    print_(datos["catalogo_productos"][i]["tipo_productos"], "  -   Tipo de producto")
+                    print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
+                    print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
+                    print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
+                    print_("----  Caracteristicas ----")
+                    
+                    print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
+                    print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
+                    print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
+                    print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
+                    print_(datos["catalogo_productos"][i]["cantidad_vendida"], "  -   Cantidad vendida")
+            return datos
+        elif op == "3":
+            for i in range(len(datos["catalogo_productos"])):
+                if datos["catalogo_productos"][i]["code_unico"] == "0012":
+                    print_(datos["catalogo_productos"][i]["tipo_productos"], "  -   Tipo de producto")
+                    print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
+                    print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
+                    print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
+                    print_("----  Caracteristicas ----")
+                    
+                    print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
+                    print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
+                    print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
+                    print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
+                    print_(datos["catalogo_productos"][i]["cantidad_vendida"], "  -   Cantidad vendida")
+            return datos
+        elif op == "0":
+            print_("Regresando...")
+            return datos
+        else:
+            dm = "Error al registrar tipo_productos"
+            reportar_error_a_txt(dm)
+            print_("El tipo de servicio no es valido")
             
 def int_precio(catalogo_productos):
     while True:
@@ -113,7 +174,7 @@ def int_precio(catalogo_productos):
         except Exception as e:
             e = e,"Error al registrar precio"
             reportar_error_a_txt(e)
-            print("Ingrese un precio valido")
+            print_("Ingrese un precio valido")
             
 def int_nuevo(catalogo_productos):
     while True:
@@ -126,7 +187,7 @@ def int_nuevo(catalogo_productos):
         except Exception as e:
             e = e,"Error al registrar descuento para usuarios nuevos"
             reportar_error_a_txt(e)
-            print("Ingrese un descuento para usuarios nuevos valido")
+            print_("Ingrese un descuento para usuarios nuevos valido")
             
 def int_regular(catalogo_productos):
     while True:
@@ -139,7 +200,7 @@ def int_regular(catalogo_productos):
         except Exception as e:
             e = e,"Error al registrar descuento para usuarios regulares"
             reportar_error_a_txt(e)
-            print("Ingrese un descuento para usuarios regulares valido")
+            print_("Ingrese un descuento para usuarios regulares valido")
             
 def int_leal(catalogo_productos):
     while True:
@@ -152,7 +213,7 @@ def int_leal(catalogo_productos):
         except Exception as e:
             e = e,"Error al registrar descuento para usuarios leales"
             reportar_error_a_txt(e)
-            print("Ingrese un descuento para usuarios leales valido")
+            print_("Ingrese un descuento para usuarios leales valido")
             
 def int_cantidad_total(catalogo_productos):
     while True:
@@ -165,7 +226,7 @@ def int_cantidad_total(catalogo_productos):
         except Exception as e:
             e = e,"Error al registrar cantidad total"
             reportar_error_a_txt(e)
-            print("Ingrese una cantidad total valida")
+            print_("Ingrese una cantidad total valida")
             
 def mod_int_precio(datos,i):
     while True:
@@ -178,7 +239,7 @@ def mod_int_precio(datos,i):
         except Exception as e:
             e = e,"Error al registrar precio"
             reportar_error_a_txt(e)
-            print("Ingrese un precio valido")
+            print_("Ingrese un precio valido")
             
 def mod_int_cantidad_total(datos,i):
     while True:
@@ -191,7 +252,7 @@ def mod_int_cantidad_total(datos,i):
         except Exception as e:
             e = e,"Error al registrar cantidad total"
             reportar_error_a_txt(e)
-            print("Ingrese una cantidad total valida")
+            print_("Ingrese una cantidad total valida")
             
 def mod_int_cantidad_vendida(datos,i):
     while True:
@@ -204,7 +265,7 @@ def mod_int_cantidad_vendida(datos,i):
         except Exception as e:
             e = e,"Error al registrar cantidad vendida"
             reportar_error_a_txt(e)
-            print("Ingrese una cantidad vendida valida")
+            print_("Ingrese una cantidad vendida valida")
             
 def mod_int_nuevo(datos,i):
     while True:
@@ -217,7 +278,7 @@ def mod_int_nuevo(datos,i):
         except Exception as e:
             e = e,"Error al registrar descuento para usuarios nuevos"
             reportar_error_a_txt(e)
-            print("Ingrese un descuento para usuarios nuevos valido")
+            print_("Ingrese un descuento para usuarios nuevos valido")
             
 def mod_int_regular(datos,i):
     while True:
@@ -230,7 +291,7 @@ def mod_int_regular(datos,i):
         except Exception as e:
             e = e,"Error al registrar descuento para usuarios regulares"
             reportar_error_a_txt(e)
-            print("Ingrese un descuento para usuarios regulares valido")
+            print_("Ingrese un descuento para usuarios regulares valido")
             
 def mod_int_leal(datos,i):
     while True:
@@ -243,53 +304,53 @@ def mod_int_leal(datos,i):
         except Exception as e:
             e = e,"Error al registrar descuento para usuarios leales"
             reportar_error_a_txt(e)
-            print("Ingrese un descuento para usuarios leales valido")
+            print_("Ingrese un descuento para usuarios leales valido")
             
 def mod_int_descuento(datos,i):    
     while True:
         op = input("Ingrese el descuento:\n     0. Salir\n     1. Nuevo\n     2. Regular\n     3. Leal\n>>")
         if op == "1": 
             mod_int_nuevo(datos,i)
-            print(datos["catalogo_productos"][i]["descuento"]["nuevo"],"modificado con éxito!")         
+            print_(datos["catalogo_productos"][i]["descuento"]["nuevo"],"modificado con éxito!")         
         elif op == "2":
             mod_int_regular(datos,i) 
-            print(datos["catalogo_productos"][i]["descuento"]["regular"],"modificado con éxito!")
+            print_(datos["catalogo_productos"][i]["descuento"]["regular"],"modificado con éxito!")
         elif op == "3":
             mod_int_leal(datos,i)
-            print(datos["catalogo_productos"][i]["descuento"]["leal"],"modificado con éxito!")
+            print_(datos["catalogo_productos"][i]["descuento"]["leal"],"modificado con éxito!")
         elif op == "0": return datos
         else:
             dm = "Error al registrar descuento"
             reportar_error_a_txt(dm)
-            print("El descuento no es valido")
+            print_("El descuento no es valido")
             
 def modificar(datos,i):    
     while True:
         op = input("Ingrese una opcion:\n    0. Salir \n    1. Referencia\n    2. Plan\n    3. Precio\n    4. Duracion\n    5. Descripcion\n    6. Cantidad Total\n    7. Cantidad Vendida\n    8. Descuento \n\n>>  ")
         if op == "1": 
             datos["catalogo_productos"][i]["referencia"] = input("Ingrese la referencia nueva: ")
-            print(datos["catalogo_productos"][i]["referencia"],"modificada con éxito!")                
+            print_(datos["catalogo_productos"][i]["referencia"],"modificada con éxito!")                
         elif op == "2":
             datos["catalogo_productos"][i]["plan"] = input("Ingrese el plan nuevo: ")                    
-            print(datos["catalogo_productos"][i]["plan"],"modificado con éxito!")                
+            print_(datos["catalogo_productos"][i]["plan"],"modificado con éxito!")                
         elif op == "3":
             mod_int_precio(datos,i)
-            print(datos["catalogo_productos"][i]["precio"],"modificado con éxito!")                   
+            print_(datos["catalogo_productos"][i]["precio"],"modificado con éxito!")                   
         elif op == "4":
             datos["catalogo_productos"][i]["duracion"] = input("Ingrese la duracion nueva: ")
-            print(datos["catalogo_productos"][i]["duracion"],"modificado con éxito!")         
+            print_(datos["catalogo_productos"][i]["duracion"],"modificado con éxito!")         
         elif op == "5": 
             datos["catalogo_productos"][i]["descripcion"] = input("Ingrese la descripcion nueva: ")
-            print(datos["catalogo_productos"][i]["descripcion"],"modificado con éxito!")         
+            print_(datos["catalogo_productos"][i]["descripcion"],"modificado con éxito!")         
         elif op == "6":
             mod_int_cantidad_total(datos,i)
-            print(datos["catalogo_productos"][i]["cantidad_total"],"modificado con éxito!")         
+            print_(datos["catalogo_productos"][i]["cantidad_total"],"modificado con éxito!")         
         elif op == "7":
             mod_int_cantidad_vendida(datos,i)
-            print(datos["catalogo_productos"][i]["cantidad_vendida"],"modificado con éxito!")         
+            print_(datos["catalogo_productos"][i]["cantidad_vendida"],"modificado con éxito!")         
         elif op == "8": mod_int_descuento(datos,i)
         elif op == "0": return datos        
         else:
             dm = "Error al registrar tipo_productos"
             reportar_error_a_txt(dm)
-            print("Opcion no valida")
+            print_("Opcion no valida")

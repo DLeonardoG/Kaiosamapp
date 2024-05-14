@@ -1,6 +1,7 @@
 import os
 import platform
 from datetime import datetime
+import shutil
 
 def time_now():
     fecha = datetime.now()
@@ -46,3 +47,17 @@ def very():
         if continuar == "1": return "1"
         elif continuar == "2": return "2"
         else: opcion_no_valida()
+        
+
+
+def print_(*args, **kwargs):
+    ancho_consola = shutil.get_terminal_size().columns
+    texto = ' '.join(map(str, args))
+    ancho_espacios = kwargs.get('ancho_espacios', 1)
+    espacio_blancos = (ancho_consola - len(texto)) // 2
+    print(' ' * espacio_blancos + texto.center(ancho_consola - 2 * espacio_blancos))
+print_("Este texto", "está centrado", "en la mitad", "de la consola", ancho_espacios=2)
+
+def imprimir_linea_horizontal(caracter='-'):
+    ancho_consola = shutil.get_terminal_size().columns
+    print(caracter * ancho_consola)

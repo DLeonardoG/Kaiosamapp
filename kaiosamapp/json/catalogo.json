@@ -1,131 +1,6 @@
 {
     "catalogo_servicios": [
         {
-            "id": "123456",
-            "tipo_servicios": "fibra_optica_namekusei",
-            "referencia": "Oozaru.",
-            "plan": "250 MG",
-            "precio": 80000,
-            "duracion": "2 meses",
-            "descuento": [
-                {
-                    "nuevo": 10,
-                    "regular": 20,
-                    "leal": 40
-                }
-            ]
-        },
-        {
-            "id": "666",
-            "tipo_servicios": "pospago",
-            "referencia": "pospago",
-            "plan": "30 g + minutos",
-            "precio": "30000",
-            "duracion": "3 meses"
-        },
-        {
-            "code": "0001",
-            "id": "12342",
-            "tipo_servicios": "pospago",
-            "referencia": "oozaru",
-            "plan": "min + ilimidatos",
-            "precio": "70000",
-            "duracion": "1 mes",
-            "descripcion": "al igual que la transformacion de Goku es grande",
-            "descuento": "2"
-        },
-        {
-            "code": "0001",
-            "id": 89891,
-            "tipo_servicios": "cotra",
-            "referencia": "cotra",
-            "plan": "cotra",
-            "precio": "20000",
-            "duracion": "1 mes",
-            "descripcion": "muy bueno",
-            "descuento": "3"
-        },
-        {
-            "code": "0001",
-            "id": 65432,
-            "tipo_servicios": "contra",
-            "referencia": "contra",
-            "plan": "",
-            "precio": "1222",
-            "duracion": "3 meses",
-            "descripcion": "buenisimo",
-            "descuento": {
-                "nuevo": "10",
-                "regular": "1",
-                "leal": "40"
-            }
-        },
-        {
-            "code": "0001",
-            "id": "98765",
-            "tipo_servicios": "fibra_optica_namekusei",
-            "referencia": "pik",
-            "plan": "el mejor ",
-            "precio": 10,
-            "duracion": "2",
-            "descripcion": "el mejor",
-            "descuento": {
-                "nuevo": "d",
-                "regular": "x",
-                "leal": "x"
-            }
-        },
-        {
-            "code": "0001",
-            "id": "23456",
-            "tipo_servicios": "combo_dragon",
-            "referencia": "mejor combo dragon",
-            "plan": "minutos mas datos",
-            "precio": 90000,
-            "duracion": "1 mws",
-            "descripcion": "es el mejor como yo",
-            "descuento": {
-                "nuevo": 2,
-                "regular": 1,
-                "leal": 6
-            }
-        },
-        {
-            "code": "0001",
-            "id": "90909",
-            "tipo_servicios": "combo_dragon",
-            "referencia": "jkjk",
-            "plan": "ne",
-            "precio": 1,
-            "duracion": "new",
-            "descripcion": "new",
-            "cantidad_total": 45,
-            "cantidad_vendida": 321,
-            "descuento": {
-                "nuevo": 1,
-                "regular": 2,
-                "leal": 3
-            }
-        },
-        {
-            "code": "0001",
-            "id": "56789",
-            "tipo_servicios": "combo_dragon",
-            "code_unico": "0041",
-            "referencia": "Esfera de 1 estrella",
-            "plan": "mas datos y minutos",
-            "precio": 890000,
-            "duracion": "1 mes",
-            "descripcion": "es el mejor plan de hogar que jamas tendras",
-            "cantidad_total": 0,
-            "cantidad_vendida": 0,
-            "descuento": {
-                "nuevo": -9,
-                "regular": -4,
-                "leal": 0
-            }
-        },
-        {
             "code": "0001",
             "id": "12121",
             "tipo_servicios": "fibra_optica_namekusei",
@@ -159,6 +34,24 @@
                 "nuevo": 12,
                 "regular": 45,
                 "leal": 0
+            }
+        },
+        {
+            "code": "0001",
+            "id": "98765",
+            "tipo_servicios": "combo_dragon",
+            "code_unico": "0041",
+            "referencia": "sw",
+            "plan": "sw",
+            "precio": 55555,
+            "duracion": "3 dias",
+            "descripcion": "estoy feliz",
+            "cantidad_total": 12,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 2,
+                "regular": 2,
+                "leal": 2
             }
         }
     ],
