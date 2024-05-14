@@ -9,7 +9,7 @@ from modules.funciones_secundarias import opcion_no_valida
                         #Gestion usuarios
 from modules.datos_users import *
 from modules.gestion_usuarios import crear_usuario,eliminar_usuario
-from modules.gestion_usuarios import actualizar_usuario,leer_usuario
+from modules.gestion_usuarios import actualizar_usuario,leer_usuario,nueva_compra_usuario
 
                         #Gestion PQRS
 from modules.pqr import registrar_pqr,consultar_pqr,eliminar_pqr

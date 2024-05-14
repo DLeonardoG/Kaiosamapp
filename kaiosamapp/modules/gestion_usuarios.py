@@ -1,5 +1,6 @@
 from modules.funciones_secundarias import reportar_error_a_txt,very,clear_screen
 from modules.gestion_usuarios_funciones import telefono_valido,int_edad,sexo,int_documento
+from modules.catalogo_productos import id_valido
 #from modules.catalogo_productos_funciones import mostrar_productos,mostrar_tipos_productos
 from modules.datos_users import *
 
@@ -141,7 +142,53 @@ def new_compra_user(datos):
             return datos
     print("Usuario no existente...")    
     return datos
+
+def buscando_producto(datos):
+    datos = dict(datos)
+    catalogo_productos={}
+    try:
+        catalogo_productos["id"]=id_valido(catalogo_productos)
+        for i in range(len(datos["catalogo_productos"])):
+            if datos["catalogo_productos"][i]["id"] == catalogo_productos["id"]:
+                print (datos["catalogo_productos"][i]["id"],"ya se encuentra registrado!")
+                
+    except Exception as e:
+        reportar_error_a_txt(e)
+        catalogo_productos["id"] = ""
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["id"] == id:
+            producto = datos["catalogo_productos"][i]
+            break
+    return producto
+
+
+
+def compra_producto(datos):
+    RUTA_BASE_DE_DATOS_CATALOGO ="kaiosamapp/json/catalogo.json"
+    datos_catalogo = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
     
+    buscando_producto(datos_catalogo)
+    datos_catalogo = dict(datos_catalogo)
+    documento =input("Ingrese el documento del usuario: ")
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == documento:
+            #datos["usuarios"][i]["registro_productos"]=[]
+            datos["usuarios"][i]["registro_productos"].append(buscando_producto(datos))
+            print(datos["usuarios"][i]["registro_productos"])
+            guardar_datos(datos_catalogo, RUTA_BASE_DE_DATOS_USERS)
+            break
+    return datos
+
+
+
+def nueva_compra_usuario():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
+        datos = compra_producto(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
+        continuar = very()
+        if continuar == "2": break
+        else: clear_screen()
 #leer_user(datos)
 #guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
 
