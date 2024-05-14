@@ -441,6 +441,21 @@
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
+        },
+        {
+            "documento": "78787845",
+            "edad": 78,
+            "nombre": "df",
+            "apellido": "sf",
+            "telefono": 4545787845,
+            "sexo": "Femenino",
+            "ciudad": "Bga",
+            "direccion": "HAsa",
+            "email": "kamail",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
         }
     ]
 }

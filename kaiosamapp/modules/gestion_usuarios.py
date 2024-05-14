@@ -123,7 +123,7 @@ def leer_user(datos):
             print_(datos["usuarios"][i]["categoria"])
             print_(i)
             es()
-            print_(("---------          Registro de servicios          ---------"))
+            """print_(("---------          Registro de servicios          ---------"))
             for sn in range(len(datos["usuarios"][i]["registro_servicios"])):
                 es()
                 print_(datos["usuarios"][i]["registro_servicios"][sn]["referencia"] + "   -  " + datos["usuarios"][i]["registro_servicios"][sn]["tipo_servicios"])
@@ -171,7 +171,7 @@ def leer_user(datos):
                 print_(str(datos["usuarios"][i]["registro_pqr"][sn]["comentario"]))
                 linen()
             print_(datos["usuarios"][i]["registro_productos"],"  -  Registro de productos")
-            print_(datos["usuarios"][i]["registro_pqr"],"  -  Registro de PQR")
+            print_(datos["usuarios"][i]["registro_pqr"],"  -  Registro de PQR")"""
             return datos
     
     print_("Usuario no existente...")  

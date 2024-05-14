@@ -104,7 +104,7 @@ def tipo_productos(catalogo_productos):
             
 def kame_celular(datos):
     for i in range(len(datos["catalogo_productos"])):
-        if datos["catalogo_productos"][i]["code_unico"] == ("0012"):
+        if [i]["code_unico"] == ("0012"):
             line()
             print_(datos["catalogo_productos"][i]["tipo_productos"])
             line()
@@ -125,7 +125,7 @@ def kame_celular(datos):
             print_(datos["catalogo_productos"][i]["caracteristicas"]["resolucion"], "  -   Resolucion")
             print_(datos["catalogo_productos"][i]["caracteristicas"]["bateria"], "  -   Bateria")
             line()
-    return datos
+        return datos
             
 def kame_tv(datos):
     for i in range(len(datos["catalogo_productos"])):
