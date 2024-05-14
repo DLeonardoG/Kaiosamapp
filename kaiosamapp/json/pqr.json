@@ -1,3 +1,44 @@
 {
-    "pqr" : []
+    "pqr": [
+        {
+            "code": "0003",
+            "id": "000007",
+            "tipo_pqr": "pregunta",
+            "code_unico": "0013",
+            "motivo": "de",
+            "comentario": "de",
+            "fecha": "2024-05-14 00:26:11",
+            "repuesta": ""
+        },
+        {
+            "code": "0003",
+            "id": "000008",
+            "tipo_pqr": "queja",
+            "code_unico": "0023",
+            "motivo": "sw",
+            "comentario": "sw",
+            "fecha": "2024-05-14 00:26:11",
+            "repuesta": ""
+        },
+        {
+            "code": "0003",
+            "id": "000009",
+            "tipo_pqr": "pregunta",
+            "code_unico": "0013",
+            "motivo": "sw",
+            "comentario": "sw",
+            "fecha": "2024-05-14 00:26:11",
+            "repuesta": ""
+        },
+        {
+            "code": "0003",
+            "id": "000010",
+            "tipo_pqr": "sugerencia",
+            "code_unico": "0043",
+            "motivo": "ma gussta programar",
+            "comentario": "",
+            "fecha": "2024-05-14 00:26:11",
+            "repuesta": ""
+        }
+    ]
 }
