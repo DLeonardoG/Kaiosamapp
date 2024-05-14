@@ -1,6 +1,6 @@
 from modules.funciones_secundarias import reportar_error_a_txt,very,clear_screen
 from modules.gestion_usuarios_funciones import telefono_valido,int_edad,sexo,int_documento
-from modules.catalogo_productos_funciones import mostrar_productos,mostrar_tipos_productos
+#from modules.catalogo_productos_funciones import mostrar_productos,mostrar_tipos_productos
 from modules.datos_users import *
 
 def registrar_user(datos):

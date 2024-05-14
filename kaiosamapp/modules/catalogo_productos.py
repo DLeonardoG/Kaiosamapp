@@ -6,16 +6,16 @@ from modules.catalogo_productos_funciones import int_nuevo,int_regular,int_leal,
 from modules.catalogo_productos_funciones import modificar,mostrar_tipo_productos
 from modules.catalogo_productos_funciones import kame_celular, kame_computador,kame_tv
 
-def crear_product(datos_catalogo):
-    datos_catalogo = dict(datos_catalogo)
+def crear_product(datos):
+    datos = dict(datos)
     catalogo_productos={}
     catalogo_productos["code"] = "0002"
     try:
         catalogo_productos["id"]=id_valido(catalogo_productos)
-        for i in range(len(datos_catalogo["catalogo_productos"])):
-            if datos_catalogo["catalogo_productos"][i]["id"] == catalogo_productos["id"]:
-                print (datos_catalogo["catalogo_productos"][i]["id"],"ya se encuentra registrado!")
-                return datos_catalogo
+        for i in range(len(datos["catalogo_productos"])):
+            if datos["catalogo_productos"][i]["id"] == catalogo_productos["id"]:
+                print (datos["catalogo_productos"][i]["id"],"ya se encuentra registrado!")
+                return datos
     except Exception as e:
         reportar_error_a_txt(e)
         catalogo_productos["id"] = ""
@@ -32,110 +32,110 @@ def crear_product(datos_catalogo):
     int_regular(catalogo_productos)
     int_leal(catalogo_productos)
     
-    datos_catalogo["catalogo_productos"].append(catalogo_productos)
+    datos["catalogo_productos"].append(catalogo_productos)
     print( catalogo_productos["referencia"],catalogo_productos["marca"],"registrado con éxito!")
-    return datos_catalogo
+    return datos
     
 def crear_producto():
     while True:
-        datos_catalogo = cargar_datos_catalogo(RUTA_BASE_DE_DATOS_CATALOGO)
-        datos_catalogo = crear_product(datos_catalogo)
-        guardar_datos_catalogo(datos_catalogo, RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = crear_product(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
 
-def eliminar_product(datos_catalogo):
-    datos_catalogo = dict(datos_catalogo)
+def eliminar_product(datos):
+    datos = dict(datos)
     id =input("Ingrese el id del Producto: ")
-    for i in range(len(datos_catalogo["catalogo_productos"])):
-        if datos_catalogo["catalogo_productos"][i]["id"] == id:
-            marca = (datos_catalogo["catalogo_productos"][i]["referencia"],datos_catalogo["catalogo_productos"][i]["marca"])
-            datos_catalogo["catalogo_productos"].pop(i)
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["id"] == id:
+            marca = (datos["catalogo_productos"][i]["referencia"],datos["catalogo_productos"][i]["marca"])
+            datos["catalogo_productos"].pop(i)
             separador = " "
             marca = separador.join(map(str, marca))
             print(marca,"eliminado...")
             #print("Producto eliminado!")
-            return datos_catalogo
+            return datos
     print("Producto no existente...")    
-    return datos_catalogo
+    return datos
 
 def eliminar_producto():
     while True:
-        datos_catalogo = cargar_datos_catalogo(RUTA_BASE_DE_DATOS_CATALOGO)
-        datos_catalogo = eliminar_product(datos_catalogo)
-        guardar_datos_catalogo(datos_catalogo, RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = eliminar_product(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
     
 
-def modificar_product(datos_catalogo):
-    datos_catalogo = dict(datos_catalogo)
+def modificar_product(datos):
+    datos = dict(datos)
     id =input("Ingrese el id del Producto: ")
-    for i in range(len(datos_catalogo["catalogo_productos"])):
-        if datos_catalogo["catalogo_productos"][i]["id"] == id:
-            modificar(datos_catalogo,i)
-            return datos_catalogo
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["id"] == id:
+            modificar(datos,i)
+            return datos
     print("Producto no existente...")     
-    return datos_catalogo
+    return datos
 
 def modificar_producto():
     while True:
-        datos_catalogo = cargar_datos_catalogo(RUTA_BASE_DE_DATOS_CATALOGO)
-        datos_catalogo = modificar_product(datos_catalogo)
-        guardar_datos_catalogo(datos_catalogo, RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = modificar_product(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
         
-def consultar_product(datos_catalogo):
-    datos_catalogo = dict(datos_catalogo)
+def consultar_product(datos):
+    datos = dict(datos)
     id =input("Ingrese el id del Producto: ")
-    for i in range(len(datos_catalogo["catalogo_productos"])):
-        if datos_catalogo["catalogo_productos"][i]["id"] == id:
-            print(datos_catalogo["catalogo_productos"][i])
-            return datos_catalogo
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["id"] == id:
+            print(datos["catalogo_productos"][i])
+            return datos
     print("Producto no existente...")    
-    return datos_catalogo
+    return datos
 
 def consultar_producto():
     while True:
-        datos_catalogo = cargar_datos_catalogo(RUTA_BASE_DE_DATOS_CATALOGO)
-        datos_catalogo = consultar_product(datos_catalogo)
-        guardar_datos_catalogo(datos_catalogo, RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = consultar_product(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
         
-def listar_service(datos_catalogo):
-    datos_catalogo = dict(datos_catalogo)
-    kame_celular(datos_catalogo)
-    kame_tv(datos_catalogo)
-    kame_computador(datos_catalogo)
-    return datos_catalogo
+def listar_service(datos):
+    datos = dict(datos)
+    kame_celular(datos)
+    kame_tv(datos)
+    kame_computador(datos)
+    return datos
 
 def mostrar_productos():
     while True:
-        datos_catalogo = cargar_datos_catalogo(RUTA_BASE_DE_DATOS_CATALOGO)
-        datos_catalogo = listar_service(datos_catalogo)
-        guardar_datos_catalogo(datos_catalogo, RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = listar_service(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
 
-def mostrar_types_productos(datos_catalogo):
-    datos_catalogo = dict(datos_catalogo)
-    datos_catalogo["catalogo_productos"]
-    for i in range(len(datos_catalogo["catalogo_productos"])):
-        mostrar_tipo_productos(datos_catalogo)
-        return datos_catalogo
+def mostrar_types_productos(datos):
+    datos = dict(datos)
+    datos["catalogo_productos"]
+    for i in range(len(datos["catalogo_productos"])):
+        mostrar_tipo_productos(datos)
+        return datos
     
 def mostrar_tipos_productos():
     while True:
-        datos_catalogo = cargar_datos_catalogo(RUTA_BASE_DE_DATOS_CATALOGO)
-        datos_catalogo = mostrar_types_productos(datos_catalogo)
-        guardar_datos_catalogo(datos_catalogo, RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+        datos = mostrar_types_productos(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_CATALOGO)
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
