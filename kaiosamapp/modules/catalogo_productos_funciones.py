@@ -102,96 +102,96 @@ def tipo_productos(catalogo_productos):
             print_("La opcion no es valida")
             catalogo_productos["tipo_productos"] = ""  
             
-def kame_celular(datos):
-    for i in range(len(datos["catalogo_productos"])):
-        if datos["catalogo_productos"][i]["code_unico"] == "0012":
+def kame_celular(datos_catalogo):
+    for i in range(len(datos_catalogo["catalogo_productos"])):
+        if datos_catalogo["catalogo_productos"][i]["code_unico"] == "0012":
             line()
-            print_(datos["catalogo_productos"][i]["tipo_productos"])
+            print_(datos_catalogo["catalogo_productos"][i]["tipo_productos"])
             line()
-            print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
-            print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
-            print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
-            print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
-            print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
-            print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
-            print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
+            print_(datos_catalogo["catalogo_productos"][i]["id"] + "  -   Id")
+            print_(datos_catalogo["catalogo_productos"][i]["referencia"], "  -   Referencia")
+            print_(datos_catalogo["catalogo_productos"][i]["marca"], "  -   Marca")
+            print_(datos_catalogo["catalogo_productos"][i]["precio"], "  -   Precio")
+            print_(datos_catalogo["catalogo_productos"][i]["garantia"], "  -   Garantia")
+            print_(datos_catalogo["catalogo_productos"][i]["descripcion"], " - Descripcion")
+            print_(datos_catalogo["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
             line()
             print_("----  Caracteristicas ----")
             line()
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["color"] , "  -   Color")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["memoria"] , "  -   Memoria")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["generacion"], "  -   Generacion")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["camara"], "  -   Camara")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["resolucion"], "  -   Resolucion")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["bateria"], "  -   Bateria")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["color"] , "  -   Color")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["memoria"] , "  -   Memoria")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["generacion"], "  -   Generacion")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["camara"], "  -   Camara")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["resolucion"], "  -   Resolucion")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["bateria"], "  -   Bateria")
             line()
-    return datos
+    return datos_catalogo
             
-def kame_tv(datos):
-    for i in range(len(datos["catalogo_productos"])):
-        if datos["catalogo_productos"][i]["code_unico"] == "0022":
+def kame_tv(datos_catalogo):
+    for i in range(len(datos_catalogo["catalogo_productos"])):
+        if datos_catalogo["catalogo_productos"][i]["code_unico"] == "0022":
             line()
-            print_(datos["catalogo_productos"][i]["tipo_productos"])
+            print_(datos_catalogo["catalogo_productos"][i]["tipo_productos"])
             line()
-            print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
-            print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
-            print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
-            print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
-            print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
-            print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
-            print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
-            line()
-            print_("----  Caracteristicas ----")
-            line()
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["resolucion"], "  -   Resolucion")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["pulgadas"], "  -   Pulgadas")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["smart_tv"], "  -   Smart TV")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["modelo"], "  -   Modelo")
-            line()
-    return datos
-
-def kame_computador(datos):
-    for i in range(len(datos["catalogo_productos"])):
-        if datos["catalogo_productos"][i]["code_unico"] == "0032":
-            line()
-            print_(datos["catalogo_productos"][i]["tipo_productos"])
-            line()
-            print_(datos["catalogo_productos"][i]["id"] + "  -   Id")
-            print_(datos["catalogo_productos"][i]["referencia"], "  -   Referencia")
-            print_(datos["catalogo_productos"][i]["marca"], "  -   Marca")
-            print_(datos["catalogo_productos"][i]["precio"], "  -   Precio")
-            print_(datos["catalogo_productos"][i]["garantia"], "  -   Garantia")
-            print_(datos["catalogo_productos"][i]["descripcion"], " - Descripcion")
-            print_(datos["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
+            print_(datos_catalogo["catalogo_productos"][i]["id"] + "  -   Id")
+            print_(datos_catalogo["catalogo_productos"][i]["referencia"], "  -   Referencia")
+            print_(datos_catalogo["catalogo_productos"][i]["marca"], "  -   Marca")
+            print_(datos_catalogo["catalogo_productos"][i]["precio"], "  -   Precio")
+            print_(datos_catalogo["catalogo_productos"][i]["garantia"], "  -   Garantia")
+            print_(datos_catalogo["catalogo_productos"][i]["descripcion"], " - Descripcion")
+            print_(datos_catalogo["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
             line()
             print_("----  Caracteristicas ----")
             line()
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["color"], "  -   Color")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["memoria"], " -   Memoria")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["generacion"], " -   Generacion")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["ram"] , " -   Ram")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["pantalla"], " -   Pantalla")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["procesador"], "  -   Procesador")
-            print_(datos["catalogo_productos"][i]["caracteristicas"]["bateria"], " -   Bateria")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["resolucion"], "  -   Resolucion")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["pulgadas"], "  -   Pulgadas")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["smart_tv"], "  -   Smart TV")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["modelo"], "  -   Modelo")
             line()
-    return datos
+    return datos_catalogo
 
-def mostrar_tipo_productos(datos):    
+def kame_computador(datos_catalogo):
+    for i in range(len(datos_catalogo["catalogo_productos"])):
+        if datos_catalogo["catalogo_productos"][i]["code_unico"] == "0032":
+            line()
+            print_(datos_catalogo["catalogo_productos"][i]["tipo_productos"])
+            line()
+            print_(datos_catalogo["catalogo_productos"][i]["id"] + "  -   Id")
+            print_(datos_catalogo["catalogo_productos"][i]["referencia"], "  -   Referencia")
+            print_(datos_catalogo["catalogo_productos"][i]["marca"], "  -   Marca")
+            print_(datos_catalogo["catalogo_productos"][i]["precio"], "  -   Precio")
+            print_(datos_catalogo["catalogo_productos"][i]["garantia"], "  -   Garantia")
+            print_(datos_catalogo["catalogo_productos"][i]["descripcion"], " - Descripcion")
+            print_(datos_catalogo["catalogo_productos"][i]["cantidad_total"], "  -   Cantidad Total")
+            line()
+            print_("----  Caracteristicas ----")
+            line()
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["color"], "  -   Color")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["memoria"], " -   Memoria")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["generacion"], " -   Generacion")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["ram"] , " -   Ram")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["pantalla"], " -   Pantalla")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["procesador"], "  -   Procesador")
+            print_(datos_catalogo["catalogo_productos"][i]["caracteristicas"]["bateria"], " -   Bateria")
+            line()
+    return datos_catalogo
+
+def mostrar_tipo_productos(datos_catalogo):    
     while True:
         line()
         op = input("Ingrese el tipo de Kame producto: \n    0. Salir\n    1. Kame celular\n    2. kame tv\n    3. kame computador\n>>    ")
         line()
         if op == "1": 
-            kame_celular(datos)
+            kame_celular(datos_catalogo)
         elif op == "2":
-            kame_tv(datos)
+            kame_tv(datos_catalogo)
         elif op == "3":
-            kame_computador(datos)
+            kame_computador(datos_catalogo)
         elif op == "0":
             line()
             print_("Regresando...")
             line()
-            return datos
+            return datos_catalogo
         else:
             dm = "Error al registrar tipo_productos"
             reportar_error_a_txt(dm)
@@ -264,128 +264,128 @@ def int_cantidad_total(catalogo_productos):
             reportar_error_a_txt(e)
             print_("Ingrese una cantidad total valida")
             
-def mod_int_precio(datos,i):
+def mod_int_precio(datos_catalogo,i):
     while True:
         try:
-            datos["catalogo_productos"][i]["precio"] = int(input("Ingrese el precio nuevo: "))
-            if isinstance(datos["catalogo_productos"][i]["precio"], int) and datos["catalogo_productos"][i]["precio"] >= 0:
-                datos["catalogo_productos"][i]["precio"] = datos["catalogo_productos"][i]["precio"]
-                return datos 
-            else: raise ValueError("precio ", datos["catalogo_productos"][i]["precio"]," no es valido")
+            datos_catalogo["catalogo_productos"][i]["precio"] = int(input("Ingrese el precio nuevo: "))
+            if isinstance(datos_catalogo["catalogo_productos"][i]["precio"], int) and datos_catalogo["catalogo_productos"][i]["precio"] >= 0:
+                datos_catalogo["catalogo_productos"][i]["precio"] = datos_catalogo["catalogo_productos"][i]["precio"]
+                return datos_catalogo 
+            else: raise ValueError("precio ", datos_catalogo["catalogo_productos"][i]["precio"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar precio"
             reportar_error_a_txt(e)
             print_("Ingrese un precio valido")
             
-def mod_int_cantidad_total(datos,i):
+def mod_int_cantidad_total(datos_catalogo,i):
     while True:
         try:
-            datos["catalogo_productos"][i]["cantidad_total"] = int(input("Ingrese la catidad total nueva: "))
-            if isinstance(datos["catalogo_productos"][i]["cantidad_total"], int) and datos["catalogo_productos"][i]["cantidad_total"] >= 0: 
-                datos["catalogo_productos"][i]["cantidad_total"] = datos["catalogo_productos"][i]["cantidad_total"]
-                return datos                    
-            else: raise ValueError("La cantidad total ", datos["catalogo_productos"][i]["cantidad_total"]," no es valido")
+            datos_catalogo["catalogo_productos"][i]["cantidad_total"] = int(input("Ingrese la catidad total nueva: "))
+            if isinstance(datos_catalogo["catalogo_productos"][i]["cantidad_total"], int) and datos_catalogo["catalogo_productos"][i]["cantidad_total"] >= 0: 
+                datos_catalogo["catalogo_productos"][i]["cantidad_total"] = datos_catalogo["catalogo_productos"][i]["cantidad_total"]
+                return datos_catalogo                    
+            else: raise ValueError("La cantidad total ", datos_catalogo["catalogo_productos"][i]["cantidad_total"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar cantidad total"
             reportar_error_a_txt(e)
             print_("Ingrese una cantidad total valida")
             
-def mod_int_cantidad_vendida(datos,i):
+def mod_int_cantidad_vendida(datos_catalogo,i):
     while True:
         try:
-            datos["catalogo_productos"][i]["cantidad_vendida"] = int(input("Ingrese la catidad vendida nueva: "))
-            if isinstance(datos["catalogo_productos"][i]["cantidad_vendida"], int) and datos["catalogo_productos"][i]["cantidad_vendida"] >= 0:
-                datos["catalogo_productos"][i]["cantidad_vendida"] = datos["catalogo_productos"][i]["cantidad_vendida"]
-                return datos                    
-            else: raise ValueError("La cantidad vendida ", datos["catalogo_productos"][i]["cantidad_vendida"]," no es valido")
+            datos_catalogo["catalogo_productos"][i]["cantidad_vendida"] = int(input("Ingrese la catidad vendida nueva: "))
+            if isinstance(datos_catalogo["catalogo_productos"][i]["cantidad_vendida"], int) and datos_catalogo["catalogo_productos"][i]["cantidad_vendida"] >= 0:
+                datos_catalogo["catalogo_productos"][i]["cantidad_vendida"] = datos_catalogo["catalogo_productos"][i]["cantidad_vendida"]
+                return datos_catalogo                    
+            else: raise ValueError("La cantidad vendida ", datos_catalogo["catalogo_productos"][i]["cantidad_vendida"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar cantidad vendida"
             reportar_error_a_txt(e)
             print_("Ingrese una cantidad vendida valida")
             
-def mod_int_nuevo(datos,i):
+def mod_int_nuevo(datos_catalogo,i):
     while True:
         try:
-            datos["catalogo_productos"][i]["descuento"]["nuevo"] = int(input("Ingrese el descuento para usuarios nuevos: "))
-            if isinstance(datos["catalogo_productos"][i]["descuento"]["nuevo"], int) and datos["catalogo_productos"][i]["descuento"]["nuevo"] >= 0:
-                datos["catalogo_productos"][i]["descuento"]["nuevo"] = datos["catalogo_productos"][i]["descuento"]["nuevo"]
+            datos_catalogo["catalogo_productos"][i]["descuento"]["nuevo"] = int(input("Ingrese el descuento para usuarios nuevos: "))
+            if isinstance(datos_catalogo["catalogo_productos"][i]["descuento"]["nuevo"], int) and datos_catalogo["catalogo_productos"][i]["descuento"]["nuevo"] >= 0:
+                datos_catalogo["catalogo_productos"][i]["descuento"]["nuevo"] = datos_catalogo["catalogo_productos"][i]["descuento"]["nuevo"]
                 break
-            else: raise ValueError("El descuento para usuarios nuevos ", datos["catalogo_productos"][i]["descuento"]["nuevo"]," no es valido")
+            else: raise ValueError("El descuento para usuarios nuevos ", datos_catalogo["catalogo_productos"][i]["descuento"]["nuevo"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar descuento para usuarios nuevos"
             reportar_error_a_txt(e)
             print_("Ingrese un descuento para usuarios nuevos valido")
             
-def mod_int_regular(datos,i):
+def mod_int_regular(datos_catalogo,i):
     while True:
         try:
-            datos["catalogo_productos"][i]["descuento"]["regular"] = int(input("Ingrese el descuento para usuarios regulares: "))
-            if isinstance(datos["catalogo_productos"][i]["descuento"]["regular"], int) and datos["catalogo_productos"][i]["descuento"]["regular"] >= 0: 
-                datos["catalogo_productos"][i]["descuento"]["regular"] = datos["catalogo_productos"][i]["descuento"]["regular"]
+            datos_catalogo["catalogo_productos"][i]["descuento"]["regular"] = int(input("Ingrese el descuento para usuarios regulares: "))
+            if isinstance(datos_catalogo["catalogo_productos"][i]["descuento"]["regular"], int) and datos_catalogo["catalogo_productos"][i]["descuento"]["regular"] >= 0: 
+                datos_catalogo["catalogo_productos"][i]["descuento"]["regular"] = datos_catalogo["catalogo_productos"][i]["descuento"]["regular"]
                 break
-            else: raise ValueError("El descuento para usuarios regulares ", datos["catalogo_productos"][i]["descuento"]["regular"]," no es valido")
+            else: raise ValueError("El descuento para usuarios regulares ", datos_catalogo["catalogo_productos"][i]["descuento"]["regular"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar descuento para usuarios regulares"
             reportar_error_a_txt(e)
             print_("Ingrese un descuento para usuarios regulares valido")
             
-def mod_int_leal(datos,i):
+def mod_int_leal(datos_catalogo,i):
     while True:
         try:
-            datos["catalogo_productos"][i]["descuento"]["leal"] = int(input("Ingrese el descuento para usuarios leales: "))
-            if isinstance(datos["catalogo_productos"][i]["descuento"]["leal"], int) and datos["catalogo_productos"][i]["descuento"]["leal"] >= 0: 
-                datos["catalogo_productos"][i]["descuento"]["leal"] = datos["catalogo_productos"][i]["descuento"]["leal"]
+            datos_catalogo["catalogo_productos"][i]["descuento"]["leal"] = int(input("Ingrese el descuento para usuarios leales: "))
+            if isinstance(datos_catalogo["catalogo_productos"][i]["descuento"]["leal"], int) and datos_catalogo["catalogo_productos"][i]["descuento"]["leal"] >= 0: 
+                datos_catalogo["catalogo_productos"][i]["descuento"]["leal"] = datos_catalogo["catalogo_productos"][i]["descuento"]["leal"]
                 break
-            else: raise ValueError("El descuento para usuarios leales ", datos["catalogo_productos"][i]["descuento"]["leal"]," no es valido")
+            else: raise ValueError("El descuento para usuarios leales ", datos_catalogo["catalogo_productos"][i]["descuento"]["leal"]," no es valido")
         except Exception as e:
             e = e,"Error al registrar descuento para usuarios leales"
             reportar_error_a_txt(e)
             print_("Ingrese un descuento para usuarios leales valido")
             
-def mod_int_descuento(datos,i):    
+def mod_int_descuento(datos_catalogo,i):    
     while True:
         op = input("Ingrese el descuento:\n     0. Salir\n     1. Nuevo\n     2. Regular\n     3. Leal\n>>")
         if op == "1": 
-            mod_int_nuevo(datos,i)
-            print_(datos["catalogo_productos"][i]["descuento"]["nuevo"],"modificado con éxito!")         
+            mod_int_nuevo(datos_catalogo,i)
+            print_(datos_catalogo["catalogo_productos"][i]["descuento"]["nuevo"],"modificado con éxito!")         
         elif op == "2":
-            mod_int_regular(datos,i) 
-            print_(datos["catalogo_productos"][i]["descuento"]["regular"],"modificado con éxito!")
+            mod_int_regular(datos_catalogo,i) 
+            print_(datos_catalogo["catalogo_productos"][i]["descuento"]["regular"],"modificado con éxito!")
         elif op == "3":
-            mod_int_leal(datos,i)
-            print_(datos["catalogo_productos"][i]["descuento"]["leal"],"modificado con éxito!")
-        elif op == "0": return datos
+            mod_int_leal(datos_catalogo,i)
+            print_(datos_catalogo["catalogo_productos"][i]["descuento"]["leal"],"modificado con éxito!")
+        elif op == "0": return datos_catalogo
         else:
             dm = "Error al registrar descuento"
             reportar_error_a_txt(dm)
             print_("El descuento no es valido")
             
-def modificar(datos,i):    
+def modificar(datos_catalogo,i):    
     while True:
         op = input("Ingrese una opcion:\n    0. Salir \n    1. Referencia\n    2. Plan\n    3. Precio\n    4. Duracion\n    5. Descripcion\n    6. Cantidad Total\n    7. Cantidad Vendida\n    8. Descuento \n\n>>  ")
         if op == "1": 
-            datos["catalogo_productos"][i]["referencia"] = input("Ingrese la referencia nueva: ")
-            print_(datos["catalogo_productos"][i]["referencia"],"modificada con éxito!")                
+            datos_catalogo["catalogo_productos"][i]["referencia"] = input("Ingrese la referencia nueva: ")
+            print_(datos_catalogo["catalogo_productos"][i]["referencia"],"modificada con éxito!")                
         elif op == "2":
-            datos["catalogo_productos"][i]["plan"] = input("Ingrese el plan nuevo: ")                    
-            print_(datos["catalogo_productos"][i]["plan"],"modificado con éxito!")                
+            datos_catalogo["catalogo_productos"][i]["plan"] = input("Ingrese el plan nuevo: ")                    
+            print_(datos_catalogo["catalogo_productos"][i]["plan"],"modificado con éxito!")                
         elif op == "3":
-            mod_int_precio(datos,i)
-            print_(datos["catalogo_productos"][i]["precio"],"modificado con éxito!")                   
+            mod_int_precio(datos_catalogo,i)
+            print_(datos_catalogo["catalogo_productos"][i]["precio"],"modificado con éxito!")                   
         elif op == "4":
-            datos["catalogo_productos"][i]["duracion"] = input("Ingrese la duracion nueva: ")
-            print_(datos["catalogo_productos"][i]["duracion"],"modificado con éxito!")         
+            datos_catalogo["catalogo_productos"][i]["duracion"] = input("Ingrese la duracion nueva: ")
+            print_(datos_catalogo["catalogo_productos"][i]["duracion"],"modificado con éxito!")         
         elif op == "5": 
-            datos["catalogo_productos"][i]["descripcion"] = input("Ingrese la descripcion nueva: ")
-            print_(datos["catalogo_productos"][i]["descripcion"],"modificado con éxito!")         
+            datos_catalogo["catalogo_productos"][i]["descripcion"] = input("Ingrese la descripcion nueva: ")
+            print_(datos_catalogo["catalogo_productos"][i]["descripcion"],"modificado con éxito!")         
         elif op == "6":
-            mod_int_cantidad_total(datos,i)
-            print_(datos["catalogo_productos"][i]["cantidad_total"],"modificado con éxito!")         
+            mod_int_cantidad_total(datos_catalogo,i)
+            print_(datos_catalogo["catalogo_productos"][i]["cantidad_total"],"modificado con éxito!")         
         elif op == "7":
-            mod_int_cantidad_vendida(datos,i)
-            print_(datos["catalogo_productos"][i]["cantidad_vendida"],"modificado con éxito!")         
-        elif op == "8": mod_int_descuento(datos,i)
-        elif op == "0": return datos        
+            mod_int_cantidad_vendida(datos_catalogo,i)
+            print_(datos_catalogo["catalogo_productos"][i]["cantidad_vendida"],"modificado con éxito!")         
+        elif op == "8": mod_int_descuento(datos_catalogo,i)
+        elif op == "0": return datos_catalogo        
         else:
             dm = "Error al registrar tipo_productos"
             reportar_error_a_txt(dm)

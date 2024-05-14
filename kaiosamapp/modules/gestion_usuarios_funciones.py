@@ -1,5 +1,6 @@
-from modules.funciones_secundarias import reportar_error_a_txt
-from modules.catalogo_productos_funciones import mostrar_productos,mostrar_tipos_productos
+from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida
+#from modules.catalogo_productos_funciones import mostrar_productos,mostrar_tipos_productos
+from modules.catalogo_productos_funciones import id_valido
 
 def int_edad(usuarios):
     while True:
@@ -83,7 +84,12 @@ def compra(usuarios):
                     while True:
                         op_l_2 = input("¿Realizar compra? \n 1. Si \n 2. No")
                         if op_l_2 == "1":
-                            input("Ingrese el  id del producto a comprar: ")
+                            id_valido()
+                            cantidad = int(input("Ingrese la cantidad a comprar: "))
+                            #se suma la cantidad a vendido y se le quita a total
+                            #le paso los valores como id, referencia,precio,cantidad, y la fecha de la compra
+                            #al terminar la compra le dice compra conn exito a la vez que se añade a facturas con el id y el id unico y code
+                            
                             
                         elif op_l_2 == "2": break
                         elif op_l_2 == "0":

@@ -1,20 +1,20 @@
 import json
 
-def cargar_datos(archivo):
-    datos = {}
+def cargar_datos_catalogo(archivo):
+    datos_catalogo = {}
     with open(archivo,"r") as file:
-        datos=json.load(file)
-    return datos
+        datos_catalogo=json.load(file)
+    return datos_catalogo
 
-def guardar_datos(datos, archivo):
-    datos = dict(datos)
+def guardar_datos_catalogo(datos_catalogo, archivo):
+    datos_catalogo = dict(datos_catalogo)
     
-    diccionario=json.dumps(datos, indent=4)
+    diccionario=json.dumps(datos_catalogo, indent=4)
     file=open(archivo,"w")
     file.write(diccionario)
     file.close()
 
 RUTA_BASE_DE_DATOS_CATALOGO ="kaiosamapp/json/catalogo.json"
-datos = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+datos_catalogo = cargar_datos_catalogo(RUTA_BASE_DE_DATOS_CATALOGO)
 
 

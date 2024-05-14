@@ -56,7 +56,6 @@ def print_(*args, **kwargs):
     ancho_espacios = kwargs.get('ancho_espacios', 1)
     espacio_blancos = (ancho_consola - len(texto)) // 2
     print(' ' * espacio_blancos + texto.center(ancho_consola - 2 * espacio_blancos))
-print_("Este texto", "está centrado", "en la mitad", "de la consola", ancho_espacios=2)
 
 def line():
     ancho_consola = shutil.get_terminal_size().columns
