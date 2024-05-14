@@ -13,10 +13,6 @@ def datetime_to_json(dt):
     return dt.strftime('%Y-%m-%d %H:%M:%S')
 _fecha_ = datetime_to_json(fecha)
 
-
-
-
-
 def clear_screen():
     if platform.system() == 'Windows': os.system('cls')
     else: os.system('clear')
@@ -35,14 +31,12 @@ def opcion_no_valida():
         mensaje_error = f"{fecha}: Opcion de menu no valida" 
         f.write(mensaje_error + '\n')
 #opcion_no_valida()
-
 def very():
     while True:
-        continuar = input("""------------------------------------       
+        continuar = input("""------------------------------------
         ¿Repetir operacion?
             1 .Si
             2 .No
-------------------------------------
         ��  """)
         if continuar == "1": return "1"
         elif continuar == "2": return "2"

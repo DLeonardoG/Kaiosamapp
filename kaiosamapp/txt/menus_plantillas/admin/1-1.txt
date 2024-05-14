@@ -1,10 +1,7 @@
------------------------------------------------
-       0 . S a l i r ↩️ 
-       00. M e n u - P r i n c i p a l ⚠️
-       1 . C r e a r 📁
-       2 . E l i m i n a r 🗑️
-       3 . A c t u a l i z a r 🔄
-       4 . L e e r 👁️
-       5 . N u e v a - C o m p r a 🚛
-       6 . R e c o m e n d a c i o e s 📰
------------------------------------------------
+                                          0 . S a l i r ↩️ 
+                                          1 . C r e a r 📁
+                                          2 . E l i m i n a r 🗑️
+                                          3 . A c t u a l i z a r 🔄
+                                          4 . L e e r 👁️
+                                          5 . N u e v a - C o m p r a 🚛
+                                          6 . R e c o m e n d a c i o e s 📰
