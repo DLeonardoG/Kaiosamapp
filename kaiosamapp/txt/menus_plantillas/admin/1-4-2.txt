@@ -6,4 +6,5 @@ Servicio
        2 . E l i m i n a r 🗑️
        3 . M o d i f i c a r 🔄
        4 . C o n s u l t a r 👁️
+       5 . M o s t r a r - T o d o s 📋
 -----------------------------------------------

@@ -131,6 +131,16 @@ def leer_usuario():
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
+        
+def new_compra_user(datos):
+    datos = dict(datos)
+    documento =input("Ingrese el documento del usuario: ")
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == documento:
+            datos["usuarios"][i]["registro_productos"].append(new_compra_user(datos))
+            return datos
+    print("Usuario no existente...")    
+    return datos
     
 #leer_user(datos)
 #guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)

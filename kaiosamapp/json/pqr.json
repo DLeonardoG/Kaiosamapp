@@ -32,12 +32,12 @@
         },
         {
             "code": "0003",
-            "id": "000010",
-            "tipo_pqr": "sugerencia",
-            "code_unico": "0043",
-            "motivo": "ma gussta programar",
-            "comentario": "",
-            "fecha": "2024-05-14 00:26:11",
+            "id": "000011",
+            "tipo_pqr": "queja",
+            "code_unico": "0023",
+            "motivo": "wew",
+            "comentario": "wewe",
+            "fecha": "2024-05-14 01:01:21",
             "repuesta": ""
         }
     ]

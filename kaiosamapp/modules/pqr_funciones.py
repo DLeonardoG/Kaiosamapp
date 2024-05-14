@@ -71,7 +71,6 @@ def contador_id():
         def obtener_id(self):
             return '{:06d}'.format(self.id_id)
     id = idPQR('id_pqr.csv')
-    print("id inicial:", id.obtener_id())
     id.registrar_pqr()
     id_pqrs = id.obtener_id()
     return id_pqrs

@@ -37,7 +37,12 @@ def opcion_no_valida():
 
 def very():
     while True:
-        continuar = input("¿Repetir operacion?\n1 .Si\n2 .No\n��  ")
+        continuar = input("""------------------------------------       
+        ¿Repetir operacion?
+            1 .Si
+            2 .No
+------------------------------------
+        ��  """)
         if continuar == "1": return "1"
         elif continuar == "2": return "2"
         else: opcion_no_valida()

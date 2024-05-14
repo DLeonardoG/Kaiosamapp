@@ -12,12 +12,12 @@ from modules.gestion_usuarios import crear_usuario,eliminar_usuario
 from modules.gestion_usuarios import actualizar_usuario,leer_usuario
 
                         #Gestion PQRS
-from modules.pqr import registrar_pqr,consultar_pqr
+from modules.pqr import registrar_pqr,consultar_pqr,eliminar_pqr
                         #Gestion ventas
 
                         #Gstion catalogo 
 #Gestion servicios
-from modules.catalogo_servicios import crear_servicio,eliminar_servicio
+from modules.catalogo_servicios import crear_servicio,eliminar_servicio,mostrar_servicios
 from modules.catalogo_servicios import modificar_servicio,consultar_servicio
 #Gestion productos
 from modules.catalogo_productos import crear_producto,eliminar_producto

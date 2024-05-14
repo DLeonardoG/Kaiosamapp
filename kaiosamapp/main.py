@@ -34,7 +34,7 @@ while True:
                     op_m_1_2 = input("Seleccione una opcion:\n👉   ")
                     if op_m_1_2 == "1": consultar_pqr()
                     elif op_m_1_2 == "2": registrar_pqr()
-                    elif op_m_1_2 == "3": print("Eliminar_pqr")
+                    elif op_m_1_2 == "3": eliminar_pqr()
                     elif op_m_1_2 == "0":
                         print("menu_anterior")                            
                         break
@@ -69,6 +69,7 @@ while True:
                             elif op_m_1_4_2 == "2": eliminar_servicio()
                             elif op_m_1_4_2 == "3": modificar_servicio()
                             elif op_m_1_4_2 == "4": consultar_servicio()
+                            elif op_m_1_4_2 == "5": mostrar_servicios()
                             elif op_m_1_4_2 == "0":
                                 print("menu_anterior")
                                 break

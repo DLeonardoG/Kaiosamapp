@@ -9,14 +9,20 @@ def create_pqr(datos):
     pqr["code"] = "0003"
     id = contador_id()
     pqr["id"] = id
+    print("----------------------------------------------------------------")
     tipo_pqr(pqr)
-    pqr["motivo"]=input("Ingrese el motivo: ")
-    pqr["comentario"]=input("Ingrese el comentario: ")
+    print("----------------------------------------------------------------")
+    pqr["motivo"]=input("                   Ingrese el motivo: ")
+    pqr["comentario"]=input("                   Ingrese el comentario: ")
+    print("----------------------------------------------------------------")
     pqr["fecha"]= _fecha_
     pqr["repuesta"] = ""
 
     datos["pqr"].append(pqr)
-    print( "El id de PQR es ", pqr["id"],"PQR registrada con exito!")
+    clear_screen()
+    print("----------------------------------------------------------------------------------------")
+    print( "           La solicitud ha sido sido recibida bajo el numero ", pqr["id"],"\ncon este podra hacerle seguimiento a su solicitud")
+    print("----------------------------------------------------------------------------------------")
     return datos
 
 def registrar_pqr():
@@ -32,21 +38,27 @@ def registrar_pqr():
 
 def consult_pqr(datos):
     datos = dict(datos)
-    id =input("Ingrese el id del PQR: ")
+    print("----------------------------------------------------------------------------")
+    id =input("                       Ingrese el numero del PQR: ")
+    print("----------------------------------------------------------------------------")
+    clear_screen()
     for i in range(len(datos["pqr"])):
         if datos["pqr"][i]["id"] == id:
             max_length = max(len(datos["pqr"][i]["tipo_pqr"] + " " + datos["pqr"][i]["motivo"]) for i in range(len(datos["pqr"])))
             print("----------------------------------------------------------------------------")
-            print(datos["pqr"][i]["tipo_pqr"]).title().rjust(max_length)
+            print(((datos["pqr"][i]["tipo_pqr"]).title()).rjust(max_length), "  -   Tipo de PQR")
             print("----------------------------------------------------------------------------")
-            print(datos["pqr"][i]["id"].rjust(max_length), "  -  id")
-            print(datos["pqr"][i]["motivo"].rjust(max_length), "  -  motivo")
-            print(datos["pqr"][i]["comentario"].rjust(max_length), "  -  comentario")
-            print(datos["pqr"][i]["fecha"].rjust(max_length), "  -  fecha")
-            print(datos["pqr"][i]["repuesta"].rjust(max_length), "  -  repuesta")
+            print(datos["pqr"][i]["id"].rjust(max_length), "  -   Id")
+            print(datos["pqr"][i]["motivo"].rjust(max_length), "  -   Motivo")
+            print(datos["pqr"][i]["comentario"].rjust(max_length), "  -   Comentario")
+            print(datos["pqr"][i]["fecha"].rjust(max_length), "  -   Fecha")
+            print(datos["pqr"][i]["repuesta"].rjust(max_length), "  -   Repuesta")
             print("----------------------------------------------------------------------------")
             return datos
-    print("PQR no existente...")
+    clear_screen()
+    print("----------------------------------------------------------------------------")    
+    print("                        PQR",id,"no existente...")
+    print("----------------------------------------------------------------------------")
     return datos
 
 def consultar_pqr():
@@ -57,3 +69,34 @@ def consultar_pqr():
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
+        
+def eliminate_pqr(datos):
+    datos = dict(datos)
+    print("----------------------------------------------------------------------------")
+    id =input("                   Ingrese el numero de PQR 💀: ")
+    print("----------------------------------------------------------------------------")
+    for i in range(len(datos["pqr"])):
+        if datos["pqr"][i]["id"] == id:
+            plan = (datos["pqr"][i]["tipo_pqr"]," - ",datos["pqr"][i]["motivo"])
+            datos["pqr"].pop(i)
+            separador = " "
+            plan = separador.join(map(str, plan))
+            print("----------------------------------------------------------------------------")
+            print(                       plan," - eliminado...")
+            print("----------------------------------------------------------------------------")
+            return datos
+    clear_screen()
+    print("----------------------------------------------------------------------------")    
+    print("                          ",id,"no existe...")    
+    print("----------------------------------------------------------------------------")
+    return datos
+
+def eliminar_pqr():
+    while True:
+        datos = cargar_datos(RUTA_BASE_DE_DATOS_PQR)
+        datos = eliminate_pqr(datos)
+        guardar_datos(datos, RUTA_BASE_DE_DATOS_PQR)
+        continuar = very()
+        if continuar == "2": break
+        else: clear_screen()
+        
