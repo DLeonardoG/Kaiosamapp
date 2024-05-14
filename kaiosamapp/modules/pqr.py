@@ -1,6 +1,6 @@
 from modules.datos_pqr import *
 from modules.funciones_secundarias import reportar_error_a_txt,opcion_no_valida
-from modules.funciones_secundarias import clear_screen,very,fecha
+from modules.funciones_secundarias import clear_screen,very,_fecha_
 from modules.pqr_funciones import id_valido,tipo_pqr,contador_id
 
 def create_pqr(datos):
@@ -12,7 +12,7 @@ def create_pqr(datos):
     tipo_pqr(pqr)
     pqr["motivo"]=input("Ingrese el motivo: ")
     pqr["comentario"]=input("Ingrese el comentario: ")
-    pqr["fecha"]= fecha
+    pqr["fecha"]= _fecha_
     pqr["repuesta"] = ""
 
     datos["pqr"].append(pqr)

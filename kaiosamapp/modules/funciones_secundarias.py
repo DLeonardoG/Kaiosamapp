@@ -7,6 +7,8 @@ def time_now():
     fecha = fecha.replace(microsecond=0)
     return fecha
 fecha = time_now()
+_fecha_ = str(fecha) 
+
 
 def clear_screen():
     if platform.system() == 'Windows': os.system('cls')
