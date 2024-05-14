@@ -179,7 +179,7 @@ def compra_producto(datos):
 
 
 
-def nueva_compra_usuario():
+def nueva_compra_usuario_():
     while True:
         datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
         datos = compra_producto(datos)
@@ -187,6 +187,70 @@ def nueva_compra_usuario():
         continuar = very()
         if continuar == "2": break
         else: clear_screen()
+        
+    
+def asignacion_producto(datos):
+    datos = dict(datos)
+    documento =input("Ingrese el documento del participante: ")
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == documento:
+            datos["usuarios"][i]["productos"]=[]
+            datos["usuarios"][i]["productos"].append(buscando_producto(datos))
+            print(datos["usuarios"][i]["productos"])
+            break
+    return datos
+def busqueda(datos):
+    datos = dict(datos)
+    producto = {}
+    id =input("Ingrese el id del Producto: ")
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["id"] == id:
+            datos["catalogo_productos"][i]["code"] = producto["code"]
+            datos["catalogo_productos"][i]["id"] = producto["id"]
+            datos["catalogo_productos"][i]["tipo_de_servicio"] = producto["tipo_de_servicio"]
+            datos["catalogo_productos"][i]["referencia"] = producto["referencia"]
+            datos["catalogo_productos"][i]["precio"] = producto["precio"]
+            producto["fecha"] = _fecha_ 
+            print(producto)
+    return producto
+            
+RUTA_BASE_DE_DATOS_CATALOGO ="kaiosamapp/json/catalogo.json"
+DATOS_PRODUCTOS = cargar_datos(RUTA_BASE_DE_DATOS_CATALOGO)
+
+def buscando_producto(datos):
+    datos = dict(datos)
+    id =input("id del producto: ")
+    producto={}
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["id"] == id:
+            producto=datos["catalogo_productos"][i]
+            break
+    return producto
+    
+def asignacion_producto(datos):
+    datos = dict(datos)
+    documento =input("Ingrese el documento del usuario: ")
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == documento:
+            #datos["usuarios"][i]["productos"]=[]
+            datos["usuarios"][i]["productos"].append(buscando_producto(DATOS_PRODUCTOS))
+            print(datos["usuarios"][i]["productos"])
+            guardar_datos(datos["usuarios"][i]["productos"])
+            break
+    return datos
+
+def nueva_compra_usuario (datos):
+    datos = dict(datos)
+    documento =input("Ingrese el documento del usuario: ")
+    datos = cargar_datos(datos)
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == documento:
+            datos["usuarios"][i]["registro_productos"].append(buscando_producto(DATOS_PRODUCTOS))
+            print(datos["usuarios"][i]["registro_productos"])
+            guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
+            break
+    guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
+    return datos
 #leer_user(datos)
 #guardar_datos(datos, RUTA_BASE_DE_DATOS_USERS)
 

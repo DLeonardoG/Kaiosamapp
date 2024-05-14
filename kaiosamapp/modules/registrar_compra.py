@@ -33,14 +33,14 @@ def id_valido(catalogo_productos):
 
 
     
-def asignacion_evento(datos):
+def asignacion_producto(datos):
     datos = dict(datos)
     documento =input("Ingrese el documento del participante: ")
-    for i in range(len(datos["participantes"])):
-        if datos["participantes"][i]["documento"] == documento:
-            datos["participantes"][i]["eventos"]=[]
-            datos["participantes"][i]["eventos"].append(buscando_evento(datos))
-            print(datos["participantes"][i]["eventos"])
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == documento:
+            datos["usuarios"][i]["productos"]=[]
+            datos["usuarios"][i]["productos"].append(buscando_producto(datos))
+            print(datos["usuarios"][i]["productos"])
             break
     return datos
 def busqueda(datos):
@@ -59,3 +59,24 @@ def busqueda(datos):
     return producto
             
 print (producto)
+
+def buscando_producto(datos):
+    datos = dict(datos)
+    id =input("id del producto: ")
+    producto={}
+    for i in range(len(datos["catalogo_productos"])):
+        if datos["catalogo_productos"][i]["id"] == id:
+            producto=datos["catalogo_productos"][i]
+            break
+    return producto
+    
+def asignacion_producto(datos):
+    datos = dict(datos)
+    documento =input("Ingrese el documento del usuario: ")
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == documento:
+            #datos["usuarios"][i]["productos"]=[]
+            datos["usuarios"][i]["productos"].append(buscando_producto(datos))
+            print(datos["usuarios"][i]["productos"])
+            break
+    return datos
