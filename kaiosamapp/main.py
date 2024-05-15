@@ -26,7 +26,6 @@ while True:
                         print("menu_anterior")                            
                         break
                     else: opcion_no_valida()
-                        
             elif op_m_1 == "2":
                 while True:
                     print("pqr")
