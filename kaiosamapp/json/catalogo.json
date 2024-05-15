@@ -5,17 +5,17 @@
             "id": "12121",
             "tipo_servicios": "fibra_optica_namekusei",
             "code_unico": "0011",
-            "referencia": "12",
-            "plan": "12",
-            "precio": 12000,
+            "referencia": "rere",
+            "plan": "ee",
+            "precio": 10000,
             "duracion": "1 mes",
             "descripcion": "weswoot",
             "cantidad_total": 10,
             "cantidad_vendida": 0,
             "descuento": {
-                "nuevo": 12,
+                "nuevo": 89,
                 "regular": 1,
-                "leal": 2
+                "leal": 23
             }
         },
         {
@@ -71,13 +71,49 @@
                 "regular": 23,
                 "leal": 23
             }
+        },
+        {
+            "code": "0001",
+            "id": "23456",
+            "tipo_servicios": "prepago_Krilin",
+            "code_unico": "0031",
+            "referencia": "12",
+            "plan": "12",
+            "precio": 10000,
+            "duracion": "3m2q2q",
+            "descripcion": "es",
+            "cantidad_total": 1000,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 12,
+                "regular": 12,
+                "leal": 12
+            }
+        },
+        {
+            "code": "0001",
+            "id": "32145",
+            "tipo_servicios": "fibra_optica_namekusei",
+            "code_unico": "0011",
+            "referencia": "w",
+            "plan": "sw",
+            "precio": 50000,
+            "duracion": "ed",
+            "descripcion": "e",
+            "cantidad_total": 980,
+            "cantidad_vendida": 0,
+            "descuento": {
+                "nuevo": 234,
+                "regular": 23,
+                "leal": 42
+            }
         }
     ],
     "catalogo_productos": [
         {
             "code": "0002",
             "id": "12345",
-            "referencia": "12345",
+            "referencia": "supersayayin",
             "marca": "fr",
             "tipo_productos": "kame_celular",
             "caracteristicas": {
@@ -98,7 +134,8 @@
                 "nuevo": 2,
                 "regular": 2,
                 "leal": 2
-            }
+            },
+            "plan": "e"
         },
         {
             "code": "0002",
@@ -126,33 +163,17 @@
                 "regular": 235,
                 "leal": 235
             }
-        },
-        {
-            "code": "0002",
-            "id": "45126",
-            "referencia": "789456123",
-            "marca": "",
-            "tipo_productos": "kame_celular",
-            "caracteristicas": {
-                "color": "rojo",
-                "memoria": "hiku\u00e7",
-                "generacion": "hkhk",
-                "camara": "bhkj",
-                "resolucion": "jhkh",
-                "bateria": "khk"
-            },
-            "code_unico": "0012",
-            "precio": 20000,
-            "garantia": "1a\u00f1o",
-            "descripcion": "hjkhklh",
-            "cantidad_total": 2,
-            "cantidad_vendida": 0,
-            "descuento": {
-                "nuevo": 20,
-                "regular": 12,
-                "leal": 45
-            }
         }
     ],
-    "facturas": []
+    "facturas": [
+        {
+            "id": "123456",
+            "fecha": "2024-05-14 17:17:55",
+            "tipo_servicios": "pospago_roshi",
+            "referencia": "Oozaru",
+            "precio": 80000,
+            "nombre": "son goku",
+            "documento": "11659876"
+        }
+    ]
 }

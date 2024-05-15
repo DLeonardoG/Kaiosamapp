@@ -14,7 +14,7 @@ from modules.gestion_usuarios import actualizar_usuario,leer_usuario,nueva_compr
                         #Gestion PQRS
 from modules.pqr import registrar_pqr,consultar_pqr,eliminar_pqr
                         #Gestion ventas
-from modules.catalogo_productos import vender_producto
+#from modules.catalogo_productos import vender_producto
                         #Gstion catalogo 
 #Gestion servicios
 from modules.catalogo_servicios import crear_servicio,eliminar_servicio,mostrar_servicios

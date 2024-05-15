@@ -1,5 +1,5 @@
 
-from main_funciones import mostrar_txt
+from main_funciones import *
 
 principal = "kaiosamapp/txt/menus_plantillas/principal.txt"
 

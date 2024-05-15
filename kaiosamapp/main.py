@@ -80,7 +80,10 @@ while True:
                             else: opcion_no_valida() 
                         print("menu_anterior")        
                         break
-                    elif op_m_1_4 == "3": vender_producto()
+                    elif op_m_1_4 == "3": print("vender_producto()")
+                    elif op_m_1_4 == "0":
+                        print("menu_anterior")                    
+                        break
                     else: opcion_no_valida()
             elif op_m_1 == "0":
                 print("menu_anterior")                    

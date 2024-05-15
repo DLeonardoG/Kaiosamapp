@@ -8,7 +8,7 @@ def time_now():
     fecha = fecha.replace(microsecond=0)
     return fecha
 fecha = time_now()
-print (fecha)
+
 def datetime_to_json(dt):
     return dt.strftime('%Y-%m-%d %H:%M:%S')
 _fecha_ = datetime_to_json(fecha)

@@ -6,8 +6,8 @@ from modules.catalogo_productos_funciones import int_nuevo,int_regular,int_leal,
 from modules.catalogo_productos_funciones import modificar,mostrar_tipo_productos
 from modules.catalogo_productos_funciones import kame_celular, kame_computador,kame_tv
 from modules.funciones_secundarias import line,print_,clear_screen,_fecha_
-from modules.datos_ventas import contador_id
-from modules.catalogo_servicios import doc
+#from modules.datos_ventas import contador_id
+#from modules.catalogo_servicios import doc
 def crear_product(datos):
     datos = dict(datos)
     catalogo_productos={}
@@ -157,45 +157,45 @@ def agregar_producto(datos):
 
 
 
-def f (datos):
-    while True:
-        try:
-            id =input("Ingrese el id del Producto: ")
-            for i in range(len(datos["catalogo_productos"])):
-                if datos["catalogo_productos"][i]["id"] == id:
-                    product = datos["catalogo_productos"][i]
-                    return product
-        except Exception:
-            print("Producto no existente...")
-product = f(datos)            
-RUTA_BASE_DE_DATOS_VENTAS ="kaiosamapp/modules/datos_ventas.py"
-datos = cargar_datos(RUTA_BASE_DE_DATOS_VENTAS)         
-def create_venta(datos,product):
-    datos = dict(datos,)
-    venta={}
-    venta["code"] = "0007"
-    id = contador_id()
-    venta["id"] = product["id"]
-    line()
-    venta["tipo_venta"]= product["itipo_ventad"]
-    line()
-    venta["referencia"]= product["referencia"]
-    venta["precio"]= product["precio"]
-    venta["documento"]= doc()
-    line()
-    venta["fecha"]= _fecha_
-    datos["venta"].append(venta)
-    clear_screen()
-    line()
-    print_( "La venta ha sido sido recibida con el id ", venta["id"])
-    print_( "con este podra hacerle seguimiento a la venta")      
-    line()
-    return datos
-
-
-RUTA_BASE_DE_DATOS_VENTAS ="kaiosamapp/modules/datos_ventas.py"
-    
-def vender_producto():
-    datos = cargar_datos(RUTA_BASE_DE_DATOS_VENTAS) 
-    datos = create_venta(datos,product)
-    guardar_datos(datos, RUTA_BASE_DE_DATOS_VENTAS)
+#def f (datos):
+#    while True:
+#        try:
+#            id =input("Ingrese el id del Producto: ")
+#            for i in range(len(datos["catalogo_productos"])):
+#                if datos["catalogo_productos"][i]["id"] == id:
+#                    product = datos["catalogo_productos"][i]
+#                    return product
+#        except Exception:
+#            print("Producto no existente...")
+#product = f(datos)            
+#RUTA_BASE_DE_DATOS_VENTAS ="kaiosamapp/modules/datos_ventas.py"
+#datos = cargar_datos(RUTA_BASE_DE_DATOS_VENTAS)         
+#def create_venta(datos,product):
+#    datos = dict(datos,)
+#    venta={}
+#    venta["code"] = "0007"
+#    id = contador_id()
+#    venta["id"] = product["id"]
+#    line()
+#    venta["tipo_venta"]= product["itipo_ventad"]
+#    line()
+#    venta["referencia"]= product["referencia"]
+#    venta["precio"]= product["precio"]
+#    venta["documento"]= doc()
+#    line()
+#    venta["fecha"]= _fecha_
+#    datos["venta"].append(venta)
+#    clear_screen()
+#    line()
+#    print_( "La venta ha sido sido recibida con el id ", venta["id"])
+#    print_( "con este podra hacerle seguimiento a la venta")      
+#    line()
+#    return datos
+#
+#
+#RUTA_BASE_DE_DATOS_VENTAS ="kaiosamapp/modules/datos_ventas.py"
+#    
+#def vender_producto():
+#    datos = cargar_datos(RUTA_BASE_DE_DATOS_VENTAS) 
+#    datos = create_venta(datos,product)
+#    guardar_datos(datos, RUTA_BASE_DE_DATOS_VENTAS)
