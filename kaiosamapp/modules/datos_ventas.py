@@ -1,6 +1,6 @@
 import json
-from modules.venta_funciones import id_valido,tipo_,contador_id
-
+from modules.funciones_secundarias import tipo_,line,print_,clear_screen,_fecha_
+from modules.datos_ventas import contador_id
 
 
 def cargar_datos(archivo):
@@ -32,18 +32,21 @@ def create_venta(datos):
     id = contador_id()
     venta["id"] = id
     line()
-    tipo_(venta)
+    venta["tipo_venta"]=
     line()
-    venta["motivo"]=input("Ingrese el motivo: ")
-    venta["comentario"]=input("Ingrese el comentario: ")
+    venta["referencia"]=
+    venta["precio"]= 
+    venta["nombre"]= 
+    venta["documento"]= 
+    venta["fecha"]= 
     line()
     venta["fecha"]= _fecha_
     venta["repuesta"] = ""
-
     datos["venta"].append(venta)
     clear_screen()
     line()
-    print( "           La solicitud ha sido sido recibida bajo el numero ", venta["id"],"\ncon este podra hacerle seguimiento a su solicitud")
+    print_( "La venta ha sido sido recibida con el id ", venta["id"])
+    print_( "con este podra hacerle seguimiento a la venta")      
     line()
     return datos
 

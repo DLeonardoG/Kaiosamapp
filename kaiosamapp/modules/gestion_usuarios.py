@@ -174,9 +174,16 @@ def leer_user(datos):
             print_(datos["usuarios"][i]["registro_pqr"],"  -  Registro de PQR")"""
             return datos
     
+    
     print_("Usuario no existente...")  
     return datos
 
+def doc ():
+    datos = dict(datos)
+    documento =input("Ingrese el documento del usuario: ")
+    for i in range(len(datos["usuarios"])):
+        if datos["usuarios"][i]["documento"] == documento:
+            return documento
 def leer_usuario():
     while True:
         datos = cargar_datos(RUTA_BASE_DE_DATOS_USERS)
