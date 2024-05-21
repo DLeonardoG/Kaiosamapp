@@ -34,7 +34,7 @@ def guardar_datos(datos, archivo):
     
 
 #Constants
-RUTA_BASE_DE_DATOS ="prueba\j.son\datos.json"
+RUTA_BASE_DE_DATOS ="prueba/j.son/datos.json"
 
 datos = cargar_datos(RUTA_BASE_DE_DATOS)
 

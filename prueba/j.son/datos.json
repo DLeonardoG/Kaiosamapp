@@ -546,6 +546,21 @@
             "registro_servicios": [],
             "registro_productos": [],
             "registro_pqr": []
+        },
+        {
+            "documento": "97080960",
+            "edad": 18,
+            "nombre": "Luis",
+            "apellido": "Vadssa",
+            "telefono": 1231231231,
+            "sexo": "Femenino",
+            "ciudad": "Bucaramanga",
+            "direccion": "dfdf",
+            "email": "sdfdsf",
+            "categoria": "nuevo",
+            "registro_servicios": [],
+            "registro_productos": [],
+            "registro_pqr": []
         }
     ],
     "catalogo_servicios": [
