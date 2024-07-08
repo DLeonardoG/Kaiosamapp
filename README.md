@@ -1,5 +1,15 @@
 # Kaiosamapp 🌏🌐
 
+## Tabla de contenido
+| Indice | Título  |
+|--|--|
+| 1. | [Descripción](#Descripción) |
+| 2. | [Tecnologías Utilizadas](#TecnologíasUtilizadas) |
+| 3. | [Uso del Repositorio](#UsodelRepositorio) |
+| 4. | [Instrucciones de Ejecución](#InstruccionesdeEjecución) |
+| 5. | [Imagenes de la pagina](#Imagenesdelapagina) |
+| 6. | [Contacto](#Contacto) |
+
 #### Descripción 🚀
 
 El proyecto kaiosamapp es una plataforma de gestión integral para una empresa de servicios de telefonia, diseñada para administrar diferentes aspectos relacionados con servicios, productos y gestion de descuentos. Esta aplicación permite a los administradores gestionar los datos pertinentes.
@@ -32,3 +42,7 @@ Este repositorio contiene el código fuente del proyecto Kaiosamapp, organizado 
 #### Autor 👤
 
 Leonardo Gonzalez
+
+#### Contacto
+
+darkleonardog@gmail.com
