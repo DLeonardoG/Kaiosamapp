@@ -3,10 +3,10 @@
 ## Tabla de contenido
 | Indice | Título  |
 |--|--|
-| 1. | [Descripción](#Descripción) |
+| 1. | [Descripción](#Descripcion) |
 | 2. | [Tecnologías Utilizadas](#TecnologíasUtilizadas) |
 | 3. | [Uso del Repositorio](#UsodelRepositorio) |
-| 4. | [Instrucciones de Ejecución](#InstruccionesdeEjecución) |
+| 4. | [Instrucciones de Ejecución](#InstruccionesdeEjecucion) |
 | 5. | [Imagenes de la pagina](#Imagenesdelapagina) |
 | 6. | [Contacto](#Contacto) |
 
