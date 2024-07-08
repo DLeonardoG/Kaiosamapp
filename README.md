@@ -31,4 +31,4 @@ Este repositorio contiene el código fuente del proyecto Kaiosamapp, organizado 
 
 #### Autor 👤
 
-Nombre: Leonardo Gonzalez
+Leonardo Gonzalez
