@@ -4,11 +4,10 @@
 | Indice | Título  |
 |--|--|
 | 1. | [Descripción](#Descripcion) |
-| 2. | [Tecnologías Utilizadas](#TecnologíasUtilizadas) |
-| 3. | [Uso del Repositorio](#UsodelRepositorio) |
-| 4. | [Instrucciones de Ejecución](#InstruccionesdeEjecucion) |
-| 5. | [Imagenes de la pagina](#Imagenesdelapagina) |
-| 6. | [Contacto](#Contacto) |
+| 2. | [Tecnologías Utilizadas](#Tecnologías) |
+| 3. | [Uso del Repositorio](#Uso) |
+| 4. | [Instrucciones de Ejecución](#Instrucciones) |
+| 5. | [Contacto](#Contacto) |
 
 #### Descripción 🚀
 
@@ -23,15 +22,15 @@ El proyecto kaiosamapp es una plataforma de gestión integral para una empresa d
 3. **Gestión de Productos** 🌐: Permite la creación, lectura, edición y eliminación de productos.
 
 
-#### Tecnologías Utilizadas 🖥️
+#### Tecnologías 🖥️
 
 - **Python** 🐍: Todas la aplicacion esta hecha con python.
 
-#### Uso del Repositorio 📝
+#### Uso 📝
 
 Este repositorio contiene el código fuente del proyecto Kaiosamapp, organizado por roles y funcionalidades dentro de kaiosamapp. Cada directorio y archivo está estructurado para facilitar el desarrollo, mantenimiento y despliegue de la aplicación.
 
-#### Instrucciones de Ejecución 📐
+#### Instrucciones📐
 
 1. Clona el repositorio a tu máquina local. 
 2. Configura adecuadamente todo lo adecuado drespecto a python.
