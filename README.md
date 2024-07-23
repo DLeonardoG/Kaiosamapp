@@ -27,7 +27,7 @@ El proyecto kaiosamapp es una plataforma de gestión integral para una empresa d
 
 - **Python** 🐍: Todas la aplicacion esta hecha con python.
 
-#### Uso 📝
+#### Uso📝
 
 Este repositorio contiene el código fuente del proyecto Kaiosamapp, organizado por roles y funcionalidades dentro de kaiosamapp. Cada directorio y archivo está estructurado para facilitar el desarrollo, mantenimiento y despliegue de la aplicación.
 
