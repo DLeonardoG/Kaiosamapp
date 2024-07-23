@@ -4,16 +4,16 @@
 | Indice | Título  |
 |--|--|
 | 1. | [Descripción](#Descripcion) |
-| 2. | [Tecnologías Utilizadas](#Tecnologías) |
+| 2. | [Tecnologías Utilizadas](#Tecnologias) |
 | 3. | [Uso del Repositorio](#Uso) |
 | 4. | [Instrucciones de Ejecución](#Instrucciones) |
 | 5. | [Contacto](#Contacto) |
 
-#### Descripción 🚀
+#### Descripcion🚀
 
 El proyecto kaiosamapp es una plataforma de gestión integral para una empresa de servicios de telefonia, diseñada para administrar diferentes aspectos relacionados con servicios, productos y gestion de descuentos. Esta aplicación permite a los administradores gestionar los datos pertinentes.
 
-#### Características Principales 🧮
+#### Características Principales🧮
 
 1. **Gestión de Usuarios** 👥: Permite registrar y gestionar cuentas de los clientes y sus planes.
 
@@ -22,7 +22,7 @@ El proyecto kaiosamapp es una plataforma de gestión integral para una empresa d
 3. **Gestión de Productos** 🌐: Permite la creación, lectura, edición y eliminación de productos.
 
 
-#### Tecnologías 🖥️
+#### Tecnologias🖥️
 
 - **Python** 🐍: Todas la aplicacion esta hecha con python.
 
