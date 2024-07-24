@@ -35,19 +35,13 @@ Este repositorio contiene el código fuente del proyecto Kaiosamapp, organizado 
 ## Instrucciones📐
 
 ### Requisitos Previos
-- Python 3.x
-- pip
 
-### Pasos de Instalación
-1. Clona el repositorio:
-    ```sh
-    git clone https://github.com/usuario/repositorio.git
-    ```
-2. Navega al directorio del proyecto:
-    ```sh
-    cd kaiosamapp
-    ```
-    
+- Python 3
+
+### Pasos
+
+1. Clona el repositorio a tu máquina local. 
+2. Configura adecuadamente todo lo adecuado drespecto a python.
 3. Ejecuta el proyecto desde la terminal.
 
 ## Mapa🗺️
