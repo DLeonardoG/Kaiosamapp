@@ -41,7 +41,7 @@ Este repositorio contiene el código fuente del proyecto Kaiosamapp, organizado 
 ### Pasos
 
 1. Clona el repositorio a tu máquina local. 
-2. Configura adecuadamente todo lo adecuado drespecto a python.
+2. Configura adecuadamente todo lo adecuado respecto a python.
 3. Ejecuta el proyecto desde la terminal.
 
 ## Mapa🗺️
