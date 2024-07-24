@@ -46,6 +46,7 @@ graph TD
     B --> E[Administrar productos]
     B --> F[Asignar productos]
     B --> G[Asignar Servicios]
+    B --> H[Gestiona Usuarios]
 ```
 
 ## Autor 👤
