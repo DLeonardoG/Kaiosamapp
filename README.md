@@ -8,7 +8,8 @@
 | 3. | [Tecnologías Utilizadas](#Tecnologias) |
 | 4. | [Uso del Repositorio](#Uso) |
 | 5. | [Instrucciones de Ejecución](#Instrucciones) |
-| 6. | [Contacto](#Contacto) |
+| 6. | [Mapa](#Mapa) |
+| 7. | [Contacto](#Contacto) |
 
 ## Descripcion🚀
 
