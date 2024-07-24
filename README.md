@@ -1,4 +1,4 @@
-# Kaiosamapp 🌏🌐
+<h1 style="text-align: center;">Kaiosamapp 🌏🌐</h1>
 
 ## Tabla de contenido
 | Indice | Título  |
@@ -51,7 +51,7 @@ graph TD
 
 ## Autor 👤
 
-Leonardo Gonzalez
+[Leonardo Gonzalez](https://github.com/DLeonardoG) 
 
 ## Contacto
 
