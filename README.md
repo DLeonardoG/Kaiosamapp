@@ -37,7 +37,7 @@ Este repositorio contiene el código fuente del proyecto Kaiosamapp, organizado 
 2. Configura adecuadamente todo lo adecuado drespecto a python.
 3. Ejecuta el proyecto desde la terminal.
 
-## Mapa 
+## Mapa🗺️
 
 ```mermaid
 graph TD
