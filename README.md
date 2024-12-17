@@ -1,65 +1,63 @@
 <h1 style="text-align: center;">Kaiosamapp 🌏🌐</h1>
 
-## Tabla de contenido
-| Indice | Título  |
+## Table of Contents
+| Index | Title  |
 |--|--|
-| 1. | [Descripción](#Descripcion) |
-| 2. | [Características](#Características) |
-| 3. | [Tecnologías Utilizadas](#Tecnologias) |
-| 4. | [Uso del Repositorio](#Uso) |
-| 5. | [Instrucciones de Ejecución](#Instrucciones) |
-| 6. | [Mapa de la app](#Mapa) |
-| 7. | [Contacto](#Contacto) |
+| 1. | [Description](#Description) |
+| 2. | [Features](#Features) |
+| 3. | [Technologies Used](#Technologies) |
+| 4. | [Repository Usage](#Usage) |
+| 5. | [Execution Instructions](#Instructions) |
+| 6. | [App Map](#Map) |
+| 7. | [Contact](#Contact) |
 
-## Descripcion🚀
+## Description🚀
 
-El proyecto kaiosamapp es una plataforma de gestión integral para una empresa de servicios de telefonia, diseñada para administrar diferentes aspectos relacionados con servicios, productos y gestion de descuentos. Esta aplicación permite a los administradores gestionar los datos pertinentes.
+The Kaiosamapp project is a comprehensive management platform for a telecommunications service company, designed to manage different aspects related to services, products, and discount management. This application allows administrators to manage relevant data.
 
-## Características🧮
+## Features🧮
 
-1. **Gestión de Usuarios** 👥: Permite registrar y gestionar cuentas de los clientes y sus planes.
+1. **User Management** 👥: Allows registration and management of customer accounts and their plans.
 
-2. **Gestión de Servicios** 🌐: Permite la creación, lectura, edición y eliminación de servicios.
+2. **Service Management** 🌐: Enables creation, reading, editing, and deletion of services.
 
-3. **Gestión de Productos** 🌐: Permite la creación, lectura, edición y eliminación de productos.
+3. **Product Management** 🌐: Enables creation, reading, editing, and deletion of products.
 
+## Technologies🖥️
 
-## Tecnologias🖥️
+- **Python** 🐍: The entire application is built with Python.
 
-- **Python** 🐍: Todas la aplicacion esta hecha con python.
+## Usage📝
 
-## Uso📝
+This repository contains the source code of the Kaiosamapp project, organized by roles and functionalities within Kaiosamapp. Each directory and file is structured to facilitate the development, maintenance, and deployment of the application.
 
-Este repositorio contiene el código fuente del proyecto Kaiosamapp, organizado por roles y funcionalidades dentro de kaiosamapp. Cada directorio y archivo está estructurado para facilitar el desarrollo, mantenimiento y despliegue de la aplicación.
+## Instructions📐
 
-## Instrucciones📐
-
-### Requisitos Previos
+### Prerequisites
 
 - Python 3
 
-### Pasos
+### Steps
 
-1. Clona el repositorio a tu máquina local. 
-2. Configura adecuadamente todo lo adecuado respecto a python.
-3. Ejecuta el proyecto desde la terminal.
+1. Clone the repository to your local machine.  
+2. Properly configure all the required Python settings.  
+3. Run the project from the terminal.
 
-## Mapa🗺️
+## Map🗺️
 
 ```mermaid
 graph TD
-    A[Kaiosamapp] --> B[Administrador]
-    B --> D[Administrar servicios]
-    B --> E[Administrar productos]
-    B --> F[Asignar productos]
-    B --> G[Asignar Servicios]
-    B --> H[Gestiona Usuarios]
-```
+    A[Kaiosamapp] --> B[Administrator]
+    B --> D[Manage Services]
+    B --> E[Manage Products]
+    B --> F[Assign Products]
+    B --> G[Assign Services]
+    B --> H[Manage Users]
 
 ## Autor 👤
 
 [Leonardo Gonzalez](https://github.com/DLeonardoG) 
 
-## Contacto
+## Contact
 
 Linkedin: <a href="https://www.linkedin.com/in/leonardo-gonzalez-302321311/" target="_blank">Leonardo Gonzalez</a>
